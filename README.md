@@ -55,3 +55,7 @@ This repository and its Pages site are public. Sharing the link with a few membe
 Feedback links open the repository’s issue form. A GitHub account is needed to submit an issue; feedback is public. Members without an account can reply directly to whoever shared the site, using the page link and suggested change. No messages are submitted or stored by the static website itself.
 
 For updates, rebuild and check, commit the approved changes and push to `main`; GitHub Pages republishes that branch. There is no separate framework build or automatic deployment to the operational club website.
+
+## Repository authorship
+
+Project updates use Bruce Partridge (`bwucee@gmail.com`) as the repository-local Git author. This keeps the project separate from other club identities configured on the same computer.
