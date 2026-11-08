@@ -1,0 +1,38 @@
+name: Member feedback or contribution
+description: Suggest a correction, add a memory or help develop the heritage collection.
+title: 'Member feedback: '
+body:
+  - type: markdown
+    attributes:
+      value: 'Thank you for helping develop the collection. This feedback is public. Please keep personal contact details out of the submission.'
+  - type: input
+    id: page
+    attributes:
+      label: Page title or link
+      description: Which part of the collection does this concern?
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of feedback
+      options:
+        - Historical correction or identification
+        - New story, photograph or record
+        - Club group material
+        - Website navigation or readability
+        - Other suggestion
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion or contribution
+      description: Include dates, names and the relevant club group where you can.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources and image permission
+      description: Where does the information come from? If contributing an image, identify its owner and any online reproduction permission.
