@@ -18,7 +18,8 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "era": "beginnings"
+      "era": "beginnings",
+      "book_pages": []
     },
     {
       "id": "domain-course",
@@ -39,7 +40,8 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "era": "beginnings"
+      "era": "beginnings",
+      "book_pages": []
     },
     {
       "id": "gate-pa",
@@ -60,7 +62,8 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "era": "beginnings"
+      "era": "beginnings",
+      "book_pages": []
     },
     {
       "id": "club-life",
@@ -81,7 +84,8 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "era": "beginnings"
+      "era": "beginnings",
+      "book_pages": []
     },
     {
       "id": "champions",
@@ -96,7 +100,7 @@
         "The men’s list records H. Phillips in 1913, no championship played in 1914, J. Fowles in 1915 and 1916, R. Renshaw in 1917, H. J. Rowe in 1918, and R. H. Roache in 1919. It gives Renshaw again in 1920, 1922 and 1923. The list does not explain why the 1914 championship was not played.",
         "The women’s senior championship list begins in 1919 with Mrs G. Henderson. Miss R. Daines won in 1920, 1921 and 1922; Miss N. Wallis is listed for 1923. A separate biographical passage identifies the three-time winner as Rennie Daines.",
         "The women’s list starting in 1919 should not be read as evidence that women only began playing then: the book names women members and mixed competition much earlier.",
-        "These names close the preview in 1923. The collection can grow into later decades using the same source references and article structure."
+        "These names close the collection’s first chapter in 1923. Later chapters follow the playing record through the decades, with the full honours lists retained in the book’s appendices."
       ],
       "groups": [
         "ladies",
@@ -105,7 +109,8 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "era": "beginnings"
+      "era": "beginnings",
+      "book_pages": []
     },
     {
       "id": "between-the-wars",
@@ -128,7 +133,8 @@
       "era": "interwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "course-redesign",
@@ -148,7 +154,8 @@
       "era": "interwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "james-mowat",
@@ -172,7 +179,8 @@
       "era": "interwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "clubhouse-1938",
@@ -195,7 +203,8 @@
       "era": "interwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "wartime-course",
@@ -218,7 +227,8 @@
       "era": "interwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "postwar-revival",
@@ -239,7 +249,8 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "clubhouse-1954",
@@ -263,7 +274,8 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "ladies-between-wars",
@@ -286,7 +298,8 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "anne-mark",
@@ -309,7 +322,8 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "una-wickham",
@@ -331,7 +345,8 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "veterans-beginnings",
@@ -354,7 +369,8 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "invitation-tournament",
@@ -376,7 +392,8 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "juniors-1950s",
@@ -400,12 +417,13 @@
       "era": "postwar",
       "record_type": "historical-story",
       "source_kind": "book",
-      "review_status": "draft"
+      "review_status": "draft",
+      "book_pages": []
     },
     {
       "id": "ladies-nine-hole",
       "title": "A shorter round, a wider welcome",
-      "date": "1977–1999 · beyond the current chapters",
+      "date": "1977–2006",
       "category": "People & Stories",
       "pages": "106–107",
       "image": null,
@@ -419,9 +437,9 @@
         "In Phyll Sandlant’s account reproduced by Mowat, an advertisement in February 1998 invited women to try nine-hole golf at Tauranga. Ninety-six women registered. Professional Rick Barker provided coaching, with volunteers accompanying beginners and introducing the game’s etiquette and competition formats.",
         "The inaugural BOPTV Honda Nine Hole Tournament followed at Tauranga in 1999. The book credits Phyll and the volunteers who supported her, as well as Alison Holdem and Lynn Goodhew who carried the work forward. Phyll became a life member in 2006.",
         "A separate 2014 centenary report in SunLive identifies Patsy Hankins as instrumental in the national initiative and says she approached Phyll in 1998 to help implement it. That report calls Tauranga the first New Zealand club; Phyll’s account in the book specifically describes the first group in Bay of Plenty. Both sources show Tauranga’s pioneering contribution, while describing the scope differently.",
-        "This story is included through the Ladies 9 Hole collection even though its dates fall beyond the historical chapters currently developed. Present-day membership, programmes and achievements can be recorded here as new, dated contributions rather than assumed from the 2014 account."
+        "The Ladies 9 Hole collection links this history to the club group’s own records. Present-day membership, programmes and achievements can be added as new, dated contributions rather than assumed from the 2014 account."
       ],
-      "era": "later",
+      "era": "eighties",
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
@@ -430,6 +448,662 @@
           "title": "Luke Balvert, “A hole in 100”, SunLive, 15 November 2014",
           "url": "https://www.sunlive.co.nz/news/87217-a-hole-100.html"
         }
+      ],
+      "book_pages": [
+        106,
+        107
+      ]
+    },
+    {
+      "id": "harris-course",
+      "title": "Subtle changes, a lasting influence",
+      "date": "1967 onwards",
+      "category": "The Course",
+      "pages": "41–43",
+      "image": null,
+      "groups": [],
+      "intro": "John Harris’s advice helped shape the course without turning it into something its members would no longer recognise.",
+      "paragraphs": [
+        "In 1967 the club invited British golf architect Commander John Harris to inspect the course. His report described changes intended to improve a club course rather than force it into the mould of a long championship layout.",
+        "Greens chairman Alan Davidson and superintendent Grant Silvester walked the course with Harris. The book describes Davidson preparing models from the advice and Silvester and his team putting the proposals into practice, with help from Garth Renner.",
+        "The changes concentrated on lines of play, bunkering and mounding. Dave’s account values their subtlety and the variety offered by the existing ground.",
+        "The original chapter also carries a hole-by-hole history and later reflections on design. Those passages remain available in the book collection, rather than being compressed into a single date on the timeline."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "water-and-irrigation",
+      "title": "Water: the work beneath the fairways",
+      "date": "1963–1995",
+      "category": "The Course",
+      "pages": "184–187",
+      "image": null,
+      "groups": [],
+      "intro": "A reliable water supply took decades of investigation, investment and practical adjustment.",
+      "paragraphs": [
+        "The earliest system drew from the Borough supply, with sprinklers that needed shifting by hand. Some greens were beyond the pipe network, and water pressure depended on demands elsewhere in the town.",
+        "The book records investigating the nearby stream in 1963 and a bore in 1970. A reservoir and further pipework followed, but keeping enough water available remained a difficulty.",
+        "In 1978 the club approved a more extensive reticulation system. By the 1990s its limitations had prompted another major decision: a professionally designed replacement, completed in April 1995.",
+        "The chapter explains both the engineering and the work of staff who moved sprinklers, often at night. Its technical descriptions and water-right references describe the position when the book was written, not current operating instructions."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        184,
+        185,
+        186,
+        187
+      ]
+    },
+    {
+      "id": "trees-and-memory",
+      "title": "A landscape planted by people",
+      "date": "1930s–2014",
+      "category": "The Course",
+      "pages": "189–193",
+      "image": null,
+      "groups": [],
+      "intro": "Trees gave shelter and shape to the course, and many also carried personal memories.",
+      "paragraphs": [
+        "Dave traces a major planting programme to A. J. Mirrielees and the relief-worker scheme during the Depression. Later members continued the work, adding both useful shelter and individual specimen trees.",
+        "The chapter records the history of particular trees, their loss in storms, and the debate that often accompanied removal or replacement. It presents planting as part of course design as well as beautification.",
+        "It also considers how species selection affects turf, maintenance and wildlife. These observations are Dave’s account and opinions, preserved in the original chapter with its date and context.",
+        "The stories of planting and care belong alongside the playing records: the landscape experienced by each generation was partly the result of work by the people before it."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        189,
+        190,
+        191,
+        192
+      ]
+    },
+    {
+      "id": "women-in-leadership",
+      "title": "Women at the committee table",
+      "date": "1974–2000",
+      "category": "People & Stories",
+      "pages": "97, 140–143",
+      "image": null,
+      "groups": [
+        "ladies"
+      ],
+      "intro": "From Nen Sim’s election to a woman president, representation changed the club’s leadership.",
+      "paragraphs": [
+        "Evelyn, known as Nen, Sim became the first woman elected to the club executive in 1974. The book describes her practical contribution and her concern for the interests of the whole membership.",
+        "A 1978 decision provided for a woman appointed from the women’s section as well as those elected directly. Loeta Hutcheson and Peg Cross were among those who followed that route.",
+        "When the Board structure arrived in 1994, women again took part in its development. Dave’s account records Joyce Paris among the first elected Board members and Noeline Shiel as vice president.",
+        "Peg Copestake became club president in 2000, the first woman to hold that office. The original administration chapter follows the transition in greater detail, including the discussions about responsibilities and representation."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        97,
+        140,
+        141,
+        142,
+        143
+      ]
+    },
+    {
+      "id": "board-of-management",
+      "title": "A new way to run the club",
+      "date": "1994 onwards",
+      "category": "People & Stories",
+      "pages": "141–147",
+      "image": null,
+      "groups": [],
+      "intro": "The move from a general committee to a Board introduced new responsibilities and a period of adjustment.",
+      "paragraphs": [
+        "The new Board structure took effect in 1994. The first elected members were Bruce Partridge and Joyce Paris, joined by president Noel Copestake and players’ representative Paul Munn; Ian Cross and Jackie McDonald were invited to fill the remaining positions.",
+        "Bruce Partridge served as inaugural chair. The book describes the early work of defining the roles of Board, general manager and players’ committees, alongside different views about the new arrangements.",
+        "Later Boards worked on finance, course improvement and the clubhouse. Dave gives particular attention to the planning behind the redevelopment and to leadership documents prepared by Grant Scoones.",
+        "This is the book’s account of the transition, including its author’s assessments. The full administration chapter preserves the detail and names so members can read beyond this short introduction."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        141,
+        142,
+        143,
+        144
+      ]
+    },
+    {
+      "id": "clubhouse-2001",
+      "title": "The clubhouse rebuilt for a new century",
+      "date": "1999–2001",
+      "category": "The Course",
+      "pages": "158–160",
+      "image": "clubhouse-rebuilt",
+      "groups": [],
+      "intro": "Planning, member expertise and a major financial commitment produced the clubhouse that opened in April 2001.",
+      "paragraphs": [
+        "In February 1999 the Board established a Facilities Advisory Group to examine the clubhouse. Its members brought experience in construction, drafting, engineering, management and cost estimation.",
+        "The proposal used the existing foundations and basement rather than building elsewhere on the course. A July 2000 meeting considered the options and financing, including funds made available when the Golf Club Trust was wound up.",
+        "During the work, club life continued in temporary accommodation. The book acknowledges caterers Peter and Tania Robb, bar staff and professional Rick Barker for keeping services going through the disruption.",
+        "The new facility opened with a champagne breakfast in April 2001. Dave credits both the formal planning and the members who gave their expertise to bring the project to completion."
+      ],
+      "era": "modern",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        158,
+        159,
+        160
+      ]
+    },
+    {
+      "id": "women-veterans",
+      "title": "The women veterans find their own rhythm",
+      "date": "1987–2014",
+      "category": "People & Stories",
+      "pages": "135–138",
+      "image": null,
+      "groups": [
+        "ladies"
+      ],
+      "intro": "Monthly golf, visits and shared lunches built another enduring part of club life.",
+      "paragraphs": [
+        "The book traces the women veterans’ group to the initiative of Jean Mack and Phyl Carter in 1987. At the first formal annual meeting in November 1988, Marg Calver was elected president.",
+        "Competition was only part of the attraction. Bus trips, lunches, visits with other clubs and Christmas gatherings helped establish the group’s character. Members also supported improvements to club facilities.",
+        "Nine-hole players joined the monthly competitions by 1999. The chapter records how the programme adapted as both nine-hole and eighteen-hole membership grew.",
+        "The original chapter retains the names of organisers and the sequence of events through the period covered by the book. It gives this group a clear place within the Ladies collection without assuming that its 2014 programme describes today’s arrangements."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        135,
+        136,
+        137,
+        138
+      ]
+    },
+    {
+      "id": "veterans-service",
+      "title": "The projects behind the pleasure",
+      "date": "1985–2014",
+      "category": "People & Stories",
+      "pages": "127–133",
+      "image": null,
+      "groups": [
+        "senior-men"
+      ],
+      "intro": "The Veterans’ contribution extended from friendly rounds to practical work around the course.",
+      "paragraphs": [
+        "In 1985 the Veterans proposed undertaking projects agreed with the club in return for relief from course fees for their annual tournament. The book records the arrangement and lists the work carried out in the years that followed.",
+        "Projects ranged from painting, paths and ball washers to gardens, steps, signs and improvements to tees and greens. The year-by-year record shows how many small jobs accumulated into a substantial contribution.",
+        "The account also recognises the volunteers who maintained the Society’s album and the group associated with firewood and tree work. These were contributions in time and skill as well as in money.",
+        "The original Veterans’ chapter includes the full project lists, office holders and personalities. New Senior Men records can continue that pattern, while keeping the book’s historical account distinct from current activities."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133
+      ]
+    },
+    {
+      "id": "twilight-and-business-house",
+      "title": "When the day’s work was done",
+      "date": "1974–2014",
+      "category": "People & Stories",
+      "pages": "195–198",
+      "image": null,
+      "groups": [
+        "men",
+        "ladies"
+      ],
+      "intro": "Twilight golf brought together summer evenings, volunteers and a different route into the club.",
+      "paragraphs": [
+        "Twilight tournaments began in the summer of 1974–75. The events used ten holes because the tenth finished near the clubhouse, making a shared meal a natural part of the evening.",
+        "Nen Sim and a team of volunteers organised early catering and kept careful records. Later, Noel Copestake and others developed a programme able to handle much larger fields, with several starting routes and their own cards.",
+        "Business House golf grew under Gary Baker’s encouragement, bringing teams and players without club membership into the evening competition. The chapter describes both its social appeal and its logistical demands.",
+        "Dave also records the development of a twilight handicap system and its eventual incorporation into the club’s computer software. The system described is historical; current conditions of competition belong on the operational club website."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        195,
+        196,
+        197,
+        198
+      ]
+    },
+    {
+      "id": "professionals-later",
+      "title": "The people behind the professional’s counter",
+      "date": "1953–2014",
+      "category": "People & Stories",
+      "pages": "167–175",
+      "image": null,
+      "groups": [
+        "men",
+        "ladies",
+        "juniors"
+      ],
+      "intro": "Teaching, equipment, encouragement and the running of a business all formed part of the professional’s role.",
+      "paragraphs": [
+        "The book follows the resident professionals from James Mowat to Jim Paterson, Greg Holst, Allan Snape, Rick Barker and the later shop team. Each worked with the facilities and circumstances of a different period.",
+        "Jim Paterson’s teaching style and ball striking receive close attention. Later profiles describe professional experience, business changes and the personal relationships that developed with members.",
+        "The 1986 fire in the shop and trundler shed was a major interruption during Allan Snape’s time. The account records the loss of stock and members’ equipment and the club’s response to help the family.",
+        "Rick Barker’s work with beginners connects directly to the development of nine-hole golf. Jay Carter’s story connects junior golf, professional training and the continuing service of the shop. All the profiles can be read in their original chapter."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175
+      ]
+    },
+    {
+      "id": "greenkeepers",
+      "title": "Making good golf possible",
+      "date": "1951–2014",
+      "category": "The Course",
+      "pages": "177–182",
+      "image": null,
+      "groups": [],
+      "intro": "Behind every round lay the work of the greenkeepers and the changing science of turf care.",
+      "paragraphs": [
+        "Grant Silvester took charge in 1951. The book describes his long service and the practical care involved in maintaining the course with the machinery, water supply and knowledge then available.",
+        "Later staff worked through changes in turf management and expectations. Dave’s account includes Grant Patterson, Murray Clark and Graeme Reinders, among others, and distinguishes periods of repair, improvement and new construction.",
+        "The chapter considers grass species, greens, bunkers, machinery and the effect of local conditions. It also acknowledges the staff teams and volunteers whose work could be less visible than a new building or a tournament result.",
+        "Its technical observations belong to the time of writing. Preserving the chapter lets readers see how course care developed without treating a 2014 description as today’s maintenance policy."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        177,
+        178,
+        179,
+        180,
+        181,
+        182
+      ]
+    },
+    {
+      "id": "handicapping",
+      "title": "From record books to card readers",
+      "date": "1962–2005",
+      "category": "People & Stories",
+      "pages": "200–202",
+      "image": null,
+      "groups": [
+        "men",
+        "ladies"
+      ],
+      "intro": "Handicapping became a less visible but increasingly technical part of keeping competition fair.",
+      "paragraphs": [
+        "The book contrasts early discretionary systems with the record-keeping required after the national adoption of a USGA-based system for men in 1962. Arnold Shanks maintained large quantities of cards and handwritten records alongside his other club duties.",
+        "Dave discusses the move to Slope in September 2000 and the practical task of comparing performance across courses. These passages reflect the rules and systems then in use.",
+        "The chapter also records an early computer demonstration by Tauranga Boys’ College staff and students and, later, approval of Golf Autoscore in 2005.",
+        "It is a history of how the club managed the task, not a guide to the current handicap system. The full chapter preserves the examples, disagreements and personal recollections that give the subject its local character."
+      ],
+      "era": "modern",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        200,
+        201,
+        202
+      ]
+    },
+    {
+      "id": "personal-recollections",
+      "title": "In the members’ own voices",
+      "date": "Recollections across the decades",
+      "category": "People & Stories",
+      "pages": "204–223",
+      "image": "arnold-shanks",
+      "groups": [
+        "men",
+        "ladies",
+        "juniors"
+      ],
+      "intro": "Arnold Shanks and other members describe the people, rounds and incidents that official records rarely capture.",
+      "paragraphs": [
+        "The personal-experiences chapter begins with Arnold Shanks, who served as steward and bar manager from 1967 to 1983. His recollections connect farming life, Saturday golf and the everyday hospitality of the club.",
+        "Other accounts describe learning the game, caddying, competition, family connections and memorable incidents. Their value lies partly in the different vantage points from which members remembered the same place.",
+        "These are attributed recollections, rather than a single independently verified chronology. Where the book signals uncertainty or an approximate date, the website retains that context.",
+        "The full chapter is available in the book collection, page by page, with its names and original wording. Search the collection for a person or follow the chapter’s story headings to find a particular account."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223
+      ]
+    },
+    {
+      "id": "ward-family",
+      "title": "A family woven into club life",
+      "date": "1947–2014",
+      "category": "People & Stories",
+      "pages": "225–228",
+      "image": null,
+      "groups": [
+        "men",
+        "juniors"
+      ],
+      "intro": "The Ward family story spans championship golf, committee work and the next generation.",
+      "paragraphs": [
+        "Fred Ward’s arrival in 1947 began a long family association with Tauranga Golf Club. His championship and open-tournament record made him a central figure in the postwar playing story.",
+        "His brothers Allen and Claude, widely known as Buster, later joined the club. The chapter follows their playing careers and the wider contributions of the family.",
+        "John Ward joined as a junior in 1967 and went on to provincial representative golf and club titles. Errol’s involvement included service as club captain around the turn of the century.",
+        "The original family chapter gives the relationships, results and memories in fuller form. It provides a model for later family contributions: a connected account with named people and sources, rather than isolated names on an honours board."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        225,
+        226,
+        227,
+        228
+      ]
+    },
+    {
+      "id": "spalding-masters",
+      "title": "The stars come to Gate Pa",
+      "date": "1968–1972",
+      "category": "People & Stories",
+      "pages": "241–247",
+      "image": "spalding-1972",
+      "groups": [
+        "men"
+      ],
+      "intro": "The Spalding Masters brought international visitors, large galleries and remarkable scoring to the course.",
+      "paragraphs": [
+        "The book records the Spalding approach in 1967 and the first tournament in January 1968. The event gave Tauranga a place on the growing summer circuit.",
+        "Billy Dunk won the inaugural event, while scoring and course-record debates became part of the story. In 1969 Bob Charles produced a total of 260, with rounds that included 62 and 63.",
+        "The chapter follows the changing fields and contests over successive years, including Stuart Jones’s challenge to the professionals. It records the spectators and atmosphere as well as the winning totals.",
+        "The original year-by-year account continues into the NZPGA events staged at Tauranga. Its details can be explored by page, keeping the short overview separate from the full tournament narrative."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247
+      ]
+    },
+    {
+      "id": "nzpga-championships",
+      "title": "National championship days",
+      "date": "1974–1980",
+      "category": "People & Stories",
+      "pages": "247–252",
+      "image": null,
+      "groups": [
+        "men"
+      ],
+      "intro": "Tauranga’s NZPGA championships brought leading professionals back to the club.",
+      "paragraphs": [
+        "Tauranga first staged the NZPGA championship in January 1974 after the Mount Maunganui greens required rebuilding. The book explains that connection before turning to the tournament itself.",
+        "The later accounts include a dramatic 1977 finish between John Lister and Allan Brask. Lister drew level late and won the play-off, with spectators crowding around the closing holes.",
+        "In 1978 Simon Owen emerged as winner after Guy Wolstenholme lost ground at the finish. The 1980 account returns to Bob Charles and the pressure of tournament putting.",
+        "These are fuller stories than a list of champions can convey. The original chapter retains the rounds, turning points, comments and local connections for readers who want to follow them."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        247,
+        248,
+        249,
+        250,
+        251,
+        252
+      ]
+    },
+    {
+      "id": "exhibition-visitors",
+      "title": "A match worth watching",
+      "date": "1960s onwards",
+      "category": "People & Stories",
+      "pages": "255–258",
+      "image": null,
+      "groups": [
+        "men",
+        "ladies"
+      ],
+      "intro": "Exhibition matches let members watch leading golfers in a different setting from a full tournament.",
+      "paragraphs": [
+        "The book records Kel Nagle playing Jim Paterson in 1960, the match finishing all square. A year later Bob Charles played the local professional and won two and one.",
+        "Another account recalls Peter Thomson playing Fred Ward, including a difficult lie under the boundary hedge. The interest lies as much in the incident and the response as in the outcome.",
+        "The chapter shows how the club tried to bring high-quality golf to its members, even when the economics of a single match were modest.",
+        "The full exhibition chapter carries the remaining visitors, recollections and details, with the original page references preserved."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        255,
+        256,
+        257,
+        258
+      ]
+    },
+    {
+      "id": "carrus-open",
+      "title": "Professional golf returns",
+      "date": "2006–2011",
+      "category": "People & Stories",
+      "pages": "260–266",
+      "image": null,
+      "groups": [
+        "men",
+        "ladies",
+        "juniors"
+      ],
+      "intro": "The Carrus Tauranga Open introduced another generation of leading players to the club.",
+      "paragraphs": [
+        "The book describes the club joining a series promoted by Greg Turner, with Paul and Sheryl Adams of Carrus Corporation becoming the name sponsors. The first tournament in this account was held in 2006.",
+        "Local amateur Josh Geary won that first event. Dave’s account follows his contest with Kevin Smith and the recovery from a difficult hole in the third round.",
+        "Later tournaments brought further memorable performances. Richard Lee’s 59 in 2010 became a landmark round, while the 2011 event ended in a wet final-day battle won by Jim Cusdin.",
+        "The original chapter contains the year-by-year narratives, women’s results and local connections. Its coverage ends in 2011; later Carrus results can be added as new records without attributing them to the book."
+      ],
+      "era": "modern",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266
+      ]
+    },
+    {
+      "id": "una-memorial",
+      "title": "Remembering Una through competition",
+      "date": "1976–2014",
+      "category": "People & Stories",
+      "pages": "268–276",
+      "image": null,
+      "groups": [
+        "ladies"
+      ],
+      "intro": "The women’s match-play tournament became a memorial to a player who had inspired the club.",
+      "paragraphs": [
+        "The book follows the women’s open match-play tournament from its first staging in 1976. After Una Wickham’s death in 1983, the women’s committee developed the event in her memory.",
+        "Its fields drew leading players from across the northern regions and, for a time, provided a useful test for interprovincial selectors. The year-by-year account names finalists, winners and close matches.",
+        "Dave also reflects on the later difficulty of sustaining the event’s profile as players’ priorities and programmes changed.",
+        "The original tournament chapter preserves the detail behind the memorial. It connects naturally with Una’s profile and the wider women’s collection, while keeping the tournament’s origins distinct from the later memorial name."
+      ],
+      "era": "eighties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276
+      ]
+    },
+    {
+      "id": "short-course",
+      "title": "A new place to learn and practise",
+      "date": "2014",
+      "category": "The Course",
+      "pages": "278–279",
+      "image": "short-course-work",
+      "groups": [
+        "juniors",
+        "ladies",
+        "men"
+      ],
+      "intro": "The short-course facility opened another way into the game at the end of the period covered by the book.",
+      "paragraphs": [
+        "The final chapter begins with a concrete development: a short-course and practice facility on land beside the second fairway. The book credits legal and planning work that made use of the area possible.",
+        "Club champion Dave Cooke and professional Jay Carter designed a flexible layout for pitch-and-putt play, teaching and practice. Synthetic tees and greens were combined with Windsor Green fairways prepared by club staff.",
+        "The account acknowledges a Lion Foundation grant arranged through Michelle Towersey and Chris McAlpine. It describes the facility as an opportunity whose future use would depend on the people promoting and using it.",
+        "After this section, Dave turns to an imagined account of the next century. The website separates that imaginative ending from the historical timeline: predicted events in 2020 or later are not presented as facts."
+      ],
+      "era": "modern",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        278,
+        279
+      ]
+    },
+    {
+      "id": "juniors-growing",
+      "title": "Making room for the next generation",
+      "date": "1960s–2014",
+      "category": "People & Stories",
+      "pages": "78, 173, 228, 281",
+      "image": null,
+      "groups": [
+        "juniors"
+      ],
+      "intro": "Talent and encouragement gradually challenged the restrictions once placed on junior members.",
+      "paragraphs": [
+        "The book includes memories of juniors being challenged over their right to compete or to use parts of the clubhouse. A later recollection describes Wayne Holden and Brent Sutherland playing extra holes in a senior championship match during the 1960s.",
+        "Another story recalls Michael Nicholson sitting with adult playing partners at a table placed across the boundary between the clubhouse’s carpet and linoleum, so he could comply with the rule excluding juniors from the lounge.",
+        "Against those restrictions stand the people who encouraged younger players, including Una Wickham, James Mowat and family members. The later profiles trace players such as Jay Carter through junior golf and into wider roles.",
+        "These memories are retained as accounts of the club’s changing culture. They offer a foundation for a Juniors collection that can also record today’s players, teams and opportunities in their own time."
+      ],
+      "era": "sixties",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        78,
+        173,
+        228,
+        281
+      ]
+    },
+    {
+      "id": "daves-imagined-century",
+      "title": "Dave looks a hundred years ahead",
+      "date": "Imagined future · written in 2014",
+      "category": "People & Stories",
+      "pages": "278–284",
+      "image": null,
+      "groups": [],
+      "intro": "The book closes with a creative look forward, written as if a future historian were looking back.",
+      "paragraphs": [
+        "Dave explicitly introduces the closing chapter as a prediction of how the club and course might develop over the next century. Much of it is written in the past tense from an imagined future viewpoint.",
+        "He considers climate, water, turf, equipment, course changes, the economy and the future appeal of golf. These passages reveal the concerns and hopes of the author at the time of writing.",
+        "They are not evidence that the predicted changes happened. The dates and developments described after the short-course section have therefore been excluded from the website’s historical timeline.",
+        "The full ending remains available as part of the book, labelled as an imagined future. Preserving that distinction honours the form Dave chose without turning his speculation into a historical claim."
+      ],
+      "era": "modern",
+      "record_type": "historical-story",
+      "source_kind": "book",
+      "review_status": "draft",
+      "book_pages": [
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284
       ]
     }
   ],
@@ -636,6 +1310,174 @@
       "Una Wickham wins the New Zealand amateur championship; Tauranga hosts the national veterans’ championship.",
       "una-wickham",
       "95, 121"
+    ],
+    [
+      "1960",
+      "Nagle visits",
+      "Kel Nagle and Jim Paterson play an exhibition match.",
+      "exhibition-visitors",
+      "255"
+    ],
+    [
+      "1962",
+      "A new handicapping workload",
+      "The book describes the move to a USGA-based system for men.",
+      "handicapping",
+      "200–201"
+    ],
+    [
+      "1967",
+      "John Harris advises",
+      "A new design report guides subtle course improvements.",
+      "harris-course",
+      "41–42"
+    ],
+    [
+      "1968",
+      "The first Spalding Masters",
+      "Tauranga joins the summer circuit with an international field.",
+      "spalding-masters",
+      "241–242"
+    ],
+    [
+      "1969",
+      "Charles totals 260",
+      "Bob Charles produces a landmark tournament performance.",
+      "spalding-masters",
+      "243"
+    ],
+    [
+      "1974",
+      "Tauranga hosts the NZPGA",
+      "The national professional championship comes to Gate Pa.",
+      "nzpga-championships",
+      "247"
+    ],
+    [
+      "1974",
+      "Nen Sim is elected",
+      "A woman joins the club executive for the first time.",
+      "women-in-leadership",
+      "97, 140"
+    ],
+    [
+      "1974–1975",
+      "Twilight begins",
+      "Ten-hole golf and shared meals fill summer evenings.",
+      "twilight-and-business-house",
+      "195"
+    ],
+    [
+      "1977",
+      "A dramatic championship finish",
+      "John Lister wins after a play-off with Allan Brask.",
+      "nzpga-championships",
+      "248–249"
+    ],
+    [
+      "1978",
+      "Water to tees and greens",
+      "The club approves an expanded reticulation scheme.",
+      "water-and-irrigation",
+      "184–185"
+    ],
+    [
+      "1985",
+      "Veterans take on projects",
+      "Agreed work becomes a regular contribution to the club.",
+      "veterans-service",
+      "127–128"
+    ],
+    [
+      "1986",
+      "Fire in the shop and shed",
+      "The club responds to losses during Allan Snape’s time.",
+      "professionals-later",
+      "170"
+    ],
+    [
+      "1987–1988",
+      "Women veterans organise",
+      "An informal beginning leads to a first annual meeting.",
+      "women-veterans",
+      "135"
+    ],
+    [
+      "1994",
+      "The Board begins",
+      "A new management structure takes effect.",
+      "board-of-management",
+      "141–142"
+    ],
+    [
+      "1995",
+      "A new irrigation network",
+      "The professionally designed replacement is completed in April.",
+      "water-and-irrigation",
+      "185"
+    ],
+    [
+      "1998",
+      "An invitation to nine-hole golf",
+      "Phyll Sandlant’s account records 96 registrations.",
+      "ladies-nine-hole",
+      "106"
+    ],
+    [
+      "2000",
+      "A woman president",
+      "Peg Copestake becomes the first woman club president.",
+      "women-in-leadership",
+      "140"
+    ],
+    [
+      "2000",
+      "Slope is adopted",
+      "The handicapping account places adoption in September.",
+      "handicapping",
+      "201"
+    ],
+    [
+      "2001",
+      "The new clubhouse opens",
+      "Members celebrate the redevelopment in April.",
+      "clubhouse-2001",
+      "160"
+    ],
+    [
+      "2005",
+      "Computerised card processing",
+      "The Board approves Golf Autoscore.",
+      "handicapping",
+      "202"
+    ],
+    [
+      "2006",
+      "The Carrus Open begins",
+      "Josh Geary wins the first tournament in the book’s account.",
+      "carrus-open",
+      "260–261"
+    ],
+    [
+      "2010",
+      "A round of 59",
+      "Richard Lee records the landmark score during the Carrus Open.",
+      "carrus-open",
+      "264"
+    ],
+    [
+      "2011",
+      "Cusdin wins in the wet",
+      "A difficult final day ends with a Carrus Open victory.",
+      "carrus-open",
+      "265–266"
+    ],
+    [
+      "2014",
+      "A new short-course facility",
+      "The book describes a flexible space for practice and learning.",
+      "short-course",
+      "278–279"
     ]
   ],
   "images": [
@@ -737,6 +1579,46 @@
       "page": "174",
       "credit": "Photographer not identified in the supplied caption.",
       "permission": "Authorised for publication by the project owner on 9 November 2026."
+    },
+    {
+      "id": "clubhouse-rebuilt",
+      "title": "The redeveloped clubhouse",
+      "date": "Reopened 2001; photograph undated",
+      "caption": "View of the rebuilt clubhouse, from the page comparing the clubhouse before and after redevelopment.",
+      "page": "162",
+      "path": "assets/book/image-877.jpg",
+      "credit": "Photographer not identified in the supplied caption.",
+      "permission": "Authorised by project owner, 9 November 2026."
+    },
+    {
+      "id": "spalding-1972",
+      "title": "Bob Charles and Michael Nicholson",
+      "date": "1972",
+      "caption": "The book identifies the professional and amateur trophy recipients at the 1972 tournament: Bob Charles and Michael Nicholson.",
+      "page": "253",
+      "path": "assets/book/image-1157.jpg",
+      "credit": "Photographer not identified in the supplied caption.",
+      "permission": "Authorised by project owner, 9 November 2026."
+    },
+    {
+      "id": "arnold-shanks",
+      "title": "Arnold Shanks",
+      "date": "Undated portrait",
+      "caption": "The portrait reproduced beside Arnold Shanks’s personal recollections.",
+      "page": "204",
+      "path": "assets/book/image-1017.jpg",
+      "credit": "Photographer not identified in the supplied caption.",
+      "permission": "Authorised by project owner, 9 November 2026."
+    },
+    {
+      "id": "short-course-work",
+      "title": "The short-course development",
+      "date": "Undated photograph",
+      "caption": "One of the development photographs reproduced alongside the short-course account. The image is not separately dated in the caption.",
+      "page": "279",
+      "path": "assets/book/image-1258.jpg",
+      "credit": "Photographer not identified in the supplied caption.",
+      "permission": "Authorised by project owner, 9 November 2026."
     }
   ],
   "groups": [
@@ -789,10 +1671,25 @@
       "link": "chapter-postwar.html"
     },
     {
-      "id": "later",
-      "title": "The next chapters",
-      "years": "1960 onwards",
-      "status": "To be developed"
+      "id": "sixties",
+      "title": "New players, wider horizons",
+      "years": "1960–1979",
+      "status": "Explore this chapter",
+      "link": "chapter-sixties.html"
+    },
+    {
+      "id": "eighties",
+      "title": "A changing club",
+      "years": "1980–1999",
+      "status": "Explore this chapter",
+      "link": "chapter-eighties.html"
+    },
+    {
+      "id": "modern",
+      "title": "Into a new century",
+      "years": "2000–2014",
+      "status": "Explore this chapter",
+      "link": "chapter-modern.html"
     }
   ],
   "records": []
