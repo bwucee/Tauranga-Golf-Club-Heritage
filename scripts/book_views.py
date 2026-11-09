@@ -88,6 +88,16 @@ def build_book_views(root, page, heading, book, collection):
         search_entries.append(dict(title=c['title']+f' · p. {n}',url=f'book-page-{n:03}.html',text=p['text'],type='Original book',page=n))
     for a in collection['articles']:
         search_entries.append(dict(title=a['title'],url=a['id']+'.html',text=a['intro']+' '+ ' '.join(a['paragraphs']),type='Story introduction',page=None))
+    additions_path=root/'content/heritage-additions.json'
+    if additions_path.exists():
+        additions=json.loads(additions_path.read_text())
+        for trophy in additions['trophies']:
+            text=trophy['context']+' '+trophy['note']+' '+' '.join(str(y)+' '+name for y,name in trophy['winners'])
+            search_entries.append(dict(title=trophy['title'],url='trophies.html#'+trophy['id'],text=text,type='Supplied trophy record',page=None))
+        for photo in additions['photographs']:
+            search_entries.append(dict(title=photo['title'],url='supplied-photographs.html',text=photo['caption'],type='Supplied photograph',page=None))
+        search_entries.append(dict(title='Life Members',url='life-members.html',text=' '.join(name+' '+date for name,date in additions['life_members']),type='Honour roll',page=304))
+        search_entries.append(dict(title='Member memories',url='member-memories.html',text=' '.join(additions['memory_prompts']),type='Contribute a memory',page=None))
     (root/'assets/search-index.json').write_text(json.dumps(search_entries,ensure_ascii=False,separators=(',',':'))+'\n')
     page('search.html','Search the collection',heading('NAMES · PLACES · STORIES','Follow a name or a memory.','Search the original book and the website’s story introductions. Try a surname, a tournament, a year or a place.')+'<form id="collection-search" class="search-form" role="search"><label for="search-input">Search the collection</label><div><input id="search-input" name="q" type="search" placeholder="For example: Mirrielees, juniors, Carrus" autocomplete="off" maxlength="150"><button type="submit">Search</button></div></form><p id="search-status" role="status" aria-live="polite">Enter at least two characters. Search runs within your browser.</p><div id="search-results"></div><noscript><p>Search needs JavaScript. You can still <a href="book.html">browse all chapters</a> and read every page without it.</p></noscript><script src="assets/search.js" defer></script>')
     # All book photographs are grouped by chapter, rather than loading into one huge gallery.

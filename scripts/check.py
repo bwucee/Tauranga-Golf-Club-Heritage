@@ -39,8 +39,9 @@ for p in book['pages']:
  if 280<=p['number']<=284:assert 'imagined future' in (R/f"book-page-{p['number']:03}.html").read_text()
 collection=json.loads((R/'content/collection.json').read_text())
 index=json.loads((R/'assets/search-index.json').read_text())
-assert len(index)==305+len(collection['articles'])
-for item in index:assert (R/item['url']).exists()
+additions=json.loads((R/'content/heritage-additions.json').read_text())
+assert len(index)==305+len(collection['articles'])+len(additions['trophies'])+len(additions['photographs'])+2
+for item in index:assert (R/urlsplit(item['url']).path).exists()
 print('PASS: complete 305-page coverage, 25 chapters, images, reference layouts, speculation labels and search targets.')
 
 class SourceText(HTMLParser):
