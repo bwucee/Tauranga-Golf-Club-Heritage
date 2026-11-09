@@ -76,3 +76,11 @@ To reimport from the separately retained PDF, use an environment with PyMuPDF: `
 Checks verify links, script/image paths, source exclusion, all 305 page routes, the 25-chapter sequence, appendix facsimiles, speculation notices and search targets. Browser QA covers search, topic expansion, source reading, a reference page and mobile widths.
 
 The incorrect motorcycle-club author on the early website commit was corrected on 9 November 2026. The original history is recoverable in a local Git backup ref; the public main branch uses Bruce Partridge’s identity.
+
+## Heritage folder additions on 9 November 2026
+
+`content/heritage-additions.json` holds seven partial trophy transcriptions (168 year entries, including unfilled years), five separately supplied photographs, the 33 Life Members in the book’s 2014 roll, and adapted member interview prompts. `scripts/heritage_additions.py` builds their four dedicated pages. The home page, archive and Senior Men collection link to the additions; search includes the names and trophy records.
+
+Trophy records retain source filenames and missing entries. Context was compared with Mowat’s account: the Ron Galloway date discrepancy and uncertain trophy identities remain explicit. The separate source documents and full PDF are not published. Photographs retain their original image data and embedded captions. The new Life Members page makes existing book material easier to find.
+
+Mowat’s researched history is the primary accepted historical reference, alongside the club’s official History page. Founded in 1904 and moved to Gate Pā in 1914 is settled editorial guidance. Other contributions should be compared with those accounts; rare exceptions need documented evidence.
