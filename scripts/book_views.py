@@ -24,7 +24,7 @@ def build_book_views(root, page, heading, book, collection):
             contents+=f'<article><span class="eyebrow">{label} · pp. {c["start"]}–{c["end"]}</span><h2>{chapter_link(c)}</h2><p>{e(c["summary"])}</p></article>'
         contents+='</div></details>'
     contents+='</div>'
-    page('book.html','Explore Dave’s book',heading('PARS FROM THE PAST · DAVID G. S. MOWAT · 2014','The book, a story at a time.','All 25 chapters, the introduction, photographs and reference pages. Choose a subject, then follow the stories at your own pace.')+'<p><a class="button" href="search.html">Find a name, place or story →</a></p>'+contents+'<aside class="note"><h2>Dave’s words, clearly identified</h2><p>The book pages preserve the original account in a review transcription, separate from the website’s shorter introductions. Page numbers, image captions and attribution stay with the source. The final chapter includes an imagined future, clearly labelled. Tables retain their original page layout.</p></aside>')
+    page('book.html','Explore Dave’s book',heading('PARS FROM THE PAST · DAVID G. S. MOWAT · 2014','The book, a story at a time.','All 25 chapters, the introduction, photographs and reference pages. Choose a subject, then follow the stories at your own pace.')+'<div class="reader-tools"><a class="button" href="documents/pars-from-the-past.pdf#page=1">Open the complete original PDF →</a><a href="search.html">Find a name, place or story →</a></div>'+contents+'<aside class="note"><h2>Dave’s words, clearly identified</h2><p>The book pages preserve the original account in a review transcription, separate from the website’s shorter introductions. Page numbers, image captions and attribution stay with the source. The final chapter includes an imagined future, clearly labelled. Tables retain their original page layout.</p></aside>')
     for c in chapters:
         pages=grouped[c['id']]
         # Use the book’s own headings as additional routes into its detail.
@@ -34,6 +34,7 @@ def build_book_views(root, page, heading, book, collection):
                 if h.casefold()==c['title'].casefold() or h.startswith('CHAPTER'):continue
                 topics.append((p['number'],h))
         body='<a class="back" href="book.html">← The book collection</a>'+heading(f'PARS FROM THE PAST · PP. {c["start"]}–{c["end"]}',e(c['title']),e(c['summary']))+tools()
+        body+=f'<p class="source-reading"><a class="button" href="documents/pars-from-the-past.pdf#page={c["start"]}">Open this chapter in the original PDF →</a></p>'
         if c['number']==25:
             body+='<aside class="speculation"><h2>A note on the ending</h2><p>The opening pages describe the short-course facility. The later account is Dave’s imagined future, written in 2014 as if looking back from another century. Its predictions are not historical events.</p></aside>'
         if c['number']==26:
@@ -67,6 +68,7 @@ def build_book_views(root, page, heading, book, collection):
         if c['number']==25:
             body+='<aside class="speculation"><strong>Original ending: includes an imagined future.</strong> The short-course account is followed by predictions written in 2014, not a record of later events. Historical side anecdotes also appear in the printed chapter.</aside>'
         body+='<div class="source-notice">From the book: original views, recollections and terminology are retained. References to “today”, rules, staff or programmes describe the time of writing. Text extraction is being reviewed; use the page reference when suggesting a correction.</div>'
+        body+=f'<p class="source-reading"><a class="button" href="documents/pars-from-the-past.pdf#page={n}">Open original PDF at page {n} →</a></p>'
         if p['facsimile']:
             body+=f'<figure class="reference-facsimile"><a href="{p["facsimile"]}"><img src="{p["facsimile"]}" alt="Original reference page {n} from Pars from the Past; select to enlarge and read its columns" loading="lazy"></a><figcaption>Original book page {n} · Select to enlarge. Layout preserved for accurate reading across columns.</figcaption></figure><details class="source-transcription"><summary>Searchable text from this reference page</summary><p class="source">The extracted text does not retain column relationships. Read the image above for the authoritative layout.</p>'
         body+='<article class="book-prose" aria-label="Original book text">'
@@ -85,7 +87,7 @@ def build_book_views(root, page, heading, book, collection):
             body+='</div></section>'
         body+=pagination+tools()
         page(f'book-page-{n:03}.html',f'Book page {n}: {c["title"]}',body)
-        search_entries.append(dict(title=c['title']+f' · p. {n}',url=f'book-page-{n:03}.html',text=p['text'],type='Original book',page=n))
+        search_entries.append(dict(title=c['title']+f' · p. {n}',url=f'pdf-viewer/web/viewer.html?file=../../documents/pars-from-the-past.pdf#page={n}',text=p['text'],type='Original book',page=n))
     for a in collection['articles']:
         search_entries.append(dict(title=a['title'],url=a['id']+'.html',text=a['intro']+' '+ ' '.join(a['paragraphs']),type='Story introduction',page=None))
     (root/'assets/search-index.json').write_text(json.dumps(search_entries,ensure_ascii=False,separators=(',',':'))+'\n')

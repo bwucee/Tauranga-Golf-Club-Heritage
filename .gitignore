@@ -1,3 +1,7 @@
 *.pdf
 .DS_Store
 __pycache__/
+
+# Complete sources explicitly authorised for the public archive on 10 November 2026.
+!documents/pars-from-the-past.pdf
+!documents/spalding-masters-1968-searchable.pdf

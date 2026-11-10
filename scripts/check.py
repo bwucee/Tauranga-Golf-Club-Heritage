@@ -22,9 +22,30 @@ for p,s in scans.items():
   t=p.parent/unquote(u.path) if u.path else p
   assert t.exists(),f'{p.name}: missing {link}'
   if u.fragment and t in scans:assert u.fragment in scans[t].ids,f'{p.name}: missing fragment {link}'
-assert not list(R.rglob('*.pdf')),'PDF must remain outside website'
+# Only the two explicitly approved complete source documents are published.
+import json,hashlib,re
+source_documents=json.loads((R/'content/documents.json').read_text())
+allowed={R/doc['path'] for doc in source_documents}
+assert set(R.rglob('*.pdf'))==allowed
+for doc in source_documents:
+ path=R/doc['path']
+ assert path.read_bytes().startswith(b'%PDF-')
+ assert hashlib.sha256(path.read_bytes()).hexdigest()==doc['sha256']
+ assert path.stat().st_size==doc['bytes']
+for path,scan in scans.items():
+ for link in scan.links:
+  u=urlsplit(link)
+  if not u.scheme and u.path.endswith('.pdf'):
+   target=path.parent/unquote(u.path)
+   assert target in allowed
+   if u.fragment:
+    match=re.fullmatch(r'page=(\d+)',u.fragment)
+    assert match, f'Unexpected PDF fragment: {link}'
+    source=next(doc for doc in source_documents if R/doc['path']==target)
+    assert 1<=int(match[1])<=source['pages']
+
 assert not (R/'.github/workflows').exists(),'No automatic publication before review'
-print(f'PASS: {len(scans)} pages; local links, fragments, images and source exclusion checked.')
+print(f'PASS: {len(scans)} pages; local links, PDF page destinations, images and approved source documents checked.')
 
 # Every source page belongs to exactly one chapter and is available to the reader.
 import json
@@ -40,11 +61,11 @@ for p in book['pages']:
 collection=json.loads((R/'content/collection.json').read_text())
 index=json.loads((R/'assets/search-index.json').read_text())
 catalogue=json.loads((R/'content/catalogue.json').read_text())
-assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+len(json.loads((R/'content/heritage-additions.json').read_text())['trophies'])+3+sum(len(s['entries']) for s in catalogue.get('volunteer_sections',[]))
+assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+len(json.loads((R/'content/heritage-additions.json').read_text())['trophies'])+3+sum(len(s['entries']) for s in catalogue.get('volunteer_sections',[]))+1
 for item in index:
  target=urlsplit(item['url'])
  assert (R/target.path).exists()
- if target.fragment:assert target.fragment in scans[R/target.path].ids
+ if target.fragment and R/target.path in scans:assert target.fragment in scans[R/target.path].ids
 print('PASS: complete 305-page coverage, 25 chapters, images, reference layouts, speculation labels and search targets.')
 
 class SourceText(HTMLParser):
@@ -95,3 +116,29 @@ for section in catalogue.get('volunteer_sections',[]):
   assert all(1<=n<=305 and not 280<=n<=284 for n in entry['book_pages'])
 assert 'volunteers-benefactors' in topics
 print('PASS: volunteer subject entries retain valid source pages and exclude the imagined future.')
+
+programme=json.loads((R/'content/catalogue.json').read_text())
+for record in programme['source_records']:
+ expected=f'pdf-viewer/web/viewer.html?file=../../documents/spalding-masters-1968-searchable.pdf#page={record["printed_pages"][0]+2}'
+ for topic in record['topics']:assert expected in (R/f'topic-{topic}.html').read_text()
+assert 'pdf-viewer/web/viewer.html?file=../../documents/pars-from-the-past.pdf#page=186' in (R/'book-page-186.html').read_text()
+assert all('pdf-viewer/web/viewer.html?file=../../'+doc['path']+'#page=1' in (R/'archive.html').read_text() for doc in source_documents)
+print('PASS: archive contains complete PDFs; programme references map printed pages to PDF pages.')
+
+from urllib.parse import parse_qs
+for path,scan in scans.items():
+ for link in scan.links:
+  u=urlsplit(link)
+  if u.path=='pdf-viewer/web/viewer.html':
+   file=parse_qs(u.query).get('file',[''])[0]
+   source=(R/'pdf-viewer/web'/file).resolve()
+   assert source in {p.resolve() for p in allowed}
+   doc=next(doc for doc in source_documents if (R/doc['path']).resolve()==source)
+   assert re.fullmatch(r'page=\d+',u.fragment)
+   assert 1<=int(u.fragment.split('=')[1])<=doc['pages']
+assert '2000–Future' in (R/'timeline.html').read_text()
+assert 'Looking ahead' in (R/'chapter-modern.html').read_text()
+assert 'person-jackie-reynish.html' in (R/'timeline.html').read_text()
+assert 'looking-ahead.html' not in {t[3]+'.html' for t in collection['timeline']}
+assert all(s in (R/'index.html').read_text() for s in ['collection-shortcuts','people-index.html','archive.html','editorial-updates.html'])
+print('PASS: reader links target valid original PDF pages; 2000–Future distinguishes milestones and future discussion.')

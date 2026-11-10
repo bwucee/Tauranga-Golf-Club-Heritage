@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pars-from-the-past",
+    "title": "Pars from the Past",
+    "path": "documents/pars-from-the-past.pdf",
+    "pages": 305,
+    "credit": "David G. S. Mowat, editor · 2014",
+    "note": "Complete original book, including photographs, honours lists and appendices. Printed page numbers match PDF pages.",
+    "bytes": 61351184,
+    "sha256": "b355452054683327796473ba5beb02692b7cd144f0b1e0afd6de3f3e08881316"
+  },
+  {
+    "id": "spalding-masters-1968",
+    "title": "Spalding Masters 1968 programme",
+    "path": "documents/spalding-masters-1968-searchable.pdf",
+    "pages": 52,
+    "credit": "Tauranga Golf Club · January 1968",
+    "note": "Complete searchable programme, including covers, photographs and advertisements. Printed page 1 is PDF page 3.",
+    "bytes": 29018230,
+    "sha256": "5e51678ea726a482b3f17a3f8b1a2ac8480e54f60d0b46bdfe3f696cd810b210"
+  }
+]

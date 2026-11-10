@@ -35,7 +35,7 @@ Chapter IDs: `beginnings` (1903–1923), `interwar` (1924–1945), `postwar` (19
 
 ## Historical sources and permissions
 
-Book: *Pars from the Past*, edited by David G. S. Mowat, 2014. Printed page numbers match PDF page numbers. The original PDF stays **outside this repository** and is ignored by Git. Do not upload it or place it in website output.
+Book: *Pars from the Past*, edited by David G. S. Mowat, 2014. Printed page numbers match PDF page numbers. On 10 November 2026 the project owner explicitly requested complete source documents in the public archive. The original book and searchable 1968 programme are now retained unchanged in `documents/`; other source PDFs remain excluded. `content/documents.json` records their page counts, byte sizes and hashes.
 
 Supporting sources:
 - https://www.taurangagolf.co.nz/history?ComeFromCat=1338
@@ -65,7 +65,7 @@ Project updates use Bruce Partridge (`bwucee@gmail.com`) as the repository-local
 
 ## Full-book edition
 
-All 25 chapters are available as original, attributed review transcriptions, with separate short story introductions. Front matter, captions, source page numbering and appendices are retained. The PDF itself is not served. Some extraction corrections and proofreading remain; this is explicit in the reader. Running headers and narrow bleed/layout fragments are removed. Three chapter-title fonts that did not extract correctly were transcribed after visual inspection.
+All 25 chapters are available as original, attributed review transcriptions, with separate short story introductions. Front matter, captions, source page numbering and appendices are retained. The complete PDF is also available through the archive, with direct links to relevant pages. Some extraction corrections and proofreading remain; this is explicit in the reader. Running headers and narrow bleed/layout fragments are removed. Three chapter-title fonts that did not extract correctly were transcribed after visual inspection.
 
 The 19 original-layout appendix pages preserve table columns. Their searchable extraction is explicitly not a substitute for the original layout. The final chapter’s imagined future is labelled on every source page and excluded from the factual timeline. References to present-day rules, personnel or programmes within source text refer to 2014, not the present.
 
@@ -73,7 +73,7 @@ Search loads `assets/search-index.json` only when needed and runs in the browser
 
 To reimport from the separately retained PDF, use an environment with PyMuPDF: `python scripts/import_book.py /absolute/path/to/source.pdf`, then run the standard build and checks. Keep the source PDF outside the checkout. Reimporting is unnecessary for normal editorial changes to the JSON.
 
-Checks verify links, script/image paths, source exclusion, all 305 page routes, the 25-chapter sequence, appendix facsimiles, speculation notices and search targets. Browser QA covers search, topic expansion, source reading, a reference page and mobile widths.
+Checks verify links, script/image paths, approved document hashes and PDF page references, all 305 page routes, the 25-chapter sequence, appendix facsimiles, speculation notices and search targets. Browser QA covers search, topic expansion, source reading, a reference page and mobile widths.
 
 The incorrect motorcycle-club author on the early website commit was corrected on 9 November 2026. The original history is recoverable in a local Git backup ref; the public main branch uses Bruce Partridge’s identity.
 
@@ -83,10 +83,18 @@ The home page now leads to `subjects.html`: greenkeeping, resident professionals
 
 `content/catalogue.json` contains subject definitions, people, the original 33-entry life-members roll, five later appointments supplied by Bruce on 10 November 2026, and 12 cross-indexed descriptions of the 1968 programme. People can link to book pages and separately contributed stories. A person’s event year and the date their information was contributed are distinct. More people and earlier/later source records can be added without inventing a book chapter or changing original book pages.
 
-`content/heritage-additions.json` retains the previously assembled trophy records, life-member profiles, supplied photographs and Jack Carter’s recollection. `scripts/catalogue_views.py` renders subject and person routes and extends search to these sources and later contributions. Searchable programme PDFs and original DOCX files stay outside the public website. Original book readers remain unchanged; corrections to contributed transcriptions are noted with contributor and date.
+`content/heritage-additions.json` retains the previously assembled trophy records, life-member profiles, supplied photographs and Jack Carter’s recollection. `scripts/catalogue_views.py` renders subject and person routes and extends search to these sources and later contributions. The complete searchable programme and original book are served from `documents/` following the owner’s 10 November 2026 request. Original DOCX files remain outside the public website. Original book readers remain unchanged; corrections to contributed transcriptions are noted with contributor and date.
 
 The project owner authorised publication of the 10 November 2026 additions, including the extracted programme photographs, on that date.
 
 ## Volunteers and Benefactors
 
 The cross-subject catalogue includes eight volunteer/benefactor themes and 37 source-linked entries. Edit `volunteer_sections` in `content/catalogue.json` to add accounts. The accompanying introduction is `volunteers-and-benefactors` in `collection.json`. Practical work, governance, hospitality, refereeing, donations and paid services retain their distinct source context. The later health-and-safety perspective is separate from the book’s account. A broader research finding aid is retained outside the website in the parent `research/` folder.
+
+## Direct source navigation
+
+Complete original PDFs are available from the Archive. Book references open `documents/pars-from-the-past.pdf#page=N`; programme references open `documents/spalding-masters-1968-searchable.pdf#page=N`, where the PDF page is the printed programme page plus two. Covers are PDF pages 1–2 and 51–52. Subject references open the PDF directly, with web text views retained beside book links. A bundled Mozilla PDF.js 5.4.624 legacy reader provides page browsing, zoom and search, including in browsers without native PDF display. Page links now use `pdf-viewer/web/viewer.html?file=../../documents/FILE.pdf#page=N`; raw PDFs remain available to download. Programme source records and photograph captions also link directly to the relevant PDF page.
+
+The Mozilla PDF.js distribution is vendored in `pdf-viewer/`, with its Apache 2.0 licence retained. It comes from the official v5.4.624 release; source maps and the sample PDF were omitted, the default document and title were changed, and an archive navigation bar was added. No remote viewer service receives the documents.
+
+The last era is labelled 2000–Future. Book milestones and later sourced life-membership records remain factual entries. `looking-ahead.html` contains separately labelled discussion prompts and links to Dave’s imagined future. Navigation near the top of every collection page exposes the primary starting points and contribution links formerly easy to miss in the footer.
