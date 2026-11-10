@@ -97,6 +97,11 @@ def build_book_views(root, page, heading, book, collection):
         for photo in additions['photographs']:
             search_entries.append(dict(title=photo['title'],url='supplied-photographs.html',text=photo['caption'],type='Supplied photograph',page=None))
         search_entries.append(dict(title='Life Members',url='life-members.html',text=' '.join(name+' '+date for name,date in additions['life_members']),type='Honour roll',page=304))
+        for profile in additions.get('life_member_profiles',[]):
+            search_entries.append(dict(title=profile['name']+' · Life Member profile',url='life-members.html#'+profile['id'],text=' '.join(profile['paragraphs'])+' '+profile['note'],type='Life Member profile',page=None))
+        if additions.get('jack_carter'):
+            jack=additions['jack_carter']
+            search_entries.append(dict(title=jack['title'],url='jack-carter.html',text=' '.join(jack['paragraphs']),type='Member recollection',page=None))
         search_entries.append(dict(title='Member memories',url='member-memories.html',text=' '.join(additions['memory_prompts']),type='Contribute a memory',page=None))
     (root/'assets/search-index.json').write_text(json.dumps(search_entries,ensure_ascii=False,separators=(',',':'))+'\n')
     page('search.html','Search the collection',heading('NAMES · PLACES · STORIES','Follow a name or a memory.','Search the original book and the website’s story introductions. Try a surname, a tournament, a year or a place.')+'<form id="collection-search" class="search-form" role="search"><label for="search-input">Search the collection</label><div><input id="search-input" name="q" type="search" placeholder="For example: Mirrielees, juniors, Carrus" autocomplete="off" maxlength="150"><button type="submit">Search</button></div></form><p id="search-status" role="status" aria-live="polite">Enter at least two characters. Search runs within your browser.</p><div id="search-results"></div><noscript><p>Search needs JavaScript. You can still <a href="book.html">browse all chapters</a> and read every page without it.</p></noscript><script src="assets/search.js" defer></script>')

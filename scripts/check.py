@@ -40,7 +40,7 @@ for p in book['pages']:
 collection=json.loads((R/'content/collection.json').read_text())
 index=json.loads((R/'assets/search-index.json').read_text())
 additions=json.loads((R/'content/heritage-additions.json').read_text())
-assert len(index)==305+len(collection['articles'])+len(additions['trophies'])+len(additions['photographs'])+2
+assert len(index)==305+len(collection['articles'])+len(additions['trophies'])+len(additions['photographs'])+2+len(additions.get('life_member_profiles',[]))+int(bool(additions.get('jack_carter')))
 for item in index:assert (R/urlsplit(item['url']).path).exists()
 print('PASS: complete 305-page coverage, 25 chapters, images, reference layouts, speculation labels and search targets.')
 
@@ -69,3 +69,14 @@ while todo:
   if target in scans:todo.append(target)
 assert seen==set(scans),f"Unreachable pages: {set(scans)-seen}"
 print(f'PASS: source words preserved in all readers; all {len(seen)} pages reachable from home.')
+
+# New contributor text remains intact, and profile anchors are searchable.
+if additions.get('jack_carter'):
+ import html
+ rendered=(R/'jack-carter.html').read_text()
+ for paragraph in additions['jack_carter']['paragraphs']:
+  assert html.escape(paragraph) in rendered
+ assert '2019' in (R/'life-members.html').read_text()
+for profile in additions.get('life_member_profiles',[]):
+ assert profile['id'] in scans[R/'life-members.html'].ids
+print('PASS: member recollection preserved, later appointment and profile anchors present.')
