@@ -1053,6 +1053,23 @@
       "book_pages": [],
       "story": "jack-carter.html",
       "added": "11 November 2026"
+    },
+    {
+      "id": "hazel-casey-joyce-paris",
+      "path": "assets/heritage-hazel-casey-joyce-paris.jpg",
+      "title": "Hazel Casey and Joyce Paris — Nancy McCormick foursomes",
+      "caption": "Hazel Casey, Life Member, and Joyce Paris, an early board chairperson, share their moment of triumph in the popular Nancy McCormick foursomes event.",
+      "people": [
+        "hazel-casey",
+        "joyce-paris"
+      ],
+      "source": "Club Heritage / Hazel Casey and Joyce Paris.jpeg",
+      "book_pages": [
+        303
+      ],
+      "story": "women-in-leadership.html",
+      "profile": "hazel-casey",
+      "added": "11 November 2026"
     }
   ],
   "jack_carter": {

@@ -27,4 +27,12 @@ def add_photos(file, body):
         if start >= 0:
             pos = body.find('<div class="group-body">', start) + len('<div class="group-body">')
             body = body[:pos] + figures(group) + body[pos:]
+    if file == 'life-members.html':
+        for photo in PHOTOS:
+            if not photo.get('profile'):
+                continue
+            start = body.find(f'<details id="{photo["profile"]}">')
+            if start >= 0:
+                pos = body.find('<div class="group-body">', start) + len('<div class="group-body">')
+                body = body[:pos] + figures([photo]) + body[pos:]
     return body
