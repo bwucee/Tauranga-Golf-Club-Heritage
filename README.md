@@ -101,6 +101,6 @@ The last era is labelled 2000–Future. Book milestones and later sourced life-m
 
 ## Photographs supplied 11 November 2026
 
-Seven supplied and identified photographs are recorded in `content/heritage-additions.json`. Web copies preserve the full framing. `scripts/contributed_photos.py` places them on related person pages, the Carrus story, Jack Carter’s account and Phyll Sandlant’s contributed profile without changing original book readers. Added person records cover Keith Dawkins, Maurice White and Mike Sandland. Captions follow the contributor’s identification; the original filename spelling Sandlant is retained in the source record. Photograph dates are unspecified except the identified 2013 Carrus event.
+Seven supplied and identified photographs are recorded in `content/heritage-additions.json`. Web copies preserve the full framing. `scripts/contributed_photos.py` places them on related person pages, the Carrus story, Jack Carter’s account and Phyll Sandlant’s contributed profile without changing original book readers. Added person records cover Keith Dawkins, Maurice White and Mike Sandlant. Captions follow the contributor’s identification; source filenames are retained in the source records. Photograph dates are unspecified except the identified 2013 Carrus event.
 
 On 11 November 2026, personal website contribution credits were removed at the project owner’s request ahead of group review. Source references, addition dates and historical mentions in the club history remain.
