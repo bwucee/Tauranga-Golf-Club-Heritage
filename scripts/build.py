@@ -10,7 +10,7 @@ def image_path(id):
  return images[id].get('path',f'assets/{id}.jpg')
 def fig(id):
  x=images[id]
- return f'<figure><a href="{image_path(id)}"><img src="{image_path(id)}" alt="{e(x["title"])}" loading="lazy" width="1800" height="1200"></a><figcaption>{e(x["title"])} · {e(x["date"])}. Pars from the Past, p. {e(x["page"])}. <a href="archive.html#{id}">Image record ↗</a></figcaption></figure>'
+ return f'<figure><a href="{image_path(id)}"><img src="{image_path(id)}" alt="{e(x["title"])}" loading="lazy" width="1800" height="1200"></a><figcaption>{e(x["title"])} · {e(x["date"])}. <a href="documents/pars-from-the-past.pdf#page={int(re.search(r"\d+",str(x["page"]))[0])}">Pars from the Past, p. {e(x["page"])}</a>. <a href="archive.html#{id}">Image record ↗</a></figcaption></figure>'
 def cards(items):return '<div class="cards">'+''.join(f'<a class="card" href="{x["id"]}.html">'+(f'<img src="{image_path(x["image"])}" alt="" loading="lazy">' if x['image'] else f'<div class="type-image">{e(x["date"].split(" · ")[0])}</div>')+f'<div><span class="eyebrow">{e(x["date"])}</span><h3>{e(x["title"])}</h3><p>{e(x["intro"])}</p><span class="read">Read the story →</span></div></a>' for x in items)+'</div>'
 def recent_records(group):
  records=sorted((x for x in d.get('records',[]) if group in x.get('groups',[]) and x.get('review_status')=='approved'),key=lambda x:x['date'],reverse=True)
@@ -25,7 +25,7 @@ def group_book_links(group):
 nav=[('index.html','Home'),('subjects.html','Subjects'),('people-index.html','People'),('timeline.html','Timeline'),('archive.html','Documents & photos'),('search.html','Search')]
 def page(file,title,body):
  # Subject references open the original PDF; the text view remains a secondary option.
- if not file.startswith('book-') and file!='book.html':
+ if not re.fullmatch(r'book-(?:page-\d{3}|\d{2})\.html',file) and file!='book.html':
   body=re.sub(r'<a href="book-page-(\d{3})\.html">(.*?)</a>',lambda m:f'<a href="documents/pars-from-the-past.pdf#page={int(m[1])}">{m[2]}</a> <a class="source-text-link" href="book-page-{m[1]}.html" aria-label="Text view of book page {int(m[1])}">Text view</a>',body,flags=re.S)
  body=re.sub(r'href="(documents/[^"]+\.pdf)#page=(\d+)"',lambda m:f'href="pdf-viewer/web/viewer.html?file=../../{m[1]}#page={m[2]}"',body)
  body_class='source-reader' if file.startswith('book-page-') else ''
