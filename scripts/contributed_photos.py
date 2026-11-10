@@ -8,7 +8,7 @@ PHOTOS = [p for p in json.loads((Path(__file__).resolve().parents[1] / 'content/
 
 def figures(photos):
     return '<div class="contributed-photos">' + ''.join(
-        f'<figure><a href="{e(p["path"])}"><img src="{e(p["path"])}" alt="{e(p["title"])}" loading="lazy"></a><figcaption>{e(p["caption"])}<p class="source">Photograph and identification supplied by Bruce Partridge, {e(p["added"])}. {e(p.get("date_note", "Photograph date not supplied."))}</p></figcaption></figure>'
+        f'<figure><a href="{e(p["path"])}"><img src="{e(p["path"])}" alt="{e(p["title"])}" loading="lazy"></a><figcaption>{e(p["caption"])}<p class="source">Photograph and identification added {e(p["added"])}. {e(p.get("date_note", "Photograph date not supplied."))}</p></figcaption></figure>'
         for p in photos) + '</div>'
 
 def add_photos(file, body):

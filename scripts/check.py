@@ -103,7 +103,7 @@ for record in catalogue['source_records']:
  assert all(1<=n<=48 for n in record['printed_pages'])
 expected={'Jack Carter':2019,'Alison Holdem':2019,'Adrienne Coad':2022,'Jackie Reynish':2023,'Chris McAlpine':2024}
 assert {p['name']:p['life_membership_year'] for p in catalogue['people'] if p.get('life_membership_year')}==expected
-assert all('Bruce Partridge' in p['source'] for p in catalogue['people'] if p.get('life_membership_year'))
+assert all('10 November 2026' in p['source'] for p in catalogue['people'] if p.get('life_membership_year'))
 assert len([m for m in catalogue['life_members'] if not m.get('added_after_book')])==33
 assert 'Maurice Code' not in ' '.join(json.loads((R/'content/heritage-additions.json').read_text())['jack_carter']['paragraphs'])
 assert (R/'jack-carter.html').read_text().count('Maurice Coad')>=2

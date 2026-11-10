@@ -399,35 +399,35 @@
     {
       "name": "Jack Carter",
       "year": "2019",
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "person_id": "jack-carter",
       "added_after_book": true
     },
     {
       "name": "Alison Holdem",
       "year": "2019",
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "person_id": "alison-holdem",
       "added_after_book": true
     },
     {
       "name": "Adrienne Coad",
       "year": "2022",
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "person_id": "adrienne-coad",
       "added_after_book": true
     },
     {
       "name": "Jackie Reynish",
       "year": "2023",
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "person_id": "jackie-reynish",
       "added_after_book": true
     },
     {
       "name": "Chris McAlpine",
       "year": "2024",
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "person_id": "chris-mcalpine",
       "added_after_book": true
     }
@@ -449,14 +449,14 @@
       "book_pages": [
         78
       ],
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "life_membership_year": 2019,
       "story": "jack-carter.html"
     },
     {
       "id": "alison-holdem",
       "name": "Alison Holdem",
-      "summary": "Life membership awarded in 2019, as contributed by Bruce Partridge.",
+      "summary": "Life membership awarded in 2019.",
       "topics": [
         "life-members",
         "individual-stories",
@@ -468,13 +468,13 @@
         106,
         303
       ],
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "life_membership_year": 2019
     },
     {
       "id": "adrienne-coad",
       "name": "Adrienne Coad",
-      "summary": "Life membership awarded in 2022, as contributed by Bruce Partridge.",
+      "summary": "Life membership awarded in 2022.",
       "topics": [
         "life-members",
         "individual-stories",
@@ -486,25 +486,25 @@
         138,
         298
       ],
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "life_membership_year": 2022
     },
     {
       "id": "jackie-reynish",
       "name": "Jackie Reynish",
-      "summary": "Life membership awarded in 2023, as contributed by Bruce Partridge.",
+      "summary": "Life membership awarded in 2023.",
       "topics": [
         "life-members",
         "individual-stories"
       ],
       "book_pages": [],
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "life_membership_year": 2023
     },
     {
       "id": "chris-mcalpine",
       "name": "Chris McAlpine",
-      "summary": "Life membership awarded in 2024, as contributed by Bruce Partridge. Long-time manager of Bay of Plenty Golf, as identified by Bruce Partridge on 11 November 2026.",
+      "summary": "Life membership awarded in 2024. Long-time manager of Bay of Plenty Golf.",
       "topics": [
         "life-members",
         "individual-stories"
@@ -512,7 +512,7 @@
       "book_pages": [
         296
       ],
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "life_membership_year": 2024
     },
     {
@@ -1022,7 +1022,7 @@
         "life-members"
       ],
       "book_pages": [],
-      "source": "Photograph and identification supplied by Bruce Partridge, 11 November 2026"
+      "source": "Photograph and identification added 11 November 2026"
     },
     {
       "id": "maurice-white",
@@ -1032,7 +1032,7 @@
         "individual-stories"
       ],
       "book_pages": [],
-      "source": "Photograph and identification supplied by Bruce Partridge, 11 November 2026"
+      "source": "Photograph and identification added 11 November 2026"
     },
     {
       "id": "mike-sandland",
@@ -1042,7 +1042,7 @@
         "individual-stories"
       ],
       "book_pages": [],
-      "source": "Photograph and identification supplied by Bruce Partridge, 11 November 2026"
+      "source": "Photograph and identification added 11 November 2026"
     }
   ],
   "source_records": [
@@ -1251,7 +1251,7 @@
       "id": "carter-coad",
       "person": "Jack Carter",
       "text": "Maurice Coad is the correct spelling, not Maurice Code, in two places in Jack Carter’s story.",
-      "source": "Bruce Partridge, 10 November 2026",
+      "source": "Club heritage contribution, 10 November 2026",
       "status": "Applied to the website transcription on 10 November 2026; original DOCX retained unchanged."
     }
   ],
