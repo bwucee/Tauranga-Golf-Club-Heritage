@@ -35,4 +35,9 @@ def add_photos(file, body):
             if start >= 0:
                 pos = body.find('<div class="group-body">', start) + len('<div class="group-body">')
                 body = body[:pos] + figures([photo]) + body[pos:]
+    if file == 'life-members.html':
+        for photo in PHOTOS:
+            if photo.get('life_member_name'):
+                pattern = r'(<p><strong>' + re.escape(e(photo['life_member_name'])) + r' · .*?</p>)'
+                body = re.sub(pattern, lambda m: m[0] + figures([photo]), body, count=1, flags=re.S)
     return body
