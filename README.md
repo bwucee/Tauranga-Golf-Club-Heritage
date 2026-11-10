@@ -104,3 +104,7 @@ The last era is labelled 2000–Future. Book milestones and later sourced life-m
 Seven supplied and identified photographs are recorded in `content/heritage-additions.json`. Web copies preserve the full framing. `scripts/contributed_photos.py` places them on related person pages, the Carrus story, Jack Carter’s account and Phyll Sandlant’s contributed profile without changing original book readers. Added person records cover Keith Dawkins, Maurice White and Mike Sandlant. Captions follow the contributor’s identification; source filenames are retained in the source records. Photograph dates are unspecified except the identified 2013 Carrus event.
 
 On 11 November 2026, personal website contribution credits were removed at the project owner’s request ahead of group review. Source references, addition dates and historical mentions in the club history remain.
+
+## Linked names in the book
+
+The web transcription links full names from the people index and verified aliases stored in `content/catalogue.json`. `scripts/person_links.py` escapes text before wrapping matched names; it preserves original wording and punctuation and never matches a first name or surname alone. Person pages gather all matching book pages, related named stories, topic links and supplied photographs. The PDF reader’s Names & connections link opens the equivalent web page; the original PDF stays unchanged. The source-text check compares all 305 pages, including text interrupted by inline links.

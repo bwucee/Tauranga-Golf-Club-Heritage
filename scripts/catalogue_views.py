@@ -1,10 +1,14 @@
 """Cross-subject catalogue; later contributions stay separate from original sources."""
 from html import escape as e
 import json
+from person_links import PersonLinks
 
 def build_catalogue(root, page, heading, book, collection, cards):
     data=json.loads((root/'content/catalogue.json').read_text())
     topics={t['id']:t for t in data['topics']}
+    name_links = PersonLinks(data['people'])
+    mentions = {p['number']: name_links.ids(p['text']) for p in book['pages']}
+    story_mentions = {a['id']: name_links.ids(a['intro'] + ' ' + ' '.join(a['paragraphs'])) for a in collection['articles']}
     search=json.loads((root/'assets/search-index.json').read_text())
     def tags(ids):
         return '<div class="reader-tools">'+''.join(f'<a href="topic-{i}.html">{e(topics[i]["title"])}</a>' for i in ids)+'</div>'
@@ -23,8 +27,18 @@ def build_catalogue(root, page, heading, book, collection, cards):
         body='<a class="back" href="people-index.html">← People index</a>'+heading('PEOPLE & CLUB LIFE',e(p['name']),e(p['summary']))+tags(p['topics'])
         if p.get('life_membership_year'):
             body+=f'<section class="note"><h2>Life membership · {p["life_membership_year"]}</h2><p>Year added 10 November 2026. This addition extends the roll published in 2014.</p><p>Further biographical material can be added as it is contributed.</p></section>'
-        if p['book_pages']:
-            body+='<section><h2>Accounts and references in the book</h2><p>These references retain their original 2014 context.</p>'+''.join(f'<p><a href="book-page-{n:03}.html">Pars from the Past · p. {n} →</a></p>' for n in p['book_pages'])+'</section>'
+        references = sorted(set(p['book_pages']) | {n for n, ids in mentions.items() if p['id'] in ids})
+        if references:
+            body += '<section><h2>Follow this person through the book</h2><p>Open the linked web text to follow more names, or view the original page. References retain their 2014 context.</p><ul class="person-references">'
+            for n in references:
+                source_page = book['pages'][n-1]
+                label = ' · '.join(source_page['headings']) or next(c['title'] for c in book['chapters'] if c['id'] == source_page['chapter'])
+                if 280 <= n <= 284: label += ' · Imagined future'
+                body += f'<li><a class="linked-book-text" href="book-page-{n:03}.html">p. {n} · {e(label)}</a> · <a href="documents/pars-from-the-past.pdf#page={n}">Original PDF</a></li>'
+            body += '</ul></section>'
+        related = [a for a in collection['articles'] if p['id'] in story_mentions[a['id']] and a['id']+'.html' != p.get('story')]
+        if related:
+            body += '<section><h2>Related stories</h2><ul>' + ''.join(f'<li><a href="{a["id"]}.html">{e(a["title"])}</a></li>' for a in related) + '</ul></section>'
         if p.get('story'):body+=f'<p><a class="button" href="{p["story"]}">Read the contributed account →</a></p>'
         body+=f'<p class="source">Record source: {e(p["source"])}.</p>'
         url=f'person-{p["id"]}.html';page(url,p['name'],body)

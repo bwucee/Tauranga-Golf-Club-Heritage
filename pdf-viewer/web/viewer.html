@@ -34,10 +34,11 @@ See https://github.com/adobe-type-tools/cmap-resources
     <link rel="stylesheet" href="viewer.css" />
 
   <script src="viewer.mjs" type="module"></script>
+  <script src="heritage-connections.js" defer></script>
   <style>#heritage-reader-bar{height:34px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:15px;padding:0 16px;background:#355e31;color:#fff;font:12px system-ui}#heritage-reader-bar a{color:#fff;text-decoration:none}#outerContainer{height:calc(100% - 34px)}#editorModeButtons{display:none!important}@media(max-width:650px){#heritage-reader-bar span{display:none}}@media print{#heritage-reader-bar{display:none}#outerContainer{height:100%}}</style></head>
 
   <body tabindex="0">
-    <div id="heritage-reader-bar"><a href="../../archive.html">← Document archive</a><span>Tauranga Golf Club · Original documents</span><a href="../../subjects.html">Subjects</a></div><div id="outerContainer">
+    <div id="heritage-reader-bar"><a href="../../archive.html">← Document archive</a><span>Tauranga Golf Club · Original documents</span><a id="linked-book-page" href="../../book.html" hidden>Names &amp; connections</a><a href="../../subjects.html">Subjects</a></div><div id="outerContainer">
       <span id="viewer-alert" class="visuallyHidden" role="alert"></span>
 
       <div id="mainContainer">

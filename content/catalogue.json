@@ -676,7 +676,12 @@
         "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 97",
-      "story": "life-members.html#nen-sim"
+      "story": "life-members.html#nen-sim",
+      "aliases": [
+        "Nen Sim",
+        "Evelyn Sim",
+        "Evelyn “Nen” Sim"
+      ]
     },
     {
       "id": "dick-phelan",
@@ -867,7 +872,12 @@
         "individual-stories",
         "volunteers-benefactors"
       ],
-      "source": "Pars from the Past (2014), p. 210"
+      "source": "Pars from the Past (2014), p. 210",
+      "aliases": [
+        "Dave Mowat",
+        "David G. S. Mowat",
+        "David G S Mowat"
+      ]
     },
     {
       "id": "elsie-hanna",
@@ -978,7 +988,11 @@
         61
       ],
       "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
-      "story": "life-members.html#harold-lusk"
+      "story": "life-members.html#harold-lusk",
+      "aliases": [
+        "H. B. Lusk",
+        "H.B. Lusk"
+      ]
     },
     {
       "id": "alick-mirrielees",
@@ -995,7 +1009,11 @@
         189
       ],
       "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
-      "story": "life-members.html#alick-mirrielees"
+      "story": "life-members.html#alick-mirrielees",
+      "aliases": [
+        "A. J. Mirrielees",
+        "A.J. Mirrielees"
+      ]
     },
     {
       "id": "phyll-sandlant",
@@ -1011,7 +1029,10 @@
         107
       ],
       "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
-      "story": "life-members.html#phyll-sandlant"
+      "story": "life-members.html#phyll-sandlant",
+      "aliases": [
+        "Phyl Sandlant"
+      ]
     },
     {
       "id": "keith-dawkins",
@@ -1042,7 +1063,10 @@
         "individual-stories"
       ],
       "book_pages": [],
-      "source": "Photograph and identification added 11 November 2026"
+      "source": "Photograph and identification added 11 November 2026",
+      "aliases": [
+        "Michael Sandlant"
+      ]
     },
     {
       "id": "joyce-paris",

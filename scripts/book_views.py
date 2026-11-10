@@ -2,8 +2,12 @@
 from html import escape as e
 import json
 import re
+from person_links import PersonLinks
 
 def build_book_views(root, page, heading, book, collection):
+    people = json.loads((root/'content/catalogue.json').read_text())['people']
+    name_links = PersonLinks(people)
+    people_by_id = {person['id']: person for person in people}
     chapters=book['chapters']
     chapter_map={c['id']:c for c in chapters}
     source_pages=book['pages']
@@ -24,7 +28,7 @@ def build_book_views(root, page, heading, book, collection):
             contents+=f'<article><span class="eyebrow">{label} · pp. {c["start"]}–{c["end"]}</span><h2>{chapter_link(c)}</h2><p>{e(c["summary"])}</p></article>'
         contents+='</div></details>'
     contents+='</div>'
-    page('book.html','Explore Dave’s book',heading('PARS FROM THE PAST · DAVID G. S. MOWAT · 2014','The book, a story at a time.','All 25 chapters, the introduction, photographs and reference pages. Choose a subject, then follow the stories at your own pace.')+'<div class="reader-tools"><a class="button" href="documents/pars-from-the-past.pdf#page=1">Open the complete original PDF →</a><a href="search.html">Find a name, place or story →</a></div>'+contents+'<aside class="note"><h2>Dave’s words, clearly identified</h2><p>The book pages preserve the original account in a review transcription, separate from the website’s shorter introductions. Page numbers, image captions and attribution stay with the source. The final chapter includes an imagined future, clearly labelled. Tables retain their original page layout.</p></aside>')
+    page('book.html','Explore Dave’s book',heading('PARS FROM THE PAST · DAVID G. S. MOWAT · 2014','The book, a story at a time.','All 25 chapters, the introduction, photographs and reference pages. Choose a subject, then follow the stories at your own pace.')+'<div class="reader-tools"><a class="button" href="documents/pars-from-the-past.pdf#page=1">Open the complete original PDF →</a><a href="search.html">Find a name, place or story →</a></div>'+contents+'<aside class="note"><h2>Dave’s words, clearly identified</h2><p>The book pages preserve the original account in a review transcription, separate from the website’s shorter introductions. Names already in the people index are clickable in the web text, opening related stories, subjects and photographs. Page numbers, image captions and attribution stay with the source. The final chapter includes an imagined future, clearly labelled. Tables retain their original page layout.</p></aside>')
     for c in chapters:
         pages=grouped[c['id']]
         # Use the book’s own headings as additional routes into its detail.
@@ -67,18 +71,22 @@ def build_book_views(root, page, heading, book, collection):
         body=f'<a class="back" href="{c["id"]}.html">← {e(c["title"])}</a>'+heading(f'PARS FROM THE PAST · ORIGINAL BOOK · PAGE {n}',e(c['title']),'David G. S. Mowat, editor · Published 2014')+pagination
         if c['number']==25:
             body+='<aside class="speculation"><strong>Original ending: includes an imagined future.</strong> The short-course account is followed by predictions written in 2014, not a record of later events. Historical side anecdotes also appear in the printed chapter.</aside>'
-        body+='<div class="source-notice">From the book: original views, recollections and terminology are retained. References to “today”, rules, staff or programmes describe the time of writing. Text extraction is being reviewed; use the page reference when suggesting a correction.</div>'
+        body+='<div class="source-notice">From the book: original views, recollections and terminology are retained. References to “today”, rules, staff or programmes describe the time of writing. Linked names open related stories, subjects and photographs. Text extraction is being reviewed; use the page reference when suggesting a correction.</div>'
         body+=f'<p class="source-reading"><a class="button" href="documents/pars-from-the-past.pdf#page={n}">Open original PDF at page {n} →</a></p>'
         if p['facsimile']:
             body+=f'<figure class="reference-facsimile"><a href="{p["facsimile"]}"><img src="{p["facsimile"]}" alt="Original reference page {n} from Pars from the Past; select to enlarge and read its columns" loading="lazy"></a><figcaption>Original book page {n} · Select to enlarge. Layout preserved for accurate reading across columns.</figcaption></figure><details class="source-transcription"><summary>Searchable text from this reference page</summary><p class="source">The extracted text does not retain column relationships. Read the image above for the authoritative layout.</p>'
         body+='<article class="book-prose" aria-label="Original book text">'
         for b in p['blocks']:
             tag='h2' if b['kind']=='heading' else 'pre' if b['kind']=='verse' else 'p'
-            if tag=='p':body+=''.join(f'<p>{e(t)}</p>' for t in readable_paragraphs(b['text']))
-            else:body+=f'<{tag}>{e(b["text"])}</{tag}>'
+            if tag=='p':body+=''.join(f'<p>{name_links.render(t)}</p>' for t in readable_paragraphs(b['text']))
+            else:body+=f'<{tag}>{name_links.render(b["text"])}</{tag}>'
         if not p['blocks']:
             body+='<p class="source">This is an illustration page with no extracted text.</p>'
         body+='</article>'
+        connected = name_links.ids(p['text'])
+        if connected:
+            body += '<aside class="note book-people"><h2>People and connections on this page</h2><p>Select a linked name in the text or below to explore related stories, subjects and photographs.</p><ul class="name-index">' + ''.join(f'<li><a href="person-{pid}.html">{e(people_by_id[pid]["name"])}</a></li>' for pid in sorted(connected, key=lambda pid: people_by_id[pid]['name'])) + '</ul></aside>'
+
         if p['facsimile']:body+='</details>'
         if p['images']:
             body+='<section class="page-images"><h2>Images from this book page</h2><p class="source">Original caption text is retained in the passage above. Image positions differ from the printed page; no identities or dates have been inferred from position.</p><div class="book-image-grid">'

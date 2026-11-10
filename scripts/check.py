@@ -73,13 +73,14 @@ class SourceText(HTMLParser):
  def handle_starttag(self,tag,attrs):
   if tag=='article' and dict(attrs).get('aria-label')=='Original book text':self.inside=True
  def handle_endtag(self,tag):
+  if self.inside and tag in ('p','h2','pre'):self.parts.append(' ')
   if tag=='article':self.inside=False
  def handle_data(self,data):
   if self.inside:self.parts.append(data)
 for p in book['pages']:
  reader=SourceText();reader.feed((R/f"book-page-{p['number']:03}.html").read_text())
  expected=' '.join(p['text'].split())
- actual=' '.join(' '.join(reader.parts).split())
+ actual=' '.join(''.join(reader.parts).split())
  if expected:assert actual==expected,f"Source text changed while rendering page {p['number']}"
 seen=set();todo=[R/'index.html']
 while todo:
@@ -142,3 +143,22 @@ assert 'person-jackie-reynish.html' in (R/'timeline.html').read_text()
 assert 'looking-ahead.html' not in {t[3]+'.html' for t in collection['timeline']}
 assert all(s in (R/'index.html').read_text() for s in ['collection-shortcuts','people-index.html','archive.html','editorial-updates.html'])
 print('PASS: reader links target valid original PDF pages; 2000–Future distinguishes milestones and future discussion.')
+
+# Name links preserve punctuation, disambiguate full names and connect back to people.
+from person_links import PersonLinks
+names = PersonLinks(catalogue['people'])
+probe = "Phyl Sandlant’s help; Michael Sandlant, Dave Mowat and Joyce Paris. Joyce and Parisian remain plain."
+linked = names.render(probe)
+assert 'person-phyll-sandlant.html' in linked and 'person-mike-sandland.html' in linked
+assert linked.count('class="person-link"') == 4
+assert 'person-david-mowat.html' in linked and 'person-joyce-paris.html' in linked
+assert names.ids('Joyce and Parisian') == set()
+assert names.ids('NotJoyce Paris') == set()
+assert names.ids('Joyce\nParis') == {'joyce-paris'}
+assert 'person-joyce-paris.html' in (R/'book-page-142.html').read_text()
+assert 'person-phyll-sandlant.html' in (R/'book-page-106.html').read_text()
+assert 'class="linked-book-text" href="book-page-142.html"' in (R/'person-joyce-paris.html').read_text()
+assert 'women-in-leadership.html' in (R/'person-joyce-paris.html').read_text()
+assert 'heritage-hazel-casey-joyce-paris.jpg' in (R/'person-joyce-paris.html').read_text()
+assert 'Names &amp; connections' in (R/'pdf-viewer/web/viewer.html').read_text()
+print('PASS: full names and verified aliases link to connected person records without changing source text.')
