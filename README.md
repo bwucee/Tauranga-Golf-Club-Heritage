@@ -84,3 +84,7 @@ The incorrect motorcycle-club author on the early website commit was corrected o
 Trophy records retain source filenames and missing entries. Context was compared with Mowat’s account: the Ron Galloway date discrepancy and uncertain trophy identities remain explicit. The separate source documents and full PDF are not published. Photographs retain their original image data and embedded captions. The new Life Members page makes existing book material easier to find.
 
 Mowat’s researched history is the primary accepted historical reference, alongside the club’s official History page. Founded in 1904 and moved to Gate Pā in 1914 is settled editorial guidance. Other contributions should be compared with those accounts; rare exceptions need documented evidence.
+
+## Member histories added on 10 November 2026
+
+Jack Carter’s undated personal history is preserved on `jack-carter.html`, with a separately attributed 2019 Life Membership entry. Ten profiles from the 21-page Life Members compilation extend the honour roll with biographical summaries and later club notices. Private correspondence headers and signatures are omitted. Original source files remain outside the repository. Search, club groups and the People page link to these contributions. The book’s 2014 roll and original source pages are preserved unchanged.
