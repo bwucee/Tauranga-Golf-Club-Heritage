@@ -86,3 +86,7 @@ The home page now leads to `subjects.html`: greenkeeping, resident professionals
 `content/heritage-additions.json` retains the previously assembled trophy records, life-member profiles, supplied photographs and Jack Carter’s recollection. `scripts/catalogue_views.py` renders subject and person routes and extends search to these sources and later contributions. Searchable programme PDFs and original DOCX files stay outside the public website. Original book readers remain unchanged; corrections to contributed transcriptions are noted with contributor and date.
 
 The project owner authorised publication of the 10 November 2026 additions, including the extracted programme photographs, on that date.
+
+## Volunteers and Benefactors
+
+The cross-subject catalogue includes eight volunteer/benefactor themes and 37 source-linked entries. Edit `volunteer_sections` in `content/catalogue.json` to add accounts. The accompanying introduction is `volunteers-and-benefactors` in `collection.json`. Practical work, governance, hospitality, refereeing, donations and paid services retain their distinct source context. The later health-and-safety perspective is separate from the book’s account. A broader research finding aid is retained outside the website in the parent `research/` folder.

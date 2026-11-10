@@ -40,7 +40,7 @@ for p in book['pages']:
 collection=json.loads((R/'content/collection.json').read_text())
 index=json.loads((R/'assets/search-index.json').read_text())
 catalogue=json.loads((R/'content/catalogue.json').read_text())
-assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+len(json.loads((R/'content/heritage-additions.json').read_text())['trophies'])+3
+assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+len(json.loads((R/'content/heritage-additions.json').read_text())['trophies'])+3+sum(len(s['entries']) for s in catalogue.get('volunteer_sections',[]))
 for item in index:
  target=urlsplit(item['url'])
  assert (R/target.path).exists()
@@ -89,3 +89,9 @@ assert (R/'jack-carter.html').read_text().count('Maurice Coad')>=2
 assert len({p['id'] for p in catalogue['people']})==len(catalogue['people'])
 assert all(not (280<=n<=284) for p in catalogue['people'] for n in p['book_pages'])
 print('PASS: subject cross-links, programme references, original life-members roll and five later additions.')
+
+for section in catalogue.get('volunteer_sections',[]):
+ for entry in section['entries']:
+  assert all(1<=n<=305 and not 280<=n<=284 for n in entry['book_pages'])
+assert 'volunteers-benefactors' in topics
+print('PASS: volunteer subject entries retain valid source pages and exclude the imagined future.')

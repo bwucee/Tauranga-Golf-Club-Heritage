@@ -29,6 +29,17 @@ def build_catalogue(root, page, heading, book, collection, cards):
         add_search(p['name'],url,p['summary']+' '+p['source']+' '+('Maurice Coad; correction of Maurice Code in Jack Carter’s story.' if p['id']=='jack-carter' else ''),'Person record')
     for t in data['topics']:
         body='<a class="back" href="subjects.html">← All subjects</a>'+heading('SUBJECT INDEX',e(t['title']),e(t['description']))
+        if t['id']=='volunteers-benefactors':
+            body+='<p><a class="button" href="volunteers-and-benefactors.html">Read the story of service and generosity →</a></p><h2>Explore the work and the people</h2><p>Eight themes bring together 37 accounts from across the book and the 1968 programme. Original pages retain their full detail, names and context.</p><div class="book-themes">'
+            for section in data.get('volunteer_sections',[]):
+                body+=f'<details id="{section["id"]}"><summary>{e(section["title"])}</summary><div class="chapter-links">'
+                for entry in section['entries']:
+                    body+=f'<article><h3>{e(entry["title"])}</h3><p>{e(entry["summary"])}</p><p class="source">'
+                    body+=' · '.join(f'<a href="book-page-{n:03}.html">Book p. {n}</a>' for n in entry['book_pages']) if entry['book_pages'] else '<a href="source-spalding-1968.html#masters-1968-advertising">1968 programme acknowledgement →</a>'
+                    body+='</p></article>'
+                    add_search(entry['title'],'topic-volunteers-benefactors.html#'+section['id'],entry['summary'],'Volunteers and Benefactors')
+                body+='</div></details>'
+            body+='</div><aside class="note"><h2>A continuing history</h2><p>A later reflection considers changing health-and-safety expectations and board risk tolerance. It is presented separately in the story, alongside space for future accounts of how volunteering changes.</p></aside>'
         if t['id']=='life-members':
             body+='<h2>Life members recorded in the 2014 book</h2><p>Names and date wording follow the book’s roll. Open the original page to check its layout.</p><p><a href="book-page-304.html">Original life-members roll · p. 304 →</a></p><ul class="name-index">'+''.join(f'<li>{e(m["name"])} · {e(m["year"])}</li>' for m in data['life_members'] if not m.get('added_after_book'))+'</ul><h2>Additional life members</h2><p>Contributed by Bruce Partridge, 10 November 2026. Listed by award year; these additions are separate from the original book.</p><ul>'+''.join(f'<li><a href="person-{m["person_id"]}.html">{e(m["name"])}</a> · {e(m["year"])}</li>' for m in sorted((m for m in data['life_members'] if m.get('added_after_book')),key=lambda m:(m['year'],m['name'])))+'</ul>'
         if t['id']=='life-members':body+='<p><a href="life-members.html">Read the contributed life-member profiles →</a></p>'

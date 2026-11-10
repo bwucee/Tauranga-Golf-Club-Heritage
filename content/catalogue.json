@@ -49,6 +49,32 @@
       ]
     },
     {
+      "id": "volunteers-benefactors",
+      "title": "Volunteers and Benefactors",
+      "description": "The work, gifts and shared spirit that built the club: on the course, behind the scenes and across generations.",
+      "book_range": null,
+      "articles": [
+        "club-life",
+        "gate-pa",
+        "anne-mark",
+        "ladies-between-wars",
+        "veterans-service",
+        "women-veterans",
+        "twilight-and-business-house",
+        "trees-and-memory",
+        "ladies-nine-hole",
+        "juniors-1950s",
+        "juniors-growing",
+        "women-in-leadership",
+        "board-of-management",
+        "clubhouse-2001",
+        "greenkeepers",
+        "windsor-green",
+        "spalding-masters",
+        "volunteers-and-benefactors"
+      ]
+    },
+    {
       "id": "individual-stories",
       "title": "Individual stories & families",
       "description": "Find a person, a family or a first-hand recollection.",
@@ -64,7 +90,8 @@
         "personal-recollections",
         "ward-family",
         "juniors-growing",
-        "daves-imagined-century"
+        "daves-imagined-century",
+        "volunteers-and-benefactors"
       ]
     },
     {
@@ -83,7 +110,8 @@
         "women-veterans",
         "veterans-service",
         "twilight-and-business-house",
-        "juniors-growing"
+        "juniors-growing",
+        "volunteers-and-benefactors"
       ]
     },
     {
@@ -104,7 +132,8 @@
         "water-and-irrigation",
         "trees-and-memory",
         "short-course",
-        "windsor-green"
+        "windsor-green",
+        "volunteers-and-benefactors"
       ]
     },
     {
@@ -414,7 +443,8 @@
         "resident-professionals",
         "club-groups",
         "tournaments",
-        "clubhouses-administration"
+        "clubhouses-administration",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         78
@@ -431,7 +461,8 @@
         "life-members",
         "individual-stories",
         "club-groups",
-        "honours-rules"
+        "honours-rules",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         106,
@@ -447,7 +478,8 @@
       "topics": [
         "life-members",
         "individual-stories",
-        "club-groups"
+        "club-groups",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         105,
@@ -600,7 +632,8 @@
         94
       ],
       "topics": [
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 94"
     },
@@ -637,7 +670,8 @@
       ],
       "topics": [
         "individual-stories",
-        "life-members"
+        "life-members",
+        "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 97",
       "story": "life-members.html#nen-sim"
@@ -650,7 +684,8 @@
         123
       ],
       "topics": [
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 123"
     },
@@ -662,7 +697,8 @@
         123
       ],
       "topics": [
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 123"
     },
@@ -674,7 +710,8 @@
         124
       ],
       "topics": [
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 124"
     },
@@ -686,7 +723,8 @@
         124
       ],
       "topics": [
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 124"
     },
@@ -824,7 +862,8 @@
         210
       ],
       "topics": [
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "source": "Pars from the Past (2014), p. 210"
     },
@@ -834,7 +873,8 @@
       "summary": "Elsie arrived in Tauranga in 1922, won the senior championship in 1924 and 1926, and served on the women’s committee from 1926 to 1939. She became the club’s first woman Life Member before 1948.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         97,
@@ -849,7 +889,8 @@
       "summary": "Noel joined in 1960 and served as captain, president and a member of the inaugural Board. Elected a Life Member in 1997, he contributed to twilight golf, pennant teams and the volunteers known as the Wednesday Firewood Gang.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         65,
@@ -864,7 +905,8 @@
       "summary": "Bernie brought the skills of a machinery contractor to the club’s many volunteer projects. He organised work for the veterans, served as their president in 1995 and built the drinking fountain behind the first tee. His service was recognised with Life Membership in 1997.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         65,
@@ -879,7 +921,8 @@
       "summary": "Hazel helped beginners, schoolchildren and women new to golf. The supplied feature remembers a Saturday group known as Hazel’s Girls and her support for the introduction of nine-hole golf.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         105
@@ -893,7 +936,8 @@
       "summary": "Ernie’s long service helped secure the administration and development of the Racecourse Reserve. Mowat describes his work on the reserve’s management arrangements and his Life Membership of both the golf and racing clubs.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         24
@@ -907,7 +951,8 @@
       "summary": "The supplied achievement summary brings together Peg’s playing record, rules knowledge and volunteer service. It records her joining in 1961, her albatross at the sixth hole in 1966, and her work with juniors and new members.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         38,
@@ -939,7 +984,8 @@
       "summary": "Mowat describes A J Mirrielees’s work on the extensive planting programme that helped shape the course. He was among the club’s Life Members honoured before 1948.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         61,
@@ -955,7 +1001,8 @@
       "summary": "Phyll led the local promotion of women’s nine-hole golf. Her account in Mowat’s book recalls 96 women responding to the first invitation in February 1998, followed by coaching with Rick Barker and support from member volunteers. She became a Life Member in 2006.",
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ],
       "book_pages": [
         106,
@@ -1068,7 +1115,8 @@
       "topics": [
         "individual-stories",
         "clubhouses-administration",
-        "tournaments"
+        "tournaments",
+        "volunteers-benefactors"
       ],
       "printed_pages": [
         39,
@@ -1125,7 +1173,8 @@
       "id": "masters-1968-advertising",
       "title": "Tauranga in 1968 through its advertising",
       "topics": [
-        "tauranga-life"
+        "tauranga-life",
+        "volunteers-benefactors"
       ],
       "printed_pages": [
         2,
@@ -1306,6 +1355,378 @@
       "caption": "Tim Woolbank, New South Wales.",
       "printed_page": 43,
       "pdf_page": 45
+    }
+  ],
+  "volunteer_sections": [
+    {
+      "id": "early-work",
+      "title": "Making a course and a clubhouse",
+      "entries": [
+        {
+          "title": "Members establish Gate Pa",
+          "book_pages": [
+            24,
+            25
+          ],
+          "summary": "Working bees cleared gorse, protected greens with fences, built stiles, planted trees and prepared greens. The tin shed, shared meals and collected firewood show the practical beginnings of club life."
+        },
+        {
+          "title": "Hospitality before modern facilities",
+          "book_pages": [
+            26,
+            94,
+            97,
+            98
+          ],
+          "summary": "The women’s committee cleaned the shed and prepared food at home for visiting teams. Anne Mark recalled finding kindling and cutting firewood; Elsie Hanna’s catering work involved heating water outside and using small spirit burners."
+        },
+        {
+          "title": "Members improve the greens",
+          "book_pages": [
+            44
+          ],
+          "summary": "Groups of bankers, commercial travellers, Loan and Mercantile staff and insurance brokers undertook to enlarge and remake greens. These are early examples of professional networks contributing practical work."
+        },
+        {
+          "title": "A voluntary keeper of the bar",
+          "book_pages": [
+            61,
+            124
+          ],
+          "summary": "Arthur Towsey’s long committee service and voluntary care of the bar formed part of the welcome members and visitors received."
+        }
+      ]
+    },
+    {
+      "id": "vets-projects",
+      "title": "The veterans’ practical projects",
+      "entries": [
+        {
+          "title": "A regular programme of service",
+          "book_pages": [
+            127,
+            128
+          ],
+          "summary": "Mowat dates the routine annual projects programme to 1985 while recognising earlier individual contributions. Peter Steward’s album preserved the Society’s activities through calligraphy, photographs and painstaking retrospective work."
+        },
+        {
+          "title": "Painting, equipment and coring",
+          "book_pages": [
+            128
+          ],
+          "summary": "Work in 1985–87 included painting club rooms and shelters, maintaining ball washers, rebuilding first-tee surrounds, replacing bunker rakes and assisting with coring. Walter Tombleson and Peter Baveystock are remembered for regular coring help."
+        },
+        {
+          "title": "Gardens, mowing equipment and course repairs",
+          "book_pages": [
+            129
+          ],
+          "summary": "The 1988–91 lists include a Toro mower blade attachment, bark gardens, paths, tee surrounds, drainage, fences, markers and storm-damaged trees."
+        },
+        {
+          "title": "Paths, practice nets and irrigation",
+          "book_pages": [
+            130
+          ],
+          "summary": "Projects in 1992–95 included steps and paths, Vets’ Dell, bunker work, course furniture, practice nets and assistance with the new irrigation system."
+        },
+        {
+          "title": "The caddie-car shed, 1996",
+          "book_pages": [
+            131
+          ],
+          "summary": "Under President Ron Holden, the Society supplied materials, designed and built a caddie-car shed adjoining the greenkeeper’s building beside the practice range."
+        },
+        {
+          "title": "Fabrication, drainage and upkeep",
+          "book_pages": [
+            131
+          ],
+          "summary": "Later 1990s work included a mower roller, stormwater channels, paths and railings, irrigator equipment, a sliding sand-bin roof and care of gardens and car-park markings. Longrun Industries gifted cladding used in the clubhouse fascia."
+        },
+        {
+          "title": "Funding and hands-on work, 2000–04",
+          "book_pages": [
+            131,
+            132
+          ],
+          "summary": "Contributions included $6,000 for paths in 2000, $4,500 towards an irrigator and junior golf in 2001, and $12,000 in 2002, all but $400 of the latter coming from the firewood team. Joe Carr did the woodworking for a lectern funded in 2004."
+        },
+        {
+          "title": "Paths, tournament preparation and turf",
+          "book_pages": [
+            132,
+            133
+          ],
+          "summary": "Projects included course tidying for Carrus, coring, practice-net renovation, paths supervised by Denis Smith with planning by Peter Bourne, and turf-nursery support. Veterans helped lay Windsor Green stolons on the eighteenth and nursery."
+        }
+      ]
+    },
+    {
+      "id": "firewood",
+      "title": "The Firewood Gang and tree care",
+      "entries": [
+        {
+          "title": "Noel Copestake’s Wednesday team",
+          "book_pages": [
+            65,
+            130
+          ],
+          "summary": "Mowat associates the emergence of the Wednesday Firewood Gang with the mid-1990s project lists; he does not give a settled foundation date. The group also became known as Dad’s Army."
+        },
+        {
+          "title": "Work and money returned to the club",
+          "book_pages": [
+            130,
+            132
+          ],
+          "summary": "Removing dead trees, trimming, clearing fallen branches, providing clubhouse firewood and selling wood combined cost savings with funds for projects. The book does not assign a total lifetime value to this work."
+        },
+        {
+          "title": "Jim Swainson and Bernie Child",
+          "book_pages": [
+            65,
+            130,
+            190
+          ],
+          "summary": "Jim Swainson’s tree-care skills and Bernie Child’s project organisation, equipment design and maintenance receive special recognition. Child’s drinking fountain behind the first tee was his own initiative and work."
+        },
+        {
+          "title": "A landscape of donated trees",
+          "book_pages": [
+            62,
+            97,
+            189,
+            190
+          ],
+          "summary": "Planting and care involved A. J. Mirrielees, Harry and Maurice Bradmore, Fred Washer, Frank and Maisie Warnes and Willis Faulds. Bill Kennedy donated specimens despite not being a golfer; Bob Burstall contributed specialist tree knowledge."
+        },
+        {
+          "title": "Paid work alongside donated effort",
+          "book_pages": [
+            158,
+            187,
+            189,
+            190
+          ],
+          "summary": "The book distinguishes relief workers, paid backpackers used in turf planting and contracted arboriculture from volunteering. It also says some clubhouse advisers were paid for professional services while donating meeting and site-visit time."
+        }
+      ]
+    },
+    {
+      "id": "women",
+      "title": "Women’s committees, hospitality and social life",
+      "entries": [
+        {
+          "title": "Anne Mark, Elsie Hanna and Nen Sim",
+          "book_pages": [
+            94,
+            97,
+            98
+          ],
+          "summary": "Their work linked catering, handicapping, committee service and leadership. Nen’s contribution also included communication through the Bunkered newspaper column and development of the club’s social life."
+        },
+        {
+          "title": "The women veterans’ contributions",
+          "book_pages": [
+            135,
+            136,
+            137,
+            138
+          ],
+          "summary": "Raffles, donated prizes, tournament organisation and sponsorship generated money for club facilities. The account records changing-room support, planter-box funding and a suggested handrail, as well as the work of successive committees."
+        },
+        {
+          "title": "Summer golf organisers",
+          "book_pages": [
+            138
+          ],
+          "summary": "After Connie Breeds stood down in 2010, Beryl Smith and Adrienne Coad volunteered to carry on the summer programme."
+        },
+        {
+          "title": "Welcoming beginners and nine-hole golfers",
+          "book_pages": [
+            105,
+            106,
+            107
+          ],
+          "summary": "Hazel Casey and others helped women gain confidence and handicaps. Phyll Sandlant’s nine-hole initiative combined Rick Barker’s professional coaching with volunteers accompanying and encouraging the newcomers."
+        }
+      ]
+    },
+    {
+      "id": "twilight",
+      "title": "Twilight and business-house golf",
+      "entries": [
+        {
+          "title": "Nen Sim’s catering team",
+          "book_pages": [
+            195
+          ],
+          "summary": "Early twilight golf depended on willing organisers and a large catering team. Mowat gives particular recognition to Nen Sim, Joan Frith, Mavis Ward and Joyce Gallagher."
+        },
+        {
+          "title": "The jobs behind a convivial evening",
+          "book_pages": [
+            195,
+            196
+          ],
+          "summary": "Noel and Peg Copestake and their colleagues managed starts, prizes, finances, cards, barbecues, bar service and cleaning. Named helpers include Joan Brown, Bruce and Marge Anderson, Ian Dale, Peter Heeney, Steve Stephens, John Robinson, David Mowat, Des Shiel and Noeline Shiel."
+        },
+        {
+          "title": "Handicapping and organisation",
+          "book_pages": [
+            197,
+            198
+          ],
+          "summary": "Gary Baker promoted business-house golf. David Mowat developed the twilight handicap system and software, while Peg and Kim Copestake checked and adjusted cards. The book credits the system with saving volunteer hours."
+        }
+      ]
+    },
+    {
+      "id": "administration",
+      "title": "Committee service and professional skills",
+      "entries": [
+        {
+          "title": "Secretaries, subscriptions and legal work",
+          "book_pages": [
+            17,
+            22,
+            63,
+            148,
+            149
+          ],
+          "summary": "Early honorary secretaries and subscription collection sustained the club. John Hare’s honorary legal work helped the Racecourse Reserve arrangements. Later paid secretary-manager roles should not all be described as unpaid work."
+        },
+        {
+          "title": "Service over many seasons",
+          "book_pages": [
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68
+          ],
+          "summary": "The men’s chapter profiles years of committee, finance, match and district service. Named contributors include Warwick Nicol, Alan Davidson, Keith Frith, Maurice White, Noel Copestake, Keith Dawkins, Ernie Craig and David Mowat, as well as others who were not life members."
+        },
+        {
+          "title": "Clubhouse expertise",
+          "book_pages": [
+            158,
+            159,
+            160
+          ],
+          "summary": "Gary Baker and Tony Gallagher brought construction experience; Alan Rydings offered quantity-surveying and supervision help. Russell Black and Ismo Torvelainen were paid for professional services but also donated meeting and site-visit time. Member contractors won work through open tenders."
+        },
+        {
+          "title": "Researching and preserving the history",
+          "book_pages": [
+            2,
+            5,
+            97,
+            128
+          ],
+          "summary": "Joan Mirrielees, later researchers, contributors of recollections and photographs, and Peter Steward’s veterans album preserved otherwise easily lost history. The book acknowledges veterans and the Volunteer Firewood Gang for helping finance its production."
+        }
+      ]
+    },
+    {
+      "id": "competitions",
+      "title": "Refereeing, tournaments and junior golf",
+      "entries": [
+        {
+          "title": "The people behind the scoreboards",
+          "book_pages": [
+            62,
+            64
+          ],
+          "summary": "Alan Davidson, Des Wilson, Jim Reid and Keith Frith gave up playing opportunities to prepare and check manually recorded results. Alex Gallagher’s calligraphy and coordination became a distinctive part of major tournaments."
+        },
+        {
+          "title": "Training referees",
+          "book_pages": [
+            77
+          ],
+          "summary": "The book uses an earlier disputed ruling to explain the value of trained referees, and records an enthusiastic core of qualified people following the introduction of courses in 1986. This is a historical account, not advice on present rules."
+        },
+        {
+          "title": "Junior encouragement and opportunity",
+          "book_pages": [
+            105,
+            106,
+            107,
+            173,
+            174,
+            291
+          ],
+          "summary": "Beginners’ helpers, junior organisers and trophy donors provided pathways into golf. Ken Fraser donated the schoolboys’ Fraser Cup to encourage young players; eligibility and later administration are discussed in the book."
+        },
+        {
+          "title": "Keeping tournaments going",
+          "book_pages": [
+            260,
+            266
+          ],
+          "summary": "Local sponsorship supported the returning professional circuit. Mowat also records officials and volunteers using squeegees in difficult weather to try to keep play moving."
+        },
+        {
+          "title": "The 1968 programme’s acknowledgement",
+          "book_pages": [],
+          "summary": "Noel Hayden’s acknowledgement credits the many volunteers who prepared the Masters and the advertisers whose support made the programme possible. Source: programme printed p. 48, PDF p. 50."
+        }
+      ]
+    },
+    {
+      "id": "benefactors",
+      "title": "Gifts, memorials and benefactors",
+      "entries": [
+        {
+          "title": "Veterans’ tournament benefactors",
+          "book_pages": [
+            119,
+            120,
+            121,
+            123,
+            124
+          ],
+          "summary": "Ron Galloway, John McKenzie, Gavin Wallace, Johnny Walker, Ted Bartlett and David Collins supported tournaments with cups, plates, a rose bowl, an honours board, money and prizes. Dick Phelan, George Willcock and Frank Macklow also gave trophies."
+        },
+        {
+          "title": "Seats, shelter and commemorative planting",
+          "book_pages": [
+            190,
+            191
+          ],
+          "summary": "The book records gifts of trees, memorial seats and shelter, including Harry Butts’s seats for every tee, the Coates and Loughlin memorial seats and the shelter given in memory of Barbara Carlisle. Families and club groups helped make the grounds a place of remembrance."
+        },
+        {
+          "title": "Trophies as encouragement",
+          "book_pages": [
+            298,
+            299,
+            300,
+            301,
+            302,
+            303,
+            304
+          ],
+          "summary": "The trophy histories connect gifts with competitions and the people they encouraged. They include Mae Cameron, E. T. Baker, Bill Darley, Warwick Nicoll, Harry Bradmore, Anne Mark, Elsie Hanna, Jean Cullen, Nen Sim, Phyll Sandlant, Hazel Casey and many more."
+        },
+        {
+          "title": "Community and business support",
+          "book_pages": [
+            120,
+            137,
+            138,
+            159,
+            260
+          ],
+          "summary": "Donated goods, sponsorship and commercially supplied services all supported club life in different ways. Their contributions should remain identifiable rather than assuming all business work was given free."
+        }
+      ]
     }
   ]
 }

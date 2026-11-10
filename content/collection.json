@@ -72,7 +72,8 @@
       "era": "beginnings",
       "book_pages": [],
       "topics": [
-        "course-development"
+        "course-development",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -98,7 +99,8 @@
       "book_pages": [],
       "topics": [
         "clubhouses-administration",
-        "tauranga-life"
+        "tauranga-life",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -342,7 +344,8 @@
       "review_status": "draft",
       "book_pages": [],
       "topics": [
-        "club-groups"
+        "club-groups",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -370,7 +373,8 @@
       "book_pages": [],
       "topics": [
         "life-members",
-        "individual-stories"
+        "individual-stories",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -480,7 +484,8 @@
       "topics": [
         "resident-professionals",
         "club-groups",
-        "honours-rules"
+        "honours-rules",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -519,7 +524,8 @@
       "topics": [
         "resident-professionals",
         "life-members",
-        "club-groups"
+        "club-groups",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -608,7 +614,8 @@
         192
       ],
       "topics": [
-        "course-development"
+        "course-development",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -640,7 +647,8 @@
         143
       ],
       "topics": [
-        "clubhouses-administration"
+        "clubhouses-administration",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -669,7 +677,8 @@
         144
       ],
       "topics": [
-        "clubhouses-administration"
+        "clubhouses-administration",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -697,7 +706,8 @@
         160
       ],
       "topics": [
-        "clubhouses-administration"
+        "clubhouses-administration",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -728,7 +738,8 @@
         138
       ],
       "topics": [
-        "club-groups"
+        "club-groups",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -763,7 +774,8 @@
       ],
       "topics": [
         "life-members",
-        "club-groups"
+        "club-groups",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -796,7 +808,8 @@
       ],
       "topics": [
         "club-groups",
-        "tauranga-life"
+        "tauranga-life",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -865,7 +878,8 @@
         182
       ],
       "topics": [
-        "greenkeeping"
+        "greenkeeping",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -1011,7 +1025,8 @@
         247
       ],
       "topics": [
-        "tournaments"
+        "tournaments",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -1212,7 +1227,8 @@
       ],
       "topics": [
         "individual-stories",
-        "club-groups"
+        "club-groups",
+        "volunteers-benefactors"
       ]
     },
     {
@@ -1286,9 +1302,90 @@
       ],
       "topics": [
         "greenkeeping",
-        "course-development"
+        "course-development",
+        "volunteers-benefactors"
       ],
       "source_note": "Based on Pars from the Past, edited by David G. S. Mowat (2014), pp. 133, 143–146, 186–187 and 278–279, with a club-history update supplied in November 2026. The Board at the time is credited with the irrigation and water-use foresight. The supplier arrangement and near-completion by 2026 are later additions; no original supplier agreement or quantified water-use records have been supplied. Mowat’s account takes precedence for dates. The imagined future on pp. 280–284 has not been used as factual evidence."
+    },
+    {
+      "id": "volunteers-and-benefactors",
+      "title": "The work and generosity that built the club",
+      "date": "From the early club to the continuing story",
+      "category": "People & Stories",
+      "pages": "2, 24–26, 61–68, 94–107, 119–138, 158–159, 190–198, 298–304",
+      "image": null,
+      "groups": [
+        "senior-men",
+        "ladies",
+        "juniors",
+        "ladies-nine-hole",
+        "men"
+      ],
+      "intro": "Volunteers and benefactors supplied more than labour and money. Through repeated acts of service they helped make a club and a community.",
+      "paragraphs": [
+        "The history of Tauranga Golf Club is also a history of people giving their time, skills, materials and money. Mowat’s account follows that contribution from the working bees that made the Gate Pa course to the committees, catering teams, tournament officials, beginners’ helpers, donors and practical workers who kept improving it. Much of this service was ordinary work, repeated over many seasons, with friendships and a sense of belonging growing alongside it.",
+        "At Gate Pa, members slashed gorse, erected fences, built stiles, planted trees and prepared greens. The women’s committee cleaned the tin shed and catered for visitors with food prepared at home. Anne Mark remembered gathering kindling and cutting wood for the kitchen range; Elsie Hanna helped provide hospitality when even heating water required considerable effort.",
+        "The veterans’ projects became a particularly visible expression of this tradition. Mowat dates their regular annual programme to 1985, while recognising earlier individual work. Their lists encompass painting, ball washers, bunker rakes, coring, gardens, paths, drainage, tee surrounds, fences, practice nets, irrigation and workshop equipment.",
+        "In 1996, under President Ron Holden, the Veterans’ Society supplied the materials, designed and built a caddie-car shed alongside the greenkeeper’s building by the practice range. Bernie Child’s fountain behind the first tee was another personal project. Later work included a lectern made by Joe Carr, and paths planned with Peter Bourne and supervised by Denis Smith.",
+        "The Wednesday Firewood Gang, led by Noel Copestake and also known as Dad’s Army, combined tree work with fundraising. Removing dead trees, clearing branches, trimming and producing firewood helped the course and provided money for improvements. Mowat gives particular recognition to Jim Swainson’s tree-care skills and Bernie Child’s practical and organisational abilities. He associates the group’s beginnings with the mid-1990s records without assigning a definite foundation date.",
+        "The financial contribution was substantial as well as practical. The book records a $12,000 donation in 2002, all but $400 of it from the firewood team. The veterans also funded paths, equipment and junior support. The Firewood Gang and veterans helped finance the production of the history itself, preserving the memory of work that might otherwise have gone unrecorded.",
+        "Tree planting and gifts also shaped the course. Harry and Maurice Bradmore, Fred Washer, Frank and Maisie Warnes, Willis Faulds and many others nurtured its landscape. Bill Kennedy donated specimens despite not being a golfer. Families and groups gave memorial trees, seats and shelter; Harry Butts once supplied seats for every tee. The landscape became a record of relationships as well as a setting for play.",
+        "Service included organising the game. Committee members and honorary officers dealt with finance, subscriptions, handicaps, legal matters and competitions. Before computer scoring, people gave up their own rounds to prepare scoreboards and check cards; Alex Gallagher’s calligraphy became part of major tournaments. Mowat also records the importance of trained referees and the qualified volunteers available after referee courses began in 1986.",
+        "The social programme depended on similar effort. Nen Sim and her team provided twilight catering. Noel and Peg Copestake and their colleagues organised prizes, starts, finances, card checking, barbecues and cleaning. Women veterans raised funds through raffles and donated prizes, while people such as Connie Breeds, Beryl Smith and Adrienne Coad sustained summer play.",
+        "Helping others learn was another contribution. Hazel Casey supported beginners; Phyll Sandlant’s nine-hole initiative brought professional coaching together with volunteers who accompanied and encouraged newcomers. Junior organisers and trophy donors made opportunities for younger players. The cups, salvers and plates described in the book carry the names of people whose generosity helped establish competitions and reward participation.",
+        "These accounts also distinguish different kinds of contribution. Staff employment, relief work, paid help and commercial contracts should not be relabelled as volunteering. For the clubhouse redevelopment, some advisers were paid for their professional work while donating meeting and site-visit time. Staff and volunteers often worked alongside one another, each bringing something different.",
+        "A later club-history perspective, contributed in November 2026, observes a shift towards greater concern about health and safety and the risks boards are prepared to accept when organising volunteer work. It raises a question for the continuing history: how can a club preserve the contribution, companionship and shared ownership associated with volunteering as the conditions for that work change? This is a later reflection, rather than Mowat’s explanation of the earlier period or a statement of current legal requirements."
+      ],
+      "era": "modern",
+      "record_type": "historical-story",
+      "source_kind": "book-and-later-reflection",
+      "review_status": "draft",
+      "book_pages": [
+        24,
+        26,
+        61,
+        62,
+        64,
+        65,
+        77,
+        94,
+        97,
+        98,
+        105,
+        106,
+        119,
+        120,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        137,
+        138,
+        158,
+        159,
+        190,
+        191,
+        195,
+        196,
+        198,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304
+      ],
+      "topics": [
+        "volunteers-benefactors",
+        "individual-stories",
+        "club-groups",
+        "course-development"
+      ],
+      "source_note": "Drawn from Pars from the Past (2014), with a detailed subject guide linking the relevant original pages. The reflection on changing health-and-safety expectations was contributed in November 2026 and is separate from the book’s historical account. It does not establish a specific present-day club policy or legal restriction. The book’s imagined future on pp. 280–284 is excluded."
     }
   ],
   "timeline": [
