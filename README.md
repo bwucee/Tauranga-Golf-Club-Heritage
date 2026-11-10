@@ -76,3 +76,13 @@ To reimport from the separately retained PDF, use an environment with PyMuPDF: `
 Checks verify links, script/image paths, source exclusion, all 305 page routes, the 25-chapter sequence, appendix facsimiles, speculation notices and search targets. Browser QA covers search, topic expansion, source reading, a reference page and mobile widths.
 
 The incorrect motorcycle-club author on the early website commit was corrected on 9 November 2026. The original history is recoverable in a local Git backup ref; the public main branch uses Bruce Partridge’s identity.
+
+## Subject catalogue and continuing records
+
+The home page now leads to `subjects.html`: greenkeeping, resident professionals, life members, individual stories, club groups, course development, tournaments, clubhouses/administration, honours/rules and Tauranga life. Each story has a `topics` array and can appear under several subjects without duplicating its text.
+
+`content/catalogue.json` contains subject definitions, people, the original 33-entry life-members roll, five later appointments supplied by Bruce on 10 November 2026, and 12 cross-indexed descriptions of the 1968 programme. People can link to book pages and separately contributed stories. A person’s event year and the date their information was contributed are distinct. More people and earlier/later source records can be added without inventing a book chapter or changing original book pages.
+
+`content/heritage-additions.json` retains the previously assembled trophy records, life-member profiles, supplied photographs and Jack Carter’s recollection. `scripts/catalogue_views.py` renders subject and person routes and extends search to these sources and later contributions. Searchable programme PDFs and original DOCX files stay outside the public website. Original book readers remain unchanged; corrections to contributed transcriptions are noted with contributor and date.
+
+The project owner authorised publication of the 10 November 2026 additions, including the extracted programme photographs, on that date.

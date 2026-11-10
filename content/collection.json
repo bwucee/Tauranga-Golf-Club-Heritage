@@ -19,7 +19,11 @@
       "source_kind": "book",
       "review_status": "draft",
       "era": "beginnings",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "individual-stories",
+        "tauranga-life"
+      ]
     },
     {
       "id": "domain-course",
@@ -41,7 +45,10 @@
       "source_kind": "book",
       "review_status": "draft",
       "era": "beginnings",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "course-development"
+      ]
     },
     {
       "id": "gate-pa",
@@ -63,7 +70,10 @@
       "source_kind": "book",
       "review_status": "draft",
       "era": "beginnings",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "course-development"
+      ]
     },
     {
       "id": "club-life",
@@ -85,7 +95,11 @@
       "source_kind": "book",
       "review_status": "draft",
       "era": "beginnings",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "clubhouses-administration",
+        "tauranga-life"
+      ]
     },
     {
       "id": "champions",
@@ -110,7 +124,11 @@
       "source_kind": "book",
       "review_status": "draft",
       "era": "beginnings",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "individual-stories",
+        "honours-rules"
+      ]
     },
     {
       "id": "between-the-wars",
@@ -134,7 +152,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "clubhouses-administration"
+      ]
     },
     {
       "id": "course-redesign",
@@ -155,7 +176,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "course-development"
+      ]
     },
     {
       "id": "james-mowat",
@@ -180,7 +204,11 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "greenkeeping",
+        "resident-professionals"
+      ]
     },
     {
       "id": "clubhouse-1938",
@@ -204,7 +232,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "clubhouses-administration"
+      ]
     },
     {
       "id": "wartime-course",
@@ -228,7 +259,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "course-development"
+      ]
     },
     {
       "id": "postwar-revival",
@@ -250,7 +284,11 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "greenkeeping",
+        "course-development"
+      ]
     },
     {
       "id": "clubhouse-1954",
@@ -275,7 +313,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "clubhouses-administration"
+      ]
     },
     {
       "id": "ladies-between-wars",
@@ -299,7 +340,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "club-groups"
+      ]
     },
     {
       "id": "anne-mark",
@@ -323,7 +367,11 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ]
     },
     {
       "id": "una-wickham",
@@ -346,7 +394,11 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ]
     },
     {
       "id": "veterans-beginnings",
@@ -370,7 +422,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "club-groups"
+      ]
     },
     {
       "id": "invitation-tournament",
@@ -393,7 +448,10 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "tournaments"
+      ]
     },
     {
       "id": "juniors-1950s",
@@ -418,7 +476,12 @@
       "record_type": "historical-story",
       "source_kind": "book",
       "review_status": "draft",
-      "book_pages": []
+      "book_pages": [],
+      "topics": [
+        "resident-professionals",
+        "club-groups",
+        "honours-rules"
+      ]
     },
     {
       "id": "ladies-nine-hole",
@@ -452,6 +515,11 @@
       "book_pages": [
         106,
         107
+      ],
+      "topics": [
+        "resident-professionals",
+        "life-members",
+        "club-groups"
       ]
     },
     {
@@ -477,6 +545,10 @@
         41,
         42,
         43
+      ],
+      "topics": [
+        "greenkeeping",
+        "course-development"
       ]
     },
     {
@@ -492,7 +564,8 @@
         "The earliest system drew from the Borough supply, with sprinklers that needed shifting by hand. Some greens were beyond the pipe network, and water pressure depended on demands elsewhere in the town.",
         "The book records investigating the nearby stream in 1963 and a bore in 1970. A reservoir and further pipework followed, but keeping enough water available remained a difficulty.",
         "In 1978 the club approved a more extensive reticulation system. By the 1990s its limitations had prompted another major decision: a professionally designed replacement, completed in April 1995.",
-        "The chapter explains both the engineering and the work of staff who moved sprinklers, often at night. Its technical descriptions and water-right references describe the position when the book was written, not current operating instructions."
+        "The chapter explains both the engineering and the work of staff who moved sprinklers, often at night. Its technical descriptions and water-right references describe the position when the book was written, not current operating instructions.",
+        "A related change was the gradual conversion of fairways to Windsor Green, reducing the need for summer watering. The separate Windsor Green story follows the book’s planting history and the later club-history account of the supplier arrangement and the use of the club’s own resources."
       ],
       "era": "eighties",
       "record_type": "historical-story",
@@ -503,6 +576,10 @@
         185,
         186,
         187
+      ],
+      "topics": [
+        "greenkeeping",
+        "course-development"
       ]
     },
     {
@@ -529,6 +606,9 @@
         190,
         191,
         192
+      ],
+      "topics": [
+        "course-development"
       ]
     },
     {
@@ -558,6 +638,9 @@
         141,
         142,
         143
+      ],
+      "topics": [
+        "clubhouses-administration"
       ]
     },
     {
@@ -584,6 +667,9 @@
         142,
         143,
         144
+      ],
+      "topics": [
+        "clubhouses-administration"
       ]
     },
     {
@@ -609,6 +695,9 @@
         158,
         159,
         160
+      ],
+      "topics": [
+        "clubhouses-administration"
       ]
     },
     {
@@ -637,6 +726,9 @@
         136,
         137,
         138
+      ],
+      "topics": [
+        "club-groups"
       ]
     },
     {
@@ -668,6 +760,10 @@
         131,
         132,
         133
+      ],
+      "topics": [
+        "life-members",
+        "club-groups"
       ]
     },
     {
@@ -697,6 +793,10 @@
         196,
         197,
         198
+      ],
+      "topics": [
+        "club-groups",
+        "tauranga-life"
       ]
     },
     {
@@ -732,6 +832,9 @@
         173,
         174,
         175
+      ],
+      "topics": [
+        "resident-professionals"
       ]
     },
     {
@@ -760,6 +863,9 @@
         180,
         181,
         182
+      ],
+      "topics": [
+        "greenkeeping"
       ]
     },
     {
@@ -788,6 +894,9 @@
         200,
         201,
         202
+      ],
+      "topics": [
+        "honours-rules"
       ]
     },
     {
@@ -834,6 +943,9 @@
         221,
         222,
         223
+      ],
+      "topics": [
+        "individual-stories"
       ]
     },
     {
@@ -863,6 +975,9 @@
         226,
         227,
         228
+      ],
+      "topics": [
+        "individual-stories"
       ]
     },
     {
@@ -894,6 +1009,9 @@
         245,
         246,
         247
+      ],
+      "topics": [
+        "tournaments"
       ]
     },
     {
@@ -924,6 +1042,9 @@
         250,
         251,
         252
+      ],
+      "topics": [
+        "tournaments"
       ]
     },
     {
@@ -953,6 +1074,9 @@
         256,
         257,
         258
+      ],
+      "topics": [
+        "tournaments"
       ]
     },
     {
@@ -986,6 +1110,9 @@
         264,
         265,
         266
+      ],
+      "topics": [
+        "tournaments"
       ]
     },
     {
@@ -1019,6 +1146,9 @@
         274,
         275,
         276
+      ],
+      "topics": [
+        "tournaments"
       ]
     },
     {
@@ -1047,6 +1177,10 @@
       "book_pages": [
         278,
         279
+      ],
+      "topics": [
+        "resident-professionals",
+        "course-development"
       ]
     },
     {
@@ -1075,6 +1209,10 @@
         173,
         228,
         281
+      ],
+      "topics": [
+        "individual-stories",
+        "club-groups"
       ]
     },
     {
@@ -1104,7 +1242,53 @@
         282,
         283,
         284
+      ],
+      "topics": [
+        "individual-stories"
       ]
+    },
+    {
+      "id": "windsor-green",
+      "title": "Windsor Green: changing the fairways, conserving water",
+      "date": "Around 2000–2026",
+      "category": "The Course",
+      "pages": "133, 143–146, 186–187, 278–279",
+      "image": null,
+      "groups": [
+        "senior-men"
+      ],
+      "intro": "Converting the fairways to Windsor Green changed how the club managed summer playing conditions and its demand for water.",
+      "paragraphs": [
+        "The conversion to Windsor Green, a fine couch variety, became a significant part of Tauranga’s greenkeeping history. The Board’s approach combined improved summer playing conditions with reduced reliance on fairway watering. A club-history update supplied in November 2026 records the fairway conversion as almost complete and its contribution to reducing water use as substantial.",
+        "Mowat describes the choice facing the Board: install comprehensive fairway irrigation or establish grasses better able to withstand dry summers. David Ormsby advised the club on suitable Cynodon cultivars, with Windsor Green selected. The book records concerns about both the capital and continuing cost of irrigation and the long-term availability of enough water.",
+        "The Board at the time faced the prospect of replacing the club’s irrigation system at a substantial cost, potentially requiring significant debt. Avoiding the need to irrigate the fairways represented a major saving. The Board’s decision to pursue a grass that reduced reliance on fairway watering also showed foresight about water use, anticipating pressures that then lay well into the future.",
+        "Mowat places the first trial on the 11th and 13th fairways, with differing dates in the book: page 186 says 2000, while page 144 gives November 2001. The book remains the primary reference for the chronology; the precise trial date is retained as a source discrepancy.",
+        "The initial establishment was not straightforward. Mowat describes slow growth, members’ doubts and the need for staff to learn how to manage the new surface. Brendan Allen developed its management and proposed using material removed by grooving the established fairways to plant others. Windsor Green reduced the need for watering, but required mowing and mechanical treatment, and underwent winter dormancy.",
+        "The way the grass was obtained also helped make the conversion affordable. The later club-history account recalls an element of good fortune: the supplier placed no restriction on propagating the grass elsewhere on the course, avoiding what would ordinarily have been a separate cost for each fairway. The club could therefore manage its spread using existing staff, plant material and other club resources. This account of the supplier arrangement has not been checked against an original agreement.",
+        "The later book account supports the practical importance of propagation from within the course. Groovings were trialled on the second fairway and part of the sixth in 2005. Purchased turf was used for the rest of the sixth in 2006, but its cost and labour requirements encouraged a return to material taken from the club’s established fairways. Mowat records conversions of the eighth in 2008, the tenth in 2009 and the eighteenth in 2011.",
+        "This was also a story of staff and member effort. The veterans’ account on page 133 records volunteers laying Windsor Green stolons on the eighteenth fairway and in the turf nursery, placing that work in 2010; the water chapter dates the successful eighteenth-fairway conversion to 2011. The accounts may describe different stages of the work. The later short-course facility also used Windsor Green harvested from the established fairways, laid by club staff.",
+        "Taken together, the accounts describe a gradual change in the playing surface and in the club’s approach to water: establish suitable turf, learn how to manage it, and use material already growing on the course to extend the conversion. The November 2026 update records the programme as almost complete. This later information is separate from the book’s imagined future."
+      ],
+      "era": "modern",
+      "record_type": "historical-story",
+      "source_kind": "book-and-member-recollection",
+      "review_status": "draft",
+      "book_pages": [
+        143,
+        144,
+        145,
+        146,
+        186,
+        187,
+        133,
+        278,
+        279
+      ],
+      "topics": [
+        "greenkeeping",
+        "course-development"
+      ],
+      "source_note": "Based on Pars from the Past, edited by David G. S. Mowat (2014), pp. 133, 143–146, 186–187 and 278–279, with a club-history update supplied in November 2026. The Board at the time is credited with the irrigation and water-use foresight. The supplier arrangement and near-completion by 2026 are later additions; no original supplier agreement or quantified water-use records have been supplied. Mowat’s account takes precedence for dates. The imagined future on pp. 280–284 has not been used as factual evidence."
     }
   ],
   "timeline": [

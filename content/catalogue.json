@@ -1,0 +1,1311 @@
+{
+  "topics": [
+    {
+      "id": "greenkeeping",
+      "title": "Greenkeeping",
+      "description": "The people, equipment and turf care behind the playing conditions.",
+      "book_range": [
+        176,
+        182
+      ],
+      "articles": [
+        "greenkeepers",
+        "james-mowat",
+        "postwar-revival",
+        "harris-course",
+        "water-and-irrigation",
+        "windsor-green"
+      ]
+    },
+    {
+      "id": "resident-professionals",
+      "title": "Resident professionals",
+      "description": "Teaching, playing, equipment and service to members.",
+      "book_range": [
+        164,
+        175
+      ],
+      "articles": [
+        "james-mowat",
+        "professionals-later",
+        "juniors-1950s",
+        "ladies-nine-hole",
+        "short-course"
+      ]
+    },
+    {
+      "id": "life-members",
+      "title": "Life members",
+      "description": "The book’s roll of honour and later additions contributed by members.",
+      "book_range": [
+        304,
+        304
+      ],
+      "articles": [
+        "anne-mark",
+        "una-wickham",
+        "veterans-service",
+        "ladies-nine-hole"
+      ]
+    },
+    {
+      "id": "individual-stories",
+      "title": "Individual stories & families",
+      "description": "Find a person, a family or a first-hand recollection.",
+      "book_range": [
+        203,
+        228
+      ],
+      "articles": [
+        "beginnings",
+        "champions",
+        "anne-mark",
+        "una-wickham",
+        "personal-recollections",
+        "ward-family",
+        "juniors-growing",
+        "daves-imagined-century"
+      ]
+    },
+    {
+      "id": "club-groups",
+      "title": "Club groups",
+      "description": "Women, men, nine-hole golfers, juniors and veterans, with stories shared across groups.",
+      "book_range": [
+        59,
+        138
+      ],
+      "articles": [
+        "ladies-between-wars",
+        "veterans-beginnings",
+        "juniors-1950s",
+        "ladies-nine-hole",
+        "women-veterans",
+        "veterans-service",
+        "twilight-and-business-house",
+        "juniors-growing"
+      ]
+    },
+    {
+      "id": "course-development",
+      "title": "The course & its development",
+      "description": "Layouts, greens, water, trees and facilities across successive generations.",
+      "book_range": [
+        21,
+        58
+      ],
+      "articles": [
+        "domain-course",
+        "gate-pa",
+        "course-redesign",
+        "wartime-course",
+        "postwar-revival",
+        "harris-course",
+        "water-and-irrigation",
+        "trees-and-memory",
+        "short-course",
+        "windsor-green"
+      ]
+    },
+    {
+      "id": "tournaments",
+      "title": "Tournaments & visiting golfers",
+      "description": "Club tournaments, national events, exhibitions and their competitors.",
+      "book_range": [
+        229,
+        276
+      ],
+      "articles": [
+        "invitation-tournament",
+        "spalding-masters",
+        "nzpga-championships",
+        "exhibition-visitors",
+        "carrus-open",
+        "una-memorial"
+      ]
+    },
+    {
+      "id": "clubhouses-administration",
+      "title": "Clubhouses & administration",
+      "description": "Buildings, governance and the people organising club life.",
+      "book_range": [
+        139,
+        163
+      ],
+      "articles": [
+        "club-life",
+        "between-the-wars",
+        "clubhouse-1938",
+        "clubhouse-1954",
+        "women-in-leadership",
+        "board-of-management",
+        "clubhouse-2001"
+      ]
+    },
+    {
+      "id": "honours-rules",
+      "title": "Honours, trophies & rules",
+      "description": "Championship records, donated trophies, handicapping and historical rules.",
+      "book_range": [
+        286,
+        304
+      ],
+      "articles": [
+        "champions",
+        "handicapping",
+        "juniors-1950s"
+      ]
+    },
+    {
+      "id": "tauranga-life",
+      "title": "Tauranga life & local businesses",
+      "description": "The wider community, advertising and everyday life around the club.",
+      "book_range": null,
+      "articles": [
+        "beginnings",
+        "club-life",
+        "twilight-and-business-house"
+      ]
+    }
+  ],
+  "life_members": [
+    {
+      "name": "Mr E T Baker",
+      "year": "Honoured prior to 1948",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr R T Goulding",
+      "year": "Honoured prior to 1948",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr D A Ivory",
+      "year": "Honoured prior to 1948",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr A J Mirrielees",
+      "year": "Honoured prior to 1948",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr P H Roach",
+      "year": "Honoured prior to 1948",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr H B Lusk",
+      "year": "1948 - 49",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr C Steedman",
+      "year": "1948 - 49",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr J A Towsey",
+      "year": "1948 - 49",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr S G Wilcock",
+      "year": "1948 - 49",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr H J W Bradmore",
+      "year": "1958",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr A W Nicol",
+      "year": "1958",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr R J Phelan",
+      "year": "1963",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr A L Davidson",
+      "year": "1964",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr K Nattrass",
+      "year": "1973",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr J C Hare",
+      "year": "1980",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr K Frith",
+      "year": "1985",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr A Gallagher",
+      "year": "1988",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr M W White",
+      "year": "1991",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr N Copestake",
+      "year": "1997",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr B Child",
+      "year": "1997",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr K D Dawkins",
+      "year": "2000",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr D G S Mowat",
+      "year": "2006",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mr E A Craig",
+      "year": "2007",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs E Hanna",
+      "year": "Honoured prior to 1948",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs S R Gordon",
+      "year": "Honoured prior to 1948",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs A Mark",
+      "year": "1963",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs J Carnachan",
+      "year": "1972",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs J Edwards",
+      "year": "1980",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs E (Nen) Sim",
+      "year": "1985",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs E Galbally",
+      "year": "1994",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs H Casey",
+      "year": "2000",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs P Copestake",
+      "year": "2005",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Mrs P Sandlant",
+      "year": "2006",
+      "source": "Pars from the Past (2014), p. 304",
+      "book_page": 304
+    },
+    {
+      "name": "Jack Carter",
+      "year": "2019",
+      "source": "Bruce Partridge, 10 November 2026",
+      "person_id": "jack-carter",
+      "added_after_book": true
+    },
+    {
+      "name": "Alison Holdem",
+      "year": "2019",
+      "source": "Bruce Partridge, 10 November 2026",
+      "person_id": "alison-holdem",
+      "added_after_book": true
+    },
+    {
+      "name": "Adrienne Coad",
+      "year": "2022",
+      "source": "Bruce Partridge, 10 November 2026",
+      "person_id": "adrienne-coad",
+      "added_after_book": true
+    },
+    {
+      "name": "Jackie Reynish",
+      "year": "2023",
+      "source": "Bruce Partridge, 10 November 2026",
+      "person_id": "jackie-reynish",
+      "added_after_book": true
+    },
+    {
+      "name": "Chris McAlpine",
+      "year": "2024",
+      "source": "Bruce Partridge, 10 November 2026",
+      "person_id": "chris-mcalpine",
+      "added_after_book": true
+    }
+  ],
+  "people": [
+    {
+      "id": "jack-carter",
+      "name": "Jack Carter",
+      "summary": "From cleaning members’ clubs as a twelve-year-old in 1957 to junior golf, provincial teams and life membership in 2019: Jack Carter tells his own story.",
+      "topics": [
+        "life-members",
+        "individual-stories",
+        "resident-professionals",
+        "club-groups",
+        "tournaments",
+        "clubhouses-administration"
+      ],
+      "book_pages": [
+        78
+      ],
+      "source": "Bruce Partridge, 10 November 2026",
+      "life_membership_year": 2019,
+      "story": "jack-carter.html"
+    },
+    {
+      "id": "alison-holdem",
+      "name": "Alison Holdem",
+      "summary": "Life membership awarded in 2019, as contributed by Bruce Partridge.",
+      "topics": [
+        "life-members",
+        "individual-stories",
+        "club-groups",
+        "honours-rules"
+      ],
+      "book_pages": [
+        106,
+        303
+      ],
+      "source": "Bruce Partridge, 10 November 2026",
+      "life_membership_year": 2019
+    },
+    {
+      "id": "adrienne-coad",
+      "name": "Adrienne Coad",
+      "summary": "Life membership awarded in 2022, as contributed by Bruce Partridge.",
+      "topics": [
+        "life-members",
+        "individual-stories",
+        "club-groups"
+      ],
+      "book_pages": [
+        105,
+        138,
+        298
+      ],
+      "source": "Bruce Partridge, 10 November 2026",
+      "life_membership_year": 2022
+    },
+    {
+      "id": "jackie-reynish",
+      "name": "Jackie Reynish",
+      "summary": "Life membership awarded in 2023, as contributed by Bruce Partridge.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [],
+      "source": "Bruce Partridge, 10 November 2026",
+      "life_membership_year": 2023
+    },
+    {
+      "id": "chris-mcalpine",
+      "name": "Chris McAlpine",
+      "summary": "Life membership awarded in 2024, as contributed by Bruce Partridge.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        296
+      ],
+      "source": "Bruce Partridge, 10 November 2026",
+      "life_membership_year": 2024
+    },
+    {
+      "id": "noel-johnson",
+      "name": "Noel Johnson",
+      "summary": "Named account in Pars from the Past, p. 77.",
+      "book_pages": [
+        77
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 77"
+    },
+    {
+      "id": "eddie-burgess",
+      "name": "Eddie Burgess",
+      "summary": "Named account in Pars from the Past, p. 77.",
+      "book_pages": [
+        77
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 77"
+    },
+    {
+      "id": "jay-carter",
+      "name": "Jay Carter",
+      "summary": "Named account in Pars from the Past, p. 172.",
+      "book_pages": [
+        172
+      ],
+      "topics": [
+        "resident-professionals",
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 172"
+    },
+    {
+      "id": "bruce-burbery",
+      "name": "Bruce Burbery",
+      "summary": "Named account in Pars from the Past, p. 78.",
+      "book_pages": [
+        78
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 78"
+    },
+    {
+      "id": "jim-lancaster",
+      "name": "Jim Lancaster",
+      "summary": "Named account in Pars from the Past, p. 79.",
+      "book_pages": [
+        79
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 79"
+    },
+    {
+      "id": "martin-hall",
+      "name": "Martin Hall",
+      "summary": "Named account in Pars from the Past, p. 79.",
+      "book_pages": [
+        79
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 79"
+    },
+    {
+      "id": "josh-geary",
+      "name": "Josh Geary",
+      "summary": "Named account in Pars from the Past, p. 79.",
+      "book_pages": [
+        79
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 79"
+    },
+    {
+      "id": "jared-pender",
+      "name": "Jared Pender",
+      "summary": "Named account in Pars from the Past, p. 80.",
+      "book_pages": [
+        80
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 80"
+    },
+    {
+      "id": "kevin-smith",
+      "name": "Kevin Smith",
+      "summary": "Named account in Pars from the Past, p. 80.",
+      "book_pages": [
+        80
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 80"
+    },
+    {
+      "id": "anne-mark",
+      "name": "Anne Mark",
+      "summary": "Named account in Pars from the Past, p. 94.",
+      "book_pages": [
+        94
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 94"
+    },
+    {
+      "id": "una-wickham",
+      "name": "Una Wickham",
+      "summary": "Named account in Pars from the Past, p. 95.",
+      "book_pages": [
+        95
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 95"
+    },
+    {
+      "id": "joan-mirrielees",
+      "name": "Joan Mirrielees",
+      "summary": "Named account in Pars from the Past, p. 96.",
+      "book_pages": [
+        96
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 96"
+    },
+    {
+      "id": "evelyn-nen-sim",
+      "name": "Evelyn (Nen) Sim",
+      "summary": "Named account in Pars from the Past, p. 97.",
+      "book_pages": [
+        97
+      ],
+      "topics": [
+        "individual-stories",
+        "life-members"
+      ],
+      "source": "Pars from the Past (2014), p. 97",
+      "story": "life-members.html#nen-sim"
+    },
+    {
+      "id": "dick-phelan",
+      "name": "Dick Phelan",
+      "summary": "Named account in Pars from the Past, p. 123.",
+      "book_pages": [
+        123
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 123"
+    },
+    {
+      "id": "george-willcock",
+      "name": "George Willcock",
+      "summary": "Named account in Pars from the Past, p. 123.",
+      "book_pages": [
+        123
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 123"
+    },
+    {
+      "id": "arthur-towsey",
+      "name": "Arthur Towsey",
+      "summary": "Named account in Pars from the Past, p. 124.",
+      "book_pages": [
+        124
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 124"
+    },
+    {
+      "id": "harry-bradmore",
+      "name": "Harry Bradmore",
+      "summary": "Named account in Pars from the Past, p. 124.",
+      "book_pages": [
+        124
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 124"
+    },
+    {
+      "id": "gavin-wallace",
+      "name": "Gavin Wallace",
+      "summary": "Named account in Pars from the Past, p. 124.",
+      "book_pages": [
+        124
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 124"
+    },
+    {
+      "id": "frank-macklow",
+      "name": "Frank Macklow",
+      "summary": "Named account in Pars from the Past, p. 125.",
+      "book_pages": [
+        125
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 125"
+    },
+    {
+      "id": "syd-randell",
+      "name": "Syd Randell",
+      "summary": "Named account in Pars from the Past, p. 125.",
+      "book_pages": [
+        125
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 125"
+    },
+    {
+      "id": "james-mowat",
+      "name": "James Mowat",
+      "summary": "Named account in Pars from the Past, p. 165.",
+      "book_pages": [
+        165
+      ],
+      "topics": [
+        "resident-professionals",
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 165"
+    },
+    {
+      "id": "jim-paterson",
+      "name": "Jim Paterson",
+      "summary": "Named account in Pars from the Past, p. 167.",
+      "book_pages": [
+        167
+      ],
+      "topics": [
+        "resident-professionals",
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 167"
+    },
+    {
+      "id": "greg-holst",
+      "name": "Greg Holst",
+      "summary": "Named account in Pars from the Past, p. 168.",
+      "book_pages": [
+        168
+      ],
+      "topics": [
+        "resident-professionals",
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 168"
+    },
+    {
+      "id": "allan-snape",
+      "name": "Allan Snape",
+      "summary": "Named account in Pars from the Past, p. 169.",
+      "book_pages": [
+        169
+      ],
+      "topics": [
+        "resident-professionals",
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 169"
+    },
+    {
+      "id": "rick-barker",
+      "name": "Rick Barker",
+      "summary": "Named account in Pars from the Past, p. 171.",
+      "book_pages": [
+        171
+      ],
+      "topics": [
+        "resident-professionals",
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 171"
+    },
+    {
+      "id": "grant-silvester",
+      "name": "Grant Silvester",
+      "summary": "Named account in Pars from the Past, p. 177.",
+      "book_pages": [
+        177
+      ],
+      "topics": [
+        "greenkeeping",
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 177"
+    },
+    {
+      "id": "arnold-shanks",
+      "name": "Arnold Shanks",
+      "summary": "Named account in Pars from the Past, p. 204.",
+      "book_pages": [
+        204
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 204"
+    },
+    {
+      "id": "david-mowat",
+      "name": "David Mowat",
+      "summary": "Named account in Pars from the Past, p. 210.",
+      "book_pages": [
+        210
+      ],
+      "topics": [
+        "individual-stories"
+      ],
+      "source": "Pars from the Past (2014), p. 210"
+    },
+    {
+      "id": "elsie-hanna",
+      "name": "Elsie Hanna",
+      "summary": "Elsie arrived in Tauranga in 1922, won the senior championship in 1924 and 1926, and served on the women’s committee from 1926 to 1939. She became the club’s first woman Life Member before 1948.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        97,
+        98
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#elsie-hanna"
+    },
+    {
+      "id": "noel-copestake",
+      "name": "Noel Copestake",
+      "summary": "Noel joined in 1960 and served as captain, president and a member of the inaugural Board. Elected a Life Member in 1997, he contributed to twilight golf, pennant teams and the volunteers known as the Wednesday Firewood Gang.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        65,
+        130
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#noel-copestake"
+    },
+    {
+      "id": "bernie-child",
+      "name": "Bernie Child",
+      "summary": "Bernie brought the skills of a machinery contractor to the club’s many volunteer projects. He organised work for the veterans, served as their president in 1995 and built the drinking fountain behind the first tee. His service was recognised with Life Membership in 1997.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        65,
+        130
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#bernie-child"
+    },
+    {
+      "id": "hazel-casey",
+      "name": "Hazel Casey",
+      "summary": "Hazel helped beginners, schoolchildren and women new to golf. The supplied feature remembers a Saturday group known as Hazel’s Girls and her support for the introduction of nine-hole golf.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        105
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#hazel-casey"
+    },
+    {
+      "id": "ernie-craig",
+      "name": "Ernie Craig",
+      "summary": "Ernie’s long service helped secure the administration and development of the Racecourse Reserve. Mowat describes his work on the reserve’s management arrangements and his Life Membership of both the golf and racing clubs.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        24
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#ernie-craig"
+    },
+    {
+      "id": "peg-copestake",
+      "name": "Peg Copestake",
+      "summary": "The supplied achievement summary brings together Peg’s playing record, rules knowledge and volunteer service. It records her joining in 1961, her albatross at the sixth hole in 1966, and her work with juniors and new members.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        38,
+        72,
+        96,
+        291,
+        292
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#peg-copestake"
+    },
+    {
+      "id": "harold-lusk",
+      "name": "H B Lusk",
+      "summary": "Mowat credits H B Lusk with helping design the course when the club moved to the Racecourse Reserve and records Life Membership in 1948–49.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        61
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#harold-lusk"
+    },
+    {
+      "id": "alick-mirrielees",
+      "name": "A J Mirrielees",
+      "summary": "Mowat describes A J Mirrielees’s work on the extensive planting programme that helped shape the course. He was among the club’s Life Members honoured before 1948.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        61,
+        97,
+        189
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#alick-mirrielees"
+    },
+    {
+      "id": "phyll-sandlant",
+      "name": "Phyll Sandlant",
+      "summary": "Phyll led the local promotion of women’s nine-hole golf. Her account in Mowat’s book recalls 96 women responding to the first invitation in February 1998, followed by coaching with Rick Barker and support from member volunteers. She became a Life Member in 2006.",
+      "topics": [
+        "life-members",
+        "individual-stories"
+      ],
+      "book_pages": [
+        106,
+        107
+      ],
+      "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
+      "story": "life-members.html#phyll-sandlant"
+    }
+  ],
+  "source_records": [
+    {
+      "id": "masters-1968-event",
+      "title": "The 1968 Spalding Masters",
+      "topics": [
+        "tournaments",
+        "honours-rules"
+      ],
+      "printed_pages": [
+        1,
+        19,
+        24,
+        25,
+        33
+      ],
+      "summary": "The programme schedules 54 holes on 8–9 January, with a $2,000 purse. Its blank field sheets list entrants; results are supplied separately by the club history.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-greenkeeping",
+      "title": "Preparing Gate Pa: Silvester and Butler",
+      "topics": [
+        "greenkeeping",
+        "course-development",
+        "individual-stories"
+      ],
+      "printed_pages": [
+        15
+      ],
+      "summary": "A contemporary account and photograph of Grant Silvester and Wally Butler preparing the course, including Silvester’s assessment of Commander Harris.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-professional",
+      "title": "Jim Paterson and the professional shop",
+      "topics": [
+        "resident-professionals",
+        "individual-stories",
+        "tauranga-life"
+      ],
+      "printed_pages": [
+        20,
+        21,
+        24
+      ],
+      "summary": "A portrait, professional-shop advertisement and tournament field entry place Jim Paterson within the 1968 club.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-players",
+      "title": "Visiting players in the 1968 programme",
+      "topics": [
+        "tournaments",
+        "individual-stories"
+      ],
+      "printed_pages": [
+        5,
+        24,
+        37,
+        43,
+        45
+      ],
+      "summary": "Named photographs include Walter Godfrey, Guy Wolstenholme, Martin Roesink, Billy Dunk, Brian Boys, Frank Malloy and other competitors.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-women",
+      "title": "Mrs K. Johnston: a national champion",
+      "topics": [
+        "individual-stories",
+        "club-groups"
+      ],
+      "printed_pages": [
+        16
+      ],
+      "summary": "The programme reports her victory in the preceding August at the New Zealand Māori Ladies’ Championship. Its Johnston spelling differs from Johnstone in the book.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-macklow",
+      "title": "Frank Macklow: golf, cricket and hockey",
+      "topics": [
+        "individual-stories",
+        "club-groups"
+      ],
+      "printed_pages": [
+        27
+      ],
+      "summary": "A portrait and profile provide sporting and personal context for Macklow’s veterans achievements.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-hockin",
+      "title": "Noel Hockin and the L. C. Smith Rose Bowl",
+      "topics": [
+        "individual-stories",
+        "clubhouses-administration",
+        "tournaments"
+      ],
+      "printed_pages": [
+        39,
+        43
+      ],
+      "summary": "A profile of regional and club service. The January 1968 programme presents Hockin as still serving, whereas the book gives a 1967 retirement.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-course",
+      "title": "Gate Pa’s 1968 scorecard and course views",
+      "topics": [
+        "course-development",
+        "clubhouses-administration"
+      ],
+      "printed_pages": [
+        22,
+        23,
+        28
+      ],
+      "summary": "The card records 6,025 yards, par 71. An aerial view and photographs from the 18th green show the course and clubhouse.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-honours",
+      "title": "Honours boards through 1967",
+      "topics": [
+        "honours-rules"
+      ],
+      "printed_pages": [
+        31,
+        43
+      ],
+      "summary": "Earlier honours lists complement the book’s appendices. Men’s Open winners for 1966–67 differ between the programme and the book; retain both accounts pending checking.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-rules",
+      "title": "Early rules reproduced in the programme",
+      "topics": [
+        "honours-rules"
+      ],
+      "printed_pages": [
+        35
+      ],
+      "summary": "Seventeen rules attributed by the programme to St Andrews in 1812. Their stated provenance is a copy displayed by Harry T. Moore; they are not Tauranga’s tournament rules.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-1968-advertising",
+      "title": "Tauranga in 1968 through its advertising",
+      "topics": [
+        "tauranga-life"
+      ],
+      "printed_pages": [
+        2,
+        8,
+        10,
+        14,
+        18,
+        20,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48
+      ],
+      "summary": "Shops, clothing, motels, dining, building trades and transport give the tournament a wider social setting. Inside-cover travel and appliance advertisements and the back cover add further context.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    },
+    {
+      "id": "masters-rotorua-group",
+      "title": "Professionals at the earlier Rotorua Masters",
+      "topics": [
+        "tournaments",
+        "individual-stories"
+      ],
+      "printed_pages": [
+        7
+      ],
+      "summary": "The named group photograph reproduced in the 1968 programme is from the earlier Rotorua event, not Tauranga’s 1968 field.",
+      "source": "Spalding Masters official programme, January 1968",
+      "source_id": "spalding-1968"
+    }
+  ],
+  "corrections": [
+    {
+      "id": "carter-coad",
+      "person": "Jack Carter",
+      "text": "Maurice Coad is the correct spelling, not Maurice Code, in two places in Jack Carter’s story.",
+      "source": "Bruce Partridge, 10 November 2026",
+      "status": "Applied to the website transcription on 10 November 2026; original DOCX retained unchanged."
+    }
+  ],
+  "programme_photographs": [
+    {
+      "id": "course-aerial",
+      "path": "assets/programme-1968-course-aerial.jpg",
+      "caption": "Aerial view of Tauranga Golf Course, racecourse and main highway.",
+      "printed_page": 23,
+      "pdf_page": 25
+    },
+    {
+      "id": "clubhouse-from-18th-green",
+      "path": "assets/programme-1968-clubhouse-from-18th-green.jpg",
+      "caption": "Clubhouse viewed from the 18th green.",
+      "printed_page": 28,
+      "pdf_page": 30
+    },
+    {
+      "id": "18th-fairway-and-finishing-holes",
+      "path": "assets/programme-1968-18th-fairway-and-finishing-holes.jpg",
+      "caption": "The 18th fairway and finishing holes, viewed from the 18th green.",
+      "printed_page": 28,
+      "pdf_page": 30
+    },
+    {
+      "id": "rotorua-masters-professionals",
+      "path": "assets/programme-1968-rotorua-masters-professionals.jpg",
+      "caption": "Professionals at the earlier Rotorua Spalding Masters; this is not the Tauranga 1968 field photograph.",
+      "printed_page": 7,
+      "pdf_page": 9
+    },
+    {
+      "id": "grant-silvester-and-wally-butler",
+      "path": "assets/programme-1968-grant-silvester-and-wally-butler.jpg",
+      "caption": "Grant Silvester at the tractor wheel with assistant Wally Butler, as identified in the accompanying article.",
+      "printed_page": 15,
+      "pdf_page": 17
+    },
+    {
+      "id": "mrs-k-johnston-first-tee",
+      "path": "assets/programme-1968-mrs-k-johnston-first-tee.jpg",
+      "caption": "Mrs K. Johnston on Tauranga’s first tee; spelling follows the programme.",
+      "printed_page": 16,
+      "pdf_page": 18
+    },
+    {
+      "id": "frank-macklow",
+      "path": "assets/programme-1968-frank-macklow.jpg",
+      "caption": "Frank G. Macklow, featured in Champion Among Veterans.",
+      "printed_page": 27,
+      "pdf_page": 29
+    },
+    {
+      "id": "noel-hockin-rose-bowl",
+      "path": "assets/programme-1968-noel-hockin-rose-bowl.jpg",
+      "caption": "Noel Hockin with the L. C. Smith Rose Bowl.",
+      "printed_page": 39,
+      "pdf_page": 41
+    },
+    {
+      "id": "billy-dunk-and-family",
+      "path": "assets/programme-1968-billy-dunk-and-family.jpg",
+      "caption": "Billy Dunk with his wife Annette and son William.",
+      "printed_page": 45,
+      "pdf_page": 47
+    },
+    {
+      "id": "walter-godfrey",
+      "path": "assets/programme-1968-walter-godfrey.jpg",
+      "caption": "Walter Godfrey.",
+      "printed_page": 5,
+      "pdf_page": 7
+    },
+    {
+      "id": "guy-wolstenholme",
+      "path": "assets/programme-1968-guy-wolstenholme.jpg",
+      "caption": "Guy Wolstenholme, identified as G. B. Wolstenholme, Great Britain.",
+      "printed_page": 37,
+      "pdf_page": 39
+    },
+    {
+      "id": "martin-roesink",
+      "path": "assets/programme-1968-martin-roesink.jpg",
+      "caption": "Martin Roesink of Holland.",
+      "printed_page": 45,
+      "pdf_page": 47
+    },
+    {
+      "id": "brian-boys",
+      "path": "assets/programme-1968-brian-boys.jpg",
+      "caption": "Brian Boys, Hamilton.",
+      "printed_page": 45,
+      "pdf_page": 47
+    },
+    {
+      "id": "frank-malloy",
+      "path": "assets/programme-1968-frank-malloy.jpg",
+      "caption": "Frank Malloy, Auckland.",
+      "printed_page": 37,
+      "pdf_page": 39
+    },
+    {
+      "id": "jim-paterson",
+      "path": "assets/programme-1968-jim-paterson.jpg",
+      "caption": "Jim Paterson, Tauranga club professional.",
+      "printed_page": 21,
+      "pdf_page": 23
+    },
+    {
+      "id": "dennis-sullivan",
+      "path": "assets/programme-1968-dennis-sullivan.jpg",
+      "caption": "Dennis Sullivan, North Shore.",
+      "printed_page": 45,
+      "pdf_page": 47
+    },
+    {
+      "id": "len-thomas",
+      "path": "assets/programme-1968-len-thomas.jpg",
+      "caption": "Len Thomas, Western Australia.",
+      "printed_page": 45,
+      "pdf_page": 47
+    },
+    {
+      "id": "lindsay-sharp",
+      "path": "assets/programme-1968-lindsay-sharp.jpg",
+      "caption": "Lindsay Sharp, New South Wales.",
+      "printed_page": 45,
+      "pdf_page": 47
+    },
+    {
+      "id": "tim-woolbank",
+      "path": "assets/programme-1968-tim-woolbank.jpg",
+      "caption": "Tim Woolbank, New South Wales.",
+      "printed_page": 43,
+      "pdf_page": 45
+    }
+  ]
+}

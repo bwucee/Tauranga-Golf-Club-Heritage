@@ -39,8 +39,12 @@ for p in book['pages']:
  if 280<=p['number']<=284:assert 'imagined future' in (R/f"book-page-{p['number']:03}.html").read_text()
 collection=json.loads((R/'content/collection.json').read_text())
 index=json.loads((R/'assets/search-index.json').read_text())
-assert len(index)==305+len(collection['articles'])
-for item in index:assert (R/item['url']).exists()
+catalogue=json.loads((R/'content/catalogue.json').read_text())
+assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+len(json.loads((R/'content/heritage-additions.json').read_text())['trophies'])+3
+for item in index:
+ target=urlsplit(item['url'])
+ assert (R/target.path).exists()
+ if target.fragment:assert target.fragment in scans[R/target.path].ids
 print('PASS: complete 305-page coverage, 25 chapters, images, reference layouts, speculation labels and search targets.')
 
 class SourceText(HTMLParser):
@@ -68,3 +72,20 @@ while todo:
   if target in scans:todo.append(target)
 assert seen==set(scans),f"Unreachable pages: {set(scans)-seen}"
 print(f'PASS: source words preserved in all readers; all {len(seen)} pages reachable from home.')
+
+# Cross-subject membership and contributor-supplied additions must survive each build.
+topics={t['id'] for t in catalogue['topics']}
+for article in collection['articles']:
+ assert article['topics'] and set(article['topics'])<=topics
+for record in catalogue['source_records']:
+ assert set(record['topics'])<=topics
+ assert all(1<=n<=48 for n in record['printed_pages'])
+expected={'Jack Carter':2019,'Alison Holdem':2019,'Adrienne Coad':2022,'Jackie Reynish':2023,'Chris McAlpine':2024}
+assert {p['name']:p['life_membership_year'] for p in catalogue['people'] if p.get('life_membership_year')}==expected
+assert all('Bruce Partridge' in p['source'] for p in catalogue['people'] if p.get('life_membership_year'))
+assert len([m for m in catalogue['life_members'] if not m.get('added_after_book')])==33
+assert 'Maurice Code' not in ' '.join(json.loads((R/'content/heritage-additions.json').read_text())['jack_carter']['paragraphs'])
+assert (R/'jack-carter.html').read_text().count('Maurice Coad')>=2
+assert len({p['id'] for p in catalogue['people']})==len(catalogue['people'])
+assert all(not (280<=n<=284) for p in catalogue['people'] for n in p['book_pages'])
+print('PASS: subject cross-links, programme references, original life-members roll and five later additions.')
