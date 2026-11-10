@@ -956,6 +956,103 @@
       "source": "Miss Una Wickham on winning the first Bay of Plenty Sportsman of the Year.jpg",
       "book_pages": [],
       "story": "una-wickham.html"
+    },
+    {
+      "id": "chris-mcalpine",
+      "path": "assets/heritage-chris-mcalpine.jpg",
+      "title": "Chris McAlpine",
+      "caption": "Chris McAlpine, Life Member and long-time manager of Bay of Plenty Golf.",
+      "people": [
+        "chris-mcalpine"
+      ],
+      "source": "Club Heritage / Chris-McAlpine-dark-background.jpg",
+      "book_pages": [],
+      "story": "person-chris-mcalpine.html",
+      "added": "11 November 2026"
+    },
+    {
+      "id": "josh-geary-carrus-2013",
+      "path": "assets/heritage-josh-geary-carrus-2013.jpg",
+      "title": "Josh Geary — 2013 Carrus Tournament winner",
+      "caption": "Josh Geary with his winning cup from the 2013 Carrus Tournament.",
+      "people": [
+        "josh-geary"
+      ],
+      "source": "Club Heritage / Josh Geary Carrus Winner 20131CC4ED1D-B971-463E-82C0-85047ED72B4D-topaz-face-upscale-4x.jpeg",
+      "book_pages": [],
+      "story": "carrus-open.html",
+      "added": "11 November 2026",
+      "date_note": "2013 Carrus Tournament, as identified by the contributor."
+    },
+    {
+      "id": "adrienne-coad",
+      "path": "assets/heritage-adrienne-coad.jpg",
+      "title": "Adrienne Coad",
+      "caption": "Adrienne Coad, Life Member.",
+      "people": [
+        "adrienne-coad"
+      ],
+      "source": "Club Heritage / Adrienne CoadAdrienne Coad-topaz-face-sharpen-upscale-4x.jpeg",
+      "book_pages": [],
+      "story": "person-adrienne-coad.html",
+      "added": "11 November 2026"
+    },
+    {
+      "id": "alison-holdem",
+      "path": "assets/heritage-alison-holdem.jpg",
+      "title": "Alison Holdem",
+      "caption": "Alison Holdem, Life Member.",
+      "people": [
+        "alison-holdem"
+      ],
+      "source": "Club Heritage / Alison Holdem8C200FDF-57B6-42C1-B2BA-71F38E26A9D7_4_5005_c-topaz-face-upscale-4x.jpeg",
+      "book_pages": [],
+      "story": "person-alison-holdem.html",
+      "added": "11 November 2026"
+    },
+    {
+      "id": "club-stalwarts-mowat",
+      "path": "assets/heritage-club-stalwarts-mowat.jpg",
+      "title": "Maurice White, Phyl Sandlant, Keith Dawkins and David Mowat",
+      "caption": "Left to right: Maurice White, Phyl Sandlant, Keith Dawkins and David Mowat. Phyl was a champion supporter and promoter of ladies’ nine-hole golf; David Mowat was the author of Pars from the Past.",
+      "people": [
+        "maurice-white",
+        "phyll-sandlant",
+        "keith-dawkins",
+        "david-mowat"
+      ],
+      "source": "Club Heritage / Maurice White Phil Sandlant Keith Dawkins Dave Mowat1138966F-8749-4B41-85F1-2BD3AFCA8230-topaz-face-sharpen-upscale-4x.jpeg",
+      "book_pages": [],
+      "story": "life-members.html#phyll-sandlant",
+      "added": "11 November 2026"
+    },
+    {
+      "id": "keith-dawkins",
+      "path": "assets/heritage-keith-dawkins.jpg",
+      "title": "Keith Dawkins",
+      "caption": "Keith Dawkins, Life Member.",
+      "people": [
+        "keith-dawkins"
+      ],
+      "source": "Club Heritage / Keith DawkinsCA86D0B1-8ECF-4F6F-8517-A158CB3B8419-topaz-face-color-upscale-4x.jpeg",
+      "book_pages": [],
+      "story": "person-keith-dawkins.html",
+      "added": "11 November 2026"
+    },
+    {
+      "id": "dawkins-sandlant-carter",
+      "path": "assets/heritage-dawkins-sandlant-carter.jpg",
+      "title": "Keith Dawkins, Mike Sandland and Jack Carter",
+      "caption": "Left to right: Keith Dawkins, Mike Sandland and Jack Carter — long-time mates and club stalwarts.",
+      "people": [
+        "keith-dawkins",
+        "mike-sandland",
+        "jack-carter"
+      ],
+      "source": "Club Heritage / Keith Dawkins, Mike Sandlant and Jack Carter.jpeg",
+      "book_pages": [],
+      "story": "jack-carter.html",
+      "added": "11 November 2026"
     }
   ],
   "jack_carter": {

@@ -68,14 +68,14 @@ def build_heritage_additions(root, page, heading):
     body += '</ul><h2>Share a memory or arrange an interview</h2><p>Send your recollection to the club member who shared this collection with you, or use the <a href="feedback.html">feedback options</a>. Please include your name, when you joined, approximate dates and the names of people mentioned. For photographs, include the photographer or owner where known and permission for online use.</p><p>Personal recollections will be credited to the contributor. Historical details will be compared with Mowat’s book and the club’s official history before being incorporated into the wider account.</p><p class="source">Interview prompts adapted from Interview Template for Member Nostalgia.docx, Club History All. Jack Carter’s written recollection was supplied separately.</p></div>'
     page('member-memories.html', 'Member memories', body)
 
-    body = heading('FROM THE CLUB HERITAGE FOLDER', 'Five photographs, more connections.',
+    body = heading('FROM THE CLUB HERITAGE FOLDER', 'Photographs, more connections.',
                    'Separately supplied portraits and event photographs, with their captions and connections to the existing collection.')
-    body += '<p class="source">Some subjects also appear in the book. These files are additional supplied copies or views, not five newly discovered events. Original captions remain within the images where supplied. Photographer credits are not provided in these files.</p><div class="archive-grid">'
+    body += '<p class="source">Some subjects also appear in the book. These files are additional supplied copies or views, not necessarily newly discovered events. Original captions remain within the images where supplied. Photographer credits are not provided in these files.</p><div class="archive-grid">'
     for photo in data['photographs']:
         body += f'<article class="supplied-photo"><figure><a href="{e(photo["path"])}"><img src="{e(photo["path"])}" alt="{e(photo["title"])}" loading="lazy"></a><figcaption>{e(photo["title"])}</figcaption></figure><h2>{e(photo["title"])}</h2><p>{e(photo["caption"])}</p>'
         body += f'<p><a href="{e(photo["story"])}">Read the related account →</a></p>'
         for n in photo['book_pages']:
             body += f'<p class="source"><a href="book-page-{n:03}.html">Compare with Mowat’s account · p. {n} →</a></p>'
-        body += f'<p class="source">Source: Club History All / {e(photo["source"])}. Added 9 November 2026.</p></article>'
+        body += f'<p class="source">Source: Club History All / {e(photo["source"])}. Added {e(photo.get("added", "9 November 2026"))}.</p></article>'
     body += '</div>'
     page('supplied-photographs.html', 'Supplied heritage photographs', body)

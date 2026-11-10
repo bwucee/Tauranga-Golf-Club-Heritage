@@ -504,7 +504,7 @@
     {
       "id": "chris-mcalpine",
       "name": "Chris McAlpine",
-      "summary": "Life membership awarded in 2024, as contributed by Bruce Partridge.",
+      "summary": "Life membership awarded in 2024, as contributed by Bruce Partridge. Long-time manager of Bay of Plenty Golf, as identified by Bruce Partridge on 11 November 2026.",
       "topics": [
         "life-members",
         "individual-stories"
@@ -596,9 +596,11 @@
         79
       ],
       "topics": [
-        "individual-stories"
+        "individual-stories",
+        "tournaments"
       ],
-      "source": "Pars from the Past (2014), p. 79"
+      "source": "Pars from the Past (2014), p. 79",
+      "story": "carrus-open.html"
     },
     {
       "id": "jared-pender",
@@ -1010,6 +1012,37 @@
       ],
       "source": "Life Members Landscape.pdf; existing heritage profile supplied 10 November 2026",
       "story": "life-members.html#phyll-sandlant"
+    },
+    {
+      "id": "keith-dawkins",
+      "name": "Keith Dawkins",
+      "summary": "Life Member and long-time club stalwart.",
+      "topics": [
+        "individual-stories",
+        "life-members"
+      ],
+      "book_pages": [],
+      "source": "Photograph and identification supplied by Bruce Partridge, 11 November 2026"
+    },
+    {
+      "id": "maurice-white",
+      "name": "Maurice White",
+      "summary": "A club stalwart, pictured with Phyl Sandlant, Keith Dawkins and David Mowat.",
+      "topics": [
+        "individual-stories"
+      ],
+      "book_pages": [],
+      "source": "Photograph and identification supplied by Bruce Partridge, 11 November 2026"
+    },
+    {
+      "id": "mike-sandland",
+      "name": "Mike Sandland",
+      "summary": "Long-time mate and club stalwart, pictured with Keith Dawkins and Jack Carter.",
+      "topics": [
+        "individual-stories"
+      ],
+      "book_pages": [],
+      "source": "Photograph and identification supplied by Bruce Partridge, 11 November 2026"
     }
   ],
   "source_records": [

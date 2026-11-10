@@ -98,3 +98,7 @@ Complete original PDFs are available from the Archive. Book references open `doc
 The Mozilla PDF.js distribution is vendored in `pdf-viewer/`, with its Apache 2.0 licence retained. It comes from the official v5.4.624 release; source maps and the sample PDF were omitted, the default document and title were changed, and an archive navigation bar was added. No remote viewer service receives the documents.
 
 The last era is labelled 2000–Future. Book milestones and later sourced life-membership records remain factual entries. `looking-ahead.html` contains separately labelled discussion prompts and links to Dave’s imagined future. Navigation near the top of every collection page exposes the primary starting points and contribution links formerly easy to miss in the footer.
+
+## Photographs supplied 11 November 2026
+
+Seven photographs supplied and identified by Bruce Partridge are recorded in `content/heritage-additions.json`. Web copies preserve the full framing. `scripts/contributed_photos.py` places them on related person pages, the Carrus story, Jack Carter’s account and Phyll Sandlant’s contributed profile without changing original book readers. Added person records cover Keith Dawkins, Maurice White and Mike Sandland. Captions follow the contributor’s identification; the original filename spelling Sandlant is retained in the source record. Photograph dates are unspecified except the identified 2013 Carrus event.
