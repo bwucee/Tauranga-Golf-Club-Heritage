@@ -28,13 +28,15 @@ def build_heritage_additions(root, page, heading):
     body = heading('SERVICE TO THE CLUB', 'Our Life Members.',
                    'The honour roll published in Pars from the Past in 2014, presented as a starting point for a growing record of service.')
     body += '<div class="prose"><p>This list follows Mowat’s published roll. Dates are the dates of recognition as recorded there. “Prior to 1948” and “1948–49” retain the book’s dating. The list is historical through 2014; later appointments can be added from club records.</p><p><a href="book-page-304.html">View the original honour roll · p. 304 →</a> · <a href="book-page-061.html">Read about the early Life Members · p. 61 →</a></p></div><div class="heritage-table-wrap"><table class="heritage-table"><caption>Life Members recorded in the 2014 book</caption><thead><tr><th scope="col">Member</th><th scope="col">Recognition</th></tr></thead><tbody>'
+    catalogue = json.loads((root/'content/catalogue.json').read_text())
+    member_ids = {member['name']: member['person_id'] for member in catalogue['life_members']}
     for name, date in data['life_members']:
-        body += f'<tr><th scope="row">{e(name)}</th><td>{e(date)}</td></tr>'
+        body += f'<tr><th scope="row"><a href="person-{e(member_ids[name])}.html">{e(name)}</a></th><td>{e(date)}</td></tr>'
     body += '</tbody></table></div><p class="source">Source: David G. S. Mowat, editor, Pars from the Past (2014), p. 304. Read the original page for the printed layout.</p>'
     if data.get('later_life_members'):
         body += '<h2>Later appointments</h2><p>These appointments extend the historical roll above, with their own source attribution.</p>'
         for member in data['later_life_members']:
-            body += f'<p><strong>{e(member["name"])} · {e(member["year"])}</strong><br>Source: <a href="{e(member["link"])}">{e(member["source"])} →</a></p>'
+            body += f'<p><strong><a href="person-{e(member_ids[member["name"]])}.html">{e(member["name"])}</a> · {e(member["year"])}</strong><br>Source: <a href="{e(member["link"])}">{e(member["source"])} →</a></p>'
     if data.get('life_member_profiles'):
         body += '<h2>The people behind the honour roll</h2><p>Profiles added from the supplied Life Members compilation on 10 November 2026. Some reproduce or overlap Mowat’s account; others add later club notices or biographical context. Sources and dates stay with each profile.</p><div class="group-list">'
         for profile in data['life_member_profiles']:

@@ -25,8 +25,23 @@ def build_catalogue(root, page, heading, book, collection, cards):
     page('people-index.html','People index',heading('INDIVIDUALS · FAMILIES · SERVICE','Find a person.','A growing name index linking book accounts and later contributions. This first selection will expand as more stories are added.')+people_list(data['people'])+'<p><a href="search.html">Search every name in the original book →</a></p>')
     for p in data['people']:
         body='<a class="back" href="people-index.html">← People index</a>'+heading('PEOPLE & CLUB LIFE',e(p['name']),e(p['summary']))+tags(p['topics'])
-        if p.get('life_membership_year'):
-            body+=f'<section class="note"><h2>Life membership · {p["life_membership_year"]}</h2><p>Year added 10 November 2026. This addition extends the roll published in 2014.</p><p>Further biographical material can be added as it is contributed.</p></section>'
+        year = p.get('recognition') or p.get('life_membership_year')
+        if year:
+            body += f'<p class="source">Life Membership · {e(str(year))}</p>'
+        if p.get('features'):
+            body += '<div class="prose">'
+            for feature in p['features']:
+                if 'title' in feature:
+                    body += f'<h2>{e(feature["title"])}</h2>'
+                    body += ''.join(f'<p>{e(paragraph)}</p>' for paragraph in feature['paragraphs'])
+                image = e(feature['image'])
+                body += (
+                    f'<figure><a href="{image}"><img src="{image}" alt="{e(feature["alt"])}" loading="lazy"></a>'
+                    f'<figcaption>{e(feature["caption"])}</figcaption></figure>'
+                )
+            body += '</div>'
+        for source in p.get('external_sources', []):
+            body += f'<p class="source"><a href="{e(source["url"])}">{e(source["title"])}</a></p>'
         references = sorted(set(p['book_pages']) | {n for n, ids in mentions.items() if p['id'] in ids})
         if references:
             body += '<section><h2>Follow this person through the book</h2><p>Open the linked web text to follow more names, or view the original page. References retain their 2014 context.</p><ul class="person-references">'
@@ -36,9 +51,15 @@ def build_catalogue(root, page, heading, book, collection, cards):
                 if 280 <= n <= 284: label += ' · Imagined future'
                 body += f'<li><a class="linked-book-text" href="book-page-{n:03}.html">p. {n} · {e(label)}</a> · <a href="documents/pars-from-the-past.pdf#page={n}">Original PDF</a></li>'
             body += '</ul></section>'
-        related = [a for a in collection['articles'] if p['id'] in story_mentions[a['id']] and a['id']+'.html' != p.get('story')]
+        related_ids = set(p.get('related_stories', []))
+        related = {a['id']: a['title'] for a in collection['articles']
+                   if a['id']+'.html' != p.get('story')
+                   and (a['id'] in related_ids or p['id'] in story_mentions[a['id']])}
+        for story_id, title in [('jack-carter', 'Jack Carter’s own golfing history'), ('trophies', 'Trophy register')]:
+            if story_id in related_ids and story_id+'.html' != p.get('story'):
+                related[story_id] = title
         if related:
-            body += '<section><h2>Related stories</h2><ul>' + ''.join(f'<li><a href="{a["id"]}.html">{e(a["title"])}</a></li>' for a in related) + '</ul></section>'
+            body += '<section><h2>Related stories</h2><ul>' + ''.join(f'<li><a href="{story_id}.html">{e(title)}</a></li>' for story_id, title in related.items()) + '</ul></section>'
         if p.get('story'):body+=f'<p><a class="button" href="{p["story"]}">Read the contributed account →</a></p>'
         body+=f'<p class="source">Record source: {e(p["source"])}.</p>'
         url=f'person-{p["id"]}.html';page(url,p['name'],body)
@@ -57,7 +78,7 @@ def build_catalogue(root, page, heading, book, collection, cards):
                 body+='</div></details>'
             body+='</div><aside class="note"><h2>A continuing history</h2><p>A later reflection considers changing health-and-safety expectations and board risk tolerance. It is presented separately in the story, alongside space for future accounts of how volunteering changes.</p></aside>'
         if t['id']=='life-members':
-            body+='<h2>Life members recorded in the 2014 book</h2><p>Names and date wording follow the book’s roll. Open the original page to check its layout.</p><p><a href="book-page-304.html">Original life-members roll · p. 304 →</a></p><ul class="name-index">'+''.join(f'<li>{e(m["name"])} · {e(m["year"])}</li>' for m in data['life_members'] if not m.get('added_after_book'))+'</ul><h2>Additional life members</h2><p>Contributed by Club heritage contribution, 10 November 2026. Listed by award year; these additions are separate from the original book.</p><ul>'+''.join(f'<li><a href="person-{m["person_id"]}.html">{e(m["name"])}</a> · {e(m["year"])}</li>' for m in sorted((m for m in data['life_members'] if m.get('added_after_book')),key=lambda m:(m['year'],m['name'])))+'</ul>'
+            body+='<h2>Life members recorded in the 2014 book</h2><p>Names and date wording follow the book’s roll. Open the original page to check its layout.</p><p><a href="book-page-304.html">Original life-members roll · p. 304 →</a></p><ul class="name-index">'+''.join(f'<li><a href="person-{m["person_id"]}.html">{e(m["name"])}</a> · {e(m["year"])}</li>' for m in data['life_members'] if not m.get('added_after_book'))+'</ul><h2>Additional life members</h2><p>Contributed by Club heritage contribution, 10 November 2026. Listed by award year; these additions are separate from the original book.</p><ul>'+''.join(f'<li><a href="person-{m["person_id"]}.html">{e(m["name"])}</a> · {e(m["year"])}</li>' for m in sorted((m for m in data['life_members'] if m.get('added_after_book')),key=lambda m:(m['year'],m['name'])))+'</ul>'
         if t['id']=='life-members':body+='<p><a href="life-members.html">Read the contributed life-member profiles →</a></p>'
         if t['id']=='individual-stories':body+='<p><a href="member-memories.html">Member memories and ways to contribute →</a></p>'
         if t['id']=='honours-rules':body+='<p><a href="trophies.html">Explore the seven contributed trophy records →</a></p>'
