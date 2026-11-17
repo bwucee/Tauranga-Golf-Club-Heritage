@@ -61,7 +61,8 @@ for p in book['pages']:
 collection=json.loads((R/'content/collection.json').read_text())
 index=json.loads((R/'assets/search-index.json').read_text())
 catalogue=json.loads((R/'content/catalogue.json').read_text())
-assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+len(json.loads((R/'content/heritage-additions.json').read_text())['trophies'])+3+sum(len(s['entries']) for s in catalogue.get('volunteer_sections',[]))+1
+records=json.loads((R/'content/club-records.json').read_text())
+assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+sum(len(records[key]) for key in records)+3+sum(len(s['entries']) for s in catalogue.get('volunteer_sections',[]))+1
 for item in index:
  target=urlsplit(item['url'])
  assert (R/target.path).exists()
@@ -103,14 +104,21 @@ for record in catalogue['source_records']:
  assert set(record['topics'])<=topics
  assert all(1<=n<=48 for n in record['printed_pages'])
 expected={'Jack Carter':2019,'Alison Holdem':2019,'Adrienne Coad':2022,'Jackie Reynish':2023,'Chris McAlpine':2024}
-assert {p['name']:p['life_membership_year'] for p in catalogue['people'] if p.get('life_membership_year')}==expected
-assert all('10 November 2026' in p['source'] for p in catalogue['people'] if p.get('life_membership_year'))
-assert len([m for m in catalogue['life_members'] if not m.get('added_after_book')])==33
+assert expected.items() <= {m['name']:int(m['year']) for m in records['life_members'] if m['year'].isdecimal()}.items()
+for member in records['life_members']:
+ assert member['source'] and member['year']
+ assert member.get('person_id', '') in {p['id'] for p in catalogue['people']} | {''}
+ assert member['name'] in (R/'life-members.html').read_text()
+for entries in (records['roles'], records['championships'], records['developments']):
+ assert all(entry['source'] for entry in entries)
+for trophy in records['trophies']:
+ assert all((trophy | row)['source'] for row in trophy['winners'])
+assert '2026-11' in (R/'club-records.html').read_text()
 assert 'Maurice Code' not in ' '.join(json.loads((R/'content/heritage-additions.json').read_text())['jack_carter']['paragraphs'])
 assert (R/'jack-carter.html').read_text().count('Maurice Coad')>=2
 assert len({p['id'] for p in catalogue['people']})==len(catalogue['people'])
 assert all(not (280<=n<=284) for p in catalogue['people'] for n in p['book_pages'])
-print('PASS: subject cross-links, programme references, original life-members roll and five later additions.')
+print('PASS: subject cross-links, programme references, continuing club registers and sourced life memberships.')
 
 for section in catalogue.get('volunteer_sections',[]):
  for entry in section['entries']:

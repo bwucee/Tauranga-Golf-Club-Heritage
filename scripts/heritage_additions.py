@@ -1,42 +1,14 @@
 """Views for separately supplied club heritage records."""
 import json
 from html import escape as e
+from club_records import life_members_roll
 
-def build_heritage_additions(root, page, heading):
+def build_heritage_additions(root, page, heading, records):
     data = json.loads((root / 'content/heritage-additions.json').read_text())
-    body = heading('TROPHIES & HONOUR ROLLS', 'Names carried forward.',
-                   'Seven trophy records from the club heritage collection, with the recorded winners and links to Dave Mowat’s historical account.')
-    body += '<div class="prose"><p>These are partial transcriptions of the supplied trophy records. A blank year means no winner was entered in that document; it does not establish that no competition took place. Names retain the supplied spelling. The book provides the historical context; additions beyond its coverage are identified here as separate records.</p><p><a href="book-09.html">Veteran men’s golf in Dave’s book →</a> · <a href="life-members.html">Life Members →</a></p></div><div class="group-list">'
-    for trophy in data['trophies']:
-        body += f'<details id="{e(trophy["id"])}"><summary>{e(trophy["title"])}<span>{len(trophy["winners"])} recorded years</span></summary><div class="group-body">'
-        body += f'<p>{e(trophy["context"])}</p>'
-        for n in trophy['book_pages']:
-            body += f'<p class="source"><a href="book-page-{n:03}.html">Historical context · Pars from the Past, p. {n} →</a></p>'
-        if trophy['note']:
-            body += f'<p>{e(trophy["note"])}</p>'
-        if trophy['winners']:
-            body += '<div class="heritage-table-wrap"><table class="heritage-table"><caption>Winners recorded in the supplied document</caption><thead><tr><th scope="col">Year</th><th scope="col">Winner or entry</th></tr></thead><tbody>'
-            for year, winner in trophy['winners']:
-                body += f'<tr><th scope="row">{year}</th><td>{e(winner or "Not entered in the supplied record")}</td></tr>'
-            body += '</tbody></table></div>'
-        else:
-            body += '<p>No winners are entered in the supplied record.</p>'
-        body += f'<p class="source">Source: Club History All / Club Heritage / Men Vets / {e(trophy["source"])}. Added 9 November 2026.</p></div></details>'
-    body += '</div>'
-    page('trophies.html', 'Trophy register', body)
-
     body = heading('SERVICE TO THE CLUB', 'Our Life Members.',
-                   'The honour roll published in Pars from the Past in 2014, presented as a starting point for a growing record of service.')
-    body += '<div class="prose"><p>This list follows Mowat’s published roll. Dates are the dates of recognition as recorded there. “Prior to 1948” and “1948–49” retain the book’s dating. The list is historical through 2014; later appointments can be added from club records.</p><p><a href="book-page-304.html">View the original honour roll · p. 304 →</a> · <a href="book-page-061.html">Read about the early Life Members · p. 61 →</a></p></div><div class="heritage-table-wrap"><table class="heritage-table"><caption>Life Members recorded in the 2014 book</caption><thead><tr><th scope="col">Member</th><th scope="col">Recognition</th></tr></thead><tbody>'
-    catalogue = json.loads((root/'content/catalogue.json').read_text())
-    member_ids = {member['name']: member['person_id'] for member in catalogue['life_members']}
-    for name, date in data['life_members']:
-        body += f'<tr><th scope="row"><a href="person-{e(member_ids[name])}.html">{e(name)}</a></th><td>{e(date)}</td></tr>'
-    body += '</tbody></table></div><p class="source">Source: David G. S. Mowat, editor, Pars from the Past (2014), p. 304. Read the original page for the printed layout.</p>'
-    if data.get('later_life_members'):
-        body += '<h2>Later appointments</h2><p>These appointments extend the historical roll above, with their own source attribution.</p>'
-        for member in data['later_life_members']:
-            body += f'<p><strong><a href="person-{e(member_ids[member["name"]])}.html">{e(member["name"])}</a> · {e(member["year"])}</strong><br>Source: <a href="{e(member["link"])}">{e(member["source"])} →</a></p>'
+                   'The club’s continuing roll of Life Members, with award dates and sources.')
+    body += life_members_roll(records['life_members'])
+    body += '<p><a href="feedback.html">Contribute a date or correction →</a></p>'
     if data.get('life_member_profiles'):
         body += '<h2>The people behind the honour roll</h2><p>Profiles added from the supplied Life Members compilation on 10 November 2026. Some reproduce or overlap Mowat’s account; others add later club notices or biographical context. Sources and dates stay with each profile.</p><div class="group-list">'
         for profile in data['life_member_profiles']:

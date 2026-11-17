@@ -81,11 +81,25 @@ The incorrect motorcycle-club author on the early website commit was corrected o
 
 The home page now leads to `subjects.html`: greenkeeping, resident professionals, life members, individual stories, club groups, course development, tournaments, clubhouses/administration, honours/rules and Tauranga life. Each story has a `topics` array and can appear under several subjects without duplicating its text.
 
-`content/catalogue.json` contains subject definitions, people, the original 33-entry life-members roll, five later appointments supplied by Bruce on 10 November 2026, and 12 cross-indexed descriptions of the 1968 programme. People can link to book pages and separately contributed stories. A person’s event year and the date their information was contributed are distinct. More people and earlier/later source records can be added without inventing a book chapter or changing original book pages.
+`content/catalogue.json` contains subject definitions, people and 12 cross-indexed descriptions of the 1968 programme. People can link to book pages and separately contributed stories. A person’s event year and the date their information was contributed are distinct. More people and earlier/later source records can be added without inventing a book chapter or changing original book pages.
 
-`content/heritage-additions.json` retains the previously assembled trophy records, life-member profiles, supplied photographs and Jack Carter’s recollection. `scripts/catalogue_views.py` renders subject and person routes and extends search to these sources and later contributions. The complete searchable programme and original book are served from `documents/` following the owner’s 10 November 2026 request. Original DOCX files remain outside the public website. Original book readers remain unchanged; corrections to contributed transcriptions are noted with contributor and date.
+`content/heritage-additions.json` retains the previously assembled life-member profiles, supplied photographs and Jack Carter’s recollection. `scripts/catalogue_views.py` renders subject and person routes and extends search to these sources and later contributions. The complete searchable programme and original book are served from `documents/` following the owner’s 10 November 2026 request. Original DOCX files remain outside the public website. Original book readers remain unchanged; corrections to contributed transcriptions are noted with contributor and date.
 
 The project owner authorised publication of the 10 November 2026 additions, including the extracted programme photographs, on that date.
+
+## Maintaining the club registers
+
+`content/club-records.json` supplies the Club Records page, the Life Members roll and the trophy register. Add entries for any period there, then rebuild and run the checks. The Life Members roll also feeds the relevant person pages and, for award years after 2014, the timeline. Search indexes register entries.
+
+| Collection | What to record |
+| --- | --- |
+| `life_members` | `name`, award `year` as text, and optional `person_id` for an existing person page. Preserve the recorded wording for uncertain dates. |
+| `roles` | `area` (`roles` for leadership, `greenkeeping` or `professional`), `role`, `name`, the displayed `term` and numeric `start_year` for ordering. Add successive terms as separate entries. |
+| `championships` | Numeric `year`, `competition` (include the division where applicable), and `result`. |
+| `developments` | `date` in ISO order (year, year-month or full date as supported), `event`, and `areas` such as `greenkeeping`, `clubhouse` and `course`. A single entry can appear in several areas. |
+| `trophies` | Append a numeric `year` and `winner` to the trophy’s `winners`. Leave the winner blank only if the source explicitly leaves that year blank. |
+
+Specify `source` using the document title and enough detail to identify the record, such as the minutes date, notice title or results sheet. Add `source_link` or `book_page` when available and `recorded_on` (ISO date) when known. Trophy rows inherit source details from their trophy, with fields overridable for a new source. Where the evidence conflicts, preserve the uncertainty in the entry or accompanying note. The original book and its appendices remain in the document archive as historical sources.
 
 ## Volunteers and Benefactors
 

@@ -2,8 +2,9 @@
 from html import escape as e
 import json
 from person_links import PersonLinks
+from club_records import source_label
 
-def build_catalogue(root, page, heading, book, collection, cards):
+def build_catalogue(root, page, heading, book, collection, cards, club_records):
     data=json.loads((root/'content/catalogue.json').read_text())
     topics={t['id']:t for t in data['topics']}
     name_links = PersonLinks(data['people'])
@@ -25,9 +26,10 @@ def build_catalogue(root, page, heading, book, collection, cards):
     page('people-index.html','People index',heading('INDIVIDUALS · FAMILIES · SERVICE','Find a person.','A growing name index linking book accounts and later contributions. This first selection will expand as more stories are added.')+people_list(data['people'])+'<p><a href="search.html">Search every name in the original book →</a></p>')
     for p in data['people']:
         body='<a class="back" href="people-index.html">← People index</a>'+heading('PEOPLE & CLUB LIFE',e(p['name']),e(p['summary']))+tags(p['topics'])
-        year = p.get('recognition') or p.get('life_membership_year')
-        if year:
-            body += f'<p class="source">Life Membership · {e(str(year))}</p>'
+        for member in club_records['life_members']:
+            if member.get('person_id') == p['id']:
+                body += (f'<section class="note"><h2>Life membership · {e(member["year"])}</h2>'
+                         f'<p>{source_label(member)}</p><p><a href="life-members.html">Life Members roll →</a></p></section>')
         if p.get('features'):
             body += '<div class="prose">'
             for feature in p['features']:
@@ -78,10 +80,17 @@ def build_catalogue(root, page, heading, book, collection, cards):
                 body+='</div></details>'
             body+='</div><aside class="note"><h2>A continuing history</h2><p>A later reflection considers changing health-and-safety expectations and board risk tolerance. It is presented separately in the story, alongside space for future accounts of how volunteering changes.</p></aside>'
         if t['id']=='life-members':
-            body+='<h2>Life members recorded in the 2014 book</h2><p>Names and date wording follow the book’s roll. Open the original page to check its layout.</p><p><a href="book-page-304.html">Original life-members roll · p. 304 →</a></p><ul class="name-index">'+''.join(f'<li><a href="person-{m["person_id"]}.html">{e(m["name"])}</a> · {e(m["year"])}</li>' for m in data['life_members'] if not m.get('added_after_book'))+'</ul><h2>Additional life members</h2><p>Contributed by Club heritage contribution, 10 November 2026. Listed by award year; these additions are separate from the original book.</p><ul>'+''.join(f'<li><a href="person-{m["person_id"]}.html">{e(m["name"])}</a> · {e(m["year"])}</li>' for m in sorted((m for m in data['life_members'] if m.get('added_after_book')),key=lambda m:(m['year'],m['name'])))+'</ul>'
-        if t['id']=='life-members':body+='<p><a href="life-members.html">Read the contributed life-member profiles →</a></p>'
+            body+='<p><a class="button" href="life-members.html">Open the Life Members roll and profiles →</a></p>'
+        record_areas = {
+            'clubhouses-administration': [('roles', 'Club leadership'), ('clubhouse', 'Clubhouse')],
+            'greenkeeping': [('greenkeeping', 'Greenkeeping')],
+            'resident-professionals': [('professional', 'Club professionals')],
+            'course-development': [('course', 'Course')],
+        }
+        for area, label in record_areas.get(t['id'], []):
+            body += f'<p><a href="club-records.html#{area}">{label} register →</a></p>'
         if t['id']=='individual-stories':body+='<p><a href="member-memories.html">Member memories and ways to contribute →</a></p>'
-        if t['id']=='honours-rules':body+='<p><a href="trophies.html">Explore the seven contributed trophy records →</a></p>'
+        if t['id']=='honours-rules':body+='<p><a href="trophies.html">Trophy register →</a> · <a href="club-records.html#championships">Club championship results →</a></p>'
         if t['id']=='club-groups':body+='<p><a class="button" href="club.html">Browse Juniors, Women, Nine Hole, Men and Senior Men →</a></p>'
         people=[p for p in data['people'] if t['id'] in p['topics']]
         if people:body+='<section><h2>People to follow</h2>'+people_list(people)+'</section>'
@@ -118,8 +127,20 @@ def build_catalogue(root, page, heading, book, collection, cards):
     page('looking-ahead.html','Looking ahead',heading('2000–FUTURE · POSSIBILITIES & DISCUSSION','Where might golf take us next?','A few simple possibilities for the game and the club. This is a place to look ahead, alongside the continuing historical record.')+'<div class="prose"><h2>More ways to enjoy the game</h2><p>Golf’s next chapter could offer more choices about how long a round takes and how people take part. Nine-hole golf, short courses, practice and social events provide starting points for imagining a club that fits different ages, abilities and amounts of spare time.</p><p><a href="topic-club-groups.html">Explore the club groups →</a> · <a href="short-course.html">The short-course story →</a></p><h2>A course suited to its place</h2><p>The Windsor Green story suggests a useful question for the future: how can the club keep offering enjoyable playing conditions while caring for water, trees and the land? Future choices may involve different turf, maintenance methods and expectations of what a good course looks like through the seasons.</p><p><a href="topic-greenkeeping.html">Greenkeeping →</a> · <a href="windsor-green.html">Windsor Green →</a></p><h2>New tools, the same pleasure in playing</h2><p>Imagine technology helping people learn, practise, find playing partners and organise competitions. How much could it improve access and enjoyment, and which parts of golf would members want to keep simple and personal?</p><h2>A club people can afford and belong to</h2><p>Membership choices, the cost of maintaining the course and the welcome offered to newcomers could shape who plays. The next generation may value a wider choice of experiences while still wanting the friendships, competition and sense of place that earlier members enjoyed.</p><h2>Keeping the spirit of contribution</h2><p>Volunteers and benefactors helped build this club. Future forms of service could preserve that sense of ownership as skills, available time, safety expectations and the organisation of work change.</p><p><a href="topic-volunteers-benefactors.html">Volunteers and Benefactors →</a></p><h2>Dave’s imagined second century</h2><p>In 2014 Dave Mowat ended his history by imagining someone looking back over the following hundred years. His vision remains part of the original book. It offers another way to begin a conversation about what the club might become.</p><p><a href="book-page-280.html">Open Dave’s imagined future at book page 280 →</a> · <a href="daves-imagined-century.html">Read the introduction →</a></p><p class="source">Editorial discussion prompts prepared for the continuing collection in November 2026. These possibilities are separate from recorded events and from an adopted club plan.</p></div>')
     add_search('Looking ahead: golf and the club’s future','looking-ahead.html','2000 Future; shorter golf, nine holes, learning, technology, water, turf, membership, affordability, volunteering and Dave Mowat’s imagined second century.','Future discussion')
     heritage=json.loads((root/'content/heritage-additions.json').read_text())
-    for trophy in heritage['trophies']:
-        add_search(trophy['title'],'trophies.html#'+trophy['id'],trophy['context']+' '+trophy['note']+' '+' '.join(str(y)+' '+w for y,w in trophy['winners']),'Trophy record')
+    for member in club_records['life_members']:
+        add_search(member['name'] + ' · Life membership', 'life-members.html',
+                   member['year'] + ' ' + member['source'], 'Club record')
+    for role in club_records['roles']:
+        add_search(role['role'] + ' · ' + role['name'], 'club-records.html#' + role.get('area', 'roles'),
+                   role['term'] + ' ' + role['source'], 'Club record')
+    for event in club_records['developments']:
+        add_search(event['event'], 'club-records.html#' + event['areas'][0],
+                   event['date'] + ' ' + event['source'], 'Club record')
+    for result in club_records['championships']:
+        add_search(result['competition'], 'club-records.html#championships',
+                   f'{result["year"]} {result["result"]} {result["source"]}', 'Club record')
+    for trophy in club_records['trophies']:
+        add_search(trophy['title'],'trophies.html#'+trophy['id'],trophy['context']+' '+trophy['note']+' '+' '.join(f'{r["year"]} {r["winner"]}' for r in trophy['winners']),'Trophy record')
     add_search(heritage['jack_carter']['title'],'jack-carter.html',' '.join(heritage['jack_carter']['paragraphs']),'Member recollection')
     add_search('Member memories','member-memories.html','Personal experiences, recollections and interview prompts','Contribution guide')
     add_search('Supplied heritage photographs','supplied-photographs.html',' '.join(p['title']+' '+p['caption'] for p in heritage['photographs']),'Photograph collection')
