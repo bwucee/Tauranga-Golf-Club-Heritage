@@ -27,3 +27,23 @@ header{max-width:none;background:#fff;padding:25px max(24px,calc((100vw - 1224px
 .contributed-photos{display:flex;flex-wrap:wrap;gap:28px;margin:24px 0 36px;max-width:900px}.contributed-photos figure{flex:1 1 280px;max-width:720px;margin:0}.contributed-photos img{display:block;width:auto;max-width:100%;height:auto;max-height:520px;object-fit:contain}.contributed-photos figcaption{max-width:680px;font-size:14px;line-height:1.6;margin-top:12px}
 
 .book-prose a.person-link{color:var(--green);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.person-link:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.person-references{padding-left:22px}.person-references li{padding:7px 0}
+
+.reserve-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+.reserve-feature > img {
+  height: auto;
+  aspect-ratio: auto;
+}
+.reserve-feature > div:not(.type-image) {
+  padding-top: 0;
+}
+@media (max-width: 640px) {
+  .reserve-feature {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

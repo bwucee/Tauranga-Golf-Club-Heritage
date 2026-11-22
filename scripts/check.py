@@ -62,7 +62,8 @@ collection=json.loads((R/'content/collection.json').read_text())
 index=json.loads((R/'assets/search-index.json').read_text())
 catalogue=json.loads((R/'content/catalogue.json').read_text())
 records=json.loads((R/'content/club-records.json').read_text())
-assert len(index)==305+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+sum(len(records[key]) for key in records)+3+sum(len(s['entries']) for s in catalogue.get('volunteer_sections',[]))+1
+assert sum(item['url'] == 'racecourse-reserve.html' for item in index) == 1
+assert len(index)==306+len(collection['articles'])+len(catalogue['topics'])+len(catalogue['people'])+len(catalogue['source_records'])+1+sum(len(records[key]) for key in records)+3+sum(len(s['entries']) for s in catalogue.get('volunteer_sections',[]))+1
 for item in index:
  target=urlsplit(item['url'])
  assert (R/target.path).exists()

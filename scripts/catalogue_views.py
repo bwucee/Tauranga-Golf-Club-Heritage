@@ -16,6 +16,11 @@ def build_catalogue(root, page, heading, book, collection, cards, club_records):
     def add_search(title,url,text,kind):
         if url.startswith('documents/') and '#page=' in url:url='pdf-viewer/web/viewer.html?file=../../'+url
         search.append(dict(title=title,url=url,text=text,type=kind,page=None))
+    add_search(
+        "The Racecourse Reserve and the club’s lease", "racecourse-reserve.html",
+        "Maarawaewae, the Crown reserve, the 1914 lease, race-day access and the club’s search for certainty beyond 2039.",
+        "story",
+    )
     def person_link(p):return f'<a href="person-{p["id"]}.html">{e(p["name"])}</a>'
     def people_list(people):return '<ul class="name-index">'+''.join(f'<li>{person_link(p)}</li>' for p in sorted(people,key=lambda p:p['name'].casefold()))+'</ul>'
     def record_links(records):
